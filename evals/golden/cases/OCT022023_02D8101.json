@@ -1,0 +1,40 @@
+{
+  "id": "OCT022023_02D8101",
+  "date": "2023-10-02",
+  "sourceUrl": "https://www.uscis.gov/sites/default/files/err/D8-Aliens-of-Extraordinary-Ability-or-Achievement_O-1_O-2_and_O-3/Decisions_Issued_in_2023/OCT022023_02D8101.pdf",
+  "split": "dev_2023_2025",
+  "field": "Athletics",
+  "facts": "The Petitioner, an international youth hockey program, sought to classify the Beneficiary, a head coach, as an individual of extraordinary ability. The petition claimed that the Beneficiary met the initial evidentiary criteria for O-1 classification, specifically citing high remuneration and original contributions of major significance.\n\nRegarding awards, the Petitioner submitted evidence regarding the background and history of the Amateur Athletic Union (AAU). The submitted screenshots from aausports.org indicated that the AAU is dedicated to the promotion and development of amateur sports and physical fitness programs. The Petitioner also stated that the team coached by the Beneficiary won the AAU National Championship for the second time in three years in the U11 division.\n\nRegarding original contributions, the Petitioner claimed the Beneficiary composed a playbook that is used throughout the hockey world, including in Slovakia, Canada, Serbia, and the US, and was distributed on academia.edu. The Petitioner submitted screenshots from academia.edu reflecting search results and rankings for the playbook. The Petitioner also submitted a letter from a former NHL player who indicated the Beneficiary was a successful head coach and developed the playbook. A second letter, from a league president, stated that players from the USA, Canada, Slovakia, and Serbia had a great experience under the guidance of the Beneficiary and the systems outlined in the playbook, and that the playbook is the gold standard for youth hockey throughout the world.",
+  "factsLeakage": [],
+  "grounds": [
+    {
+      "prong": "criteria",
+      "criterion": "awards",
+      "reasonCode": "AWARD_RECOGNITION_UNPROVEN",
+      "summary": "The evidence regarding the AAU National Championship did not demonstrate that the award was nationally or internationally recognized for excellence in the field.",
+      "quote": "Moreover.I ~etter does not further discuss the AAU National Championship and show how the field views winning the AAU National Championship in the under 11 years of age division as being tantamount to a nationally or internationally recognized prize or award for excellence.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "original_contributions",
+      "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+      "summary": "The submitted letters and screenshots failed to demonstrate that the Beneficiary's playbook had risen to a level of major significance in the field.",
+      "quote": "In the absence of specific information detailing the impact or influence of the Petitioner's playbook, the letters do not demonstrate that his work has risen to a level of major significance in the field.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "final_merits",
+      "criterion": null,
+      "reasonCode": "FINAL_MERITS_NOT_MET",
+      "summary": "The Petitioner failed to establish the required threshold of at least three alternative regulatory criteria, preventing a totality determination of sustained acclaim.",
+      "quote": "Consequently, the Petitioner has not established the Beneficiary's eligibility for the 0-1 visa classification as an individual of extraordinary ability.",
+      "dispositive": true,
+      "quoteVerified": true
+    }
+  ],
+  "reviewed": false,
+  "reviewNotes": ""
+}

@@ -1,0 +1,35 @@
+{
+  "raman": {
+    "beneficiary": "Dr. Priya Raman",
+    "docs": [
+      "A-cv.pdf",
+      "B-lindqvist-prize.pdf",
+      "C-meridian-profile.pdf",
+      "D-sosd-review-confirmation.pdf",
+      "E-expert-letter-osei.pdf",
+      "F-compensation.pdf",
+      "G-advisory-opinion.pdf"
+    ]
+  },
+  "alvarez": {
+    "beneficiary": "Mateo Alvarez",
+    "docs": [
+      "A-cv.pdf",
+      "B-press-company.pdf",
+      "C-fintech-weekly-list.pdf",
+      "D-membership.pdf",
+      "E-judging-invite.pdf",
+      "F-cto-letter.pdf",
+      "G-salary.pdf"
+    ]
+  },
+  "okafor": {
+    "beneficiary": "Dr. Lena Okafor",
+    "docs": [
+      "A-cv.pdf",
+      "B-poster-award.pdf",
+      "C-advisor-letter.pdf",
+      "D-offer.pdf"
+    ]
+  }
+}

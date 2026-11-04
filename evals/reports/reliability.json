@@ -1,0 +1,248 @@
+{
+  "eval": "reliability",
+  "generatedAt": "2026-11-04T12:20:54.582Z",
+  "k": 3,
+  "pooled": {
+    "fleissKappaStrength": 0.6916488222698074,
+    "fleissKappaMet": -0.02127659574468143,
+    "strengthModalAgreement": 0.9375,
+    "metDecisionAgreement": 0.9791666666666667,
+    "verdictPassK": 1,
+    "claimJaccardMean": 0.45971555618294746
+  },
+  "perCase": [
+    {
+      "case": "Mateo Alvarez",
+      "k": 3,
+      "runs": [
+        {
+          "runId": "899cf268-a6a9-4542-aaa2-3d8a01a03aae",
+          "likelyMet": 1,
+          "strengths": {
+            "awards": "weak",
+            "membership": "weak",
+            "published_material": "weak",
+            "judging": "weak",
+            "original_contributions": "weak",
+            "scholarly_articles": "none",
+            "critical_employment": "moderate",
+            "high_remuneration": "weak"
+          },
+          "claims": 18,
+          "costUsd": 0,
+          "seconds": 1188.793
+        },
+        {
+          "runId": "0b6e1f89-334f-4df2-86c4-cf34e1a252d2",
+          "likelyMet": 0,
+          "strengths": {
+            "awards": "weak",
+            "membership": "weak",
+            "published_material": "weak",
+            "judging": "weak",
+            "original_contributions": "weak",
+            "scholarly_articles": "none",
+            "critical_employment": "weak",
+            "high_remuneration": "weak"
+          },
+          "claims": 16,
+          "costUsd": 0,
+          "seconds": 1109.712
+        },
+        {
+          "runId": "9c1ae2ff-1540-455e-8859-4538ee484db3",
+          "likelyMet": 0,
+          "strengths": {
+            "awards": "weak",
+            "membership": "weak",
+            "published_material": "weak",
+            "judging": "weak",
+            "original_contributions": "weak",
+            "scholarly_articles": "none",
+            "critical_employment": "weak",
+            "high_remuneration": "weak"
+          },
+          "claims": 18,
+          "costUsd": 0,
+          "seconds": 949.317
+        }
+      ],
+      "strengthModalAgreement": 0.9583333333333334,
+      "metDecisionAgreement": 0.9583333333333334,
+      "fleissKappaStrength": 0.7108433734939756,
+      "verdictConsistentAllRuns": true,
+      "likelyMetRange": [
+        0,
+        1
+      ],
+      "claimJaccardMean": 0.5533596837944663,
+      "perCriterion": {
+        "awards": [
+          "weak",
+          "weak",
+          "weak"
+        ],
+        "membership": [
+          "weak",
+          "weak",
+          "weak"
+        ],
+        "published_material": [
+          "weak",
+          "weak",
+          "weak"
+        ],
+        "judging": [
+          "weak",
+          "weak",
+          "weak"
+        ],
+        "original_contributions": [
+          "weak",
+          "weak",
+          "weak"
+        ],
+        "scholarly_articles": [
+          "none",
+          "none",
+          "none"
+        ],
+        "critical_employment": [
+          "moderate",
+          "weak",
+          "weak"
+        ],
+        "high_remuneration": [
+          "weak",
+          "weak",
+          "weak"
+        ]
+      }
+    },
+    {
+      "case": "Dr. Lena Okafor",
+      "k": 3,
+      "runs": [
+        {
+          "runId": "2847f45d-4dad-4b5e-bd3e-6d5749607806",
+          "likelyMet": 0,
+          "strengths": {
+            "awards": "weak",
+            "membership": "none",
+            "published_material": "weak",
+            "judging": "none",
+            "original_contributions": "weak",
+            "scholarly_articles": "weak",
+            "critical_employment": "weak",
+            "high_remuneration": "weak"
+          },
+          "claims": 6,
+          "costUsd": 0,
+          "seconds": 509.055
+        },
+        {
+          "runId": "db14dcde-55a1-4050-a6d0-fe5af2a4859e",
+          "likelyMet": 0,
+          "strengths": {
+            "awards": "weak",
+            "membership": "none",
+            "published_material": "none",
+            "judging": "none",
+            "original_contributions": "weak",
+            "scholarly_articles": "none",
+            "critical_employment": "weak",
+            "high_remuneration": "weak"
+          },
+          "claims": 12,
+          "costUsd": 0,
+          "seconds": 557.199
+        },
+        {
+          "runId": "f83a654f-1eb1-44ae-b276-31fc4bf54b0a",
+          "likelyMet": 0,
+          "strengths": {
+            "awards": "weak",
+            "membership": "none",
+            "published_material": "none",
+            "judging": "none",
+            "original_contributions": "weak",
+            "scholarly_articles": "weak",
+            "critical_employment": "weak",
+            "high_remuneration": "weak"
+          },
+          "claims": 7,
+          "costUsd": 0,
+          "seconds": 560.571
+        }
+      ],
+      "strengthModalAgreement": 0.9166666666666666,
+      "metDecisionAgreement": 1,
+      "fleissKappaStrength": 0.6444444444444445,
+      "verdictConsistentAllRuns": true,
+      "likelyMetRange": [
+        0,
+        0
+      ],
+      "claimJaccardMean": 0.36607142857142855,
+      "perCriterion": {
+        "awards": [
+          "weak",
+          "weak",
+          "weak"
+        ],
+        "membership": [
+          "none",
+          "none",
+          "none"
+        ],
+        "published_material": [
+          "weak",
+          "none",
+          "none"
+        ],
+        "judging": [
+          "none",
+          "none",
+          "none"
+        ],
+        "original_contributions": [
+          "weak",
+          "weak",
+          "weak"
+        ],
+        "scholarly_articles": [
+          "weak",
+          "none",
+          "weak"
+        ],
+        "critical_employment": [
+          "weak",
+          "weak",
+          "weak"
+        ],
+        "high_remuneration": [
+          "weak",
+          "weak",
+          "weak"
+        ]
+      }
+    }
+  ],
+  "recovery": {
+    "runId": "be517b2d-5890-44ee-8807-9b455ac9806b",
+    "injectedFailures": 2,
+    "finalStatus": "suspended",
+    "reachedAttorneyCheckpoint": true,
+    "reusedSteps": 0,
+    "seconds": 826.754,
+    "stepsCommittedOnce": true
+  },
+  "cost": {
+    "mappingRunsUsd": 0,
+    "perMappingRunUsd": 0,
+    "recoveryRunUsd": 0
+  },
+  "latency": {
+    "meanMappingRunSeconds": 812.4411666666666
+  }
+}

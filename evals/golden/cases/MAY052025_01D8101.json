@@ -1,0 +1,49 @@
+{
+  "id": "MAY052025_01D8101",
+  "date": "2025-05-05",
+  "sourceUrl": "https://www.uscis.gov/sites/default/files/err/D8-Aliens-of-Extraordinary-Ability-or-Achievement_O-1_O-2_and_O-3/Decisions_Issued_in_2025/MAY052025_01D8101.pdf",
+  "split": "dev_2023_2025",
+  "field": "Chief Technology Officer (CTO) in AI Technology",
+  "facts": "The Petitioner, an artificial intelligence technology company, sought to classify the Beneficiary as a chief technology officer of extraordinary ability. The Petitioner claimed the Beneficiary met the requirements for O-1 nonimmigrant classification through sustained national or international acclaim.\n\nRegarding awards, the Petitioner submitted a letter from S-D-, founder and chief executive officer, stating that the Beneficiary garnered \"significant venture capital funding of $500,000 as awarded by leading industry experts at c::J, a prominent institution which selectively finances innovative excellence by top founders at the global level.\" The record also included three articles from [website], reporting on eight computer science students receiving seed funding from c::J.\n\nFor membership, the Petitioner provided screenshots from the c::J website showing the Beneficiary listed as a co-founder and the company being invested in. A letter from H-T-, group partner, endorsed the Beneficiary's \"outstanding merits including as a founder of [the Petitioner] to be accepted to D an eminent associational affiliation that complements their credentials and acclaim on the international level.\" This letter claimed the selection process was rigorous, limited to 1-2% of founders accepted from thousands of applicants.\n\nIn the category of published materials, the Petitioner submitted an article titled, \"Meet the '-----.--------------..------------'\" posted on [website]. This article listed several tech startups at the cohort, and the Beneficiary was briefly indicated as being one of the founders for one of the startups.\n\nFor judging, the Petitioner claimed the Beneficiary was \"publicly-credited for his panel judging over the work of others within the same or allied field, including risk innovators, technologists, and entrepreneurs at the 2024 [event].\" The Petitioner provided background documentation, registration information, promotional material, and an email from [company] inviting the Beneficiary to participate as a judge.",
+  "factsLeakage": [],
+  "grounds": [
+    {
+      "prong": "criteria",
+      "criterion": "awards",
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The seed funding award was not demonstrated to be a nationally or internationally recognized prize or award for excellence in the field.",
+      "quote": "The evidence, however, does not demonstrate that c::J $SOOK seed funding award constitutes a nationally or internationally recognized prize or award for excellence in the field.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "membership",
+      "reasonCode": "LETTERS_CONCLUSORY",
+      "summary": "The supporting letter repeated statutory language regarding outstanding achievements without describing the selection criteria or proving that recognized experts judged the membership.",
+      "quote": "Although H-T- references 'outstanding merits,' 'outstanding achievements,' and 'acclaim on the international level,' repeating the language of the statute or regulations does not establish eligibility for the benefit.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "published_material",
+      "reasonCode": "NOT_ABOUT_BENEFICIARY",
+      "summary": "The submitted article did not reflect published material about the Beneficiary relating to his work, as the Beneficiary was only briefly mentioned as a founder.",
+      "quote": "The article does not reflect published material about the Beneficiary relating to his work. In fact, the Beneficiary is briefly indicated as being one of the founders for one of tech startups at the event.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "judging",
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The Petitioner failed to provide documentation establishing that the Beneficiary actually participated as a judge at the event, only providing evidence of the invitation.",
+      "quote": "The petitioner must show that the beneficiary has not only been invited to judge the work of others, but also that the beneficiary actually participated in judging the work of others in the same or allied field of specialization.",
+      "dispositive": true,
+      "quoteVerified": true
+    }
+  ],
+  "reviewed": false,
+  "reviewNotes": ""
+}

@@ -1,0 +1,3346 @@
+{
+  "eval": "objection-recall",
+  "generatedAt": "2026-11-04T10:50:56.261Z",
+  "models": {
+    "officer": "ollama/qwen3:8b",
+    "judge": "ollama/gemma4"
+  },
+  "method": "Officer sees neutral facts only; AAO retrieval excludes the decision under test; independent judge maps each verified gold ground to a predicted objection.",
+  "overall": {
+    "cases": 31,
+    "dispositiveGrounds": 100,
+    "recallStrict": {
+      "p": 0.55,
+      "lo": 0.45244427031643447,
+      "hi": 0.6438562489359654
+    },
+    "recallLenient": {
+      "p": 0.6,
+      "lo": 0.5020007846184025,
+      "hi": 0.6906002538863971
+    },
+    "casesFullyCaught": {
+      "p": 0.1935483870967742,
+      "lo": 0.09186883586347633,
+      "hi": 0.36280603555459856
+    },
+    "objectionsPerCase": 4.612903225806452,
+    "matchedPredictionRate": 0.36363636363636365,
+    "errors": 0
+  },
+  "bySplit": {
+    "dev_2023_2025": {
+      "cases": 25,
+      "dispositiveGrounds": 81,
+      "recallStrict": {
+        "p": 0.5555555555555556,
+        "lo": 0.44727379297278025,
+        "hi": 0.6588062432358722
+      },
+      "recallLenient": {
+        "p": 0.5802469135802469,
+        "lo": 0.471534628313757,
+        "hi": 0.6816920906542965
+      },
+      "casesFullyCaught": {
+        "p": 0.2,
+        "lo": 0.08860454100652487,
+        "hi": 0.3913133553653824
+      },
+      "objectionsPerCase": 4.92,
+      "matchedPredictionRate": 0.35772357723577236,
+      "errors": 0
+    },
+    "holdout_2026": {
+      "cases": 6,
+      "dispositiveGrounds": 19,
+      "recallStrict": {
+        "p": 0.5263157894736842,
+        "lo": 0.31707482511825114,
+        "hi": 0.7267049451255145
+      },
+      "recallLenient": {
+        "p": 0.6842105263157895,
+        "lo": 0.4601001017506463,
+        "hi": 0.846358289955714
+      },
+      "casesFullyCaught": {
+        "p": 0.16666666666666666,
+        "lo": 0.03005258587173032,
+        "hi": 0.563509436563646
+      },
+      "objectionsPerCase": 3.3333333333333335,
+      "matchedPredictionRate": 0.4,
+      "errors": 0
+    }
+  },
+  "noLeakage": {
+    "cases": 24,
+    "dispositiveGrounds": 79,
+    "recallStrict": {
+      "p": 0.5443037974683544,
+      "lo": 0.4349813769749742,
+      "hi": 0.6495172324193399
+    },
+    "recallLenient": {
+      "p": 0.5949367088607594,
+      "lo": 0.48472952838439765,
+      "hi": 0.6963389203177036
+    },
+    "casesFullyCaught": {
+      "p": 0.20833333333333334,
+      "lo": 0.0924468910478809,
+      "hi": 0.40470844485235474
+    },
+    "objectionsPerCase": 4.083333333333333,
+    "matchedPredictionRate": 0.40816326530612246,
+    "errors": 0
+  },
+  "leakedCases": [
+    "AUG152024_01D8101",
+    "FEB252025_01D8101",
+    "JAN042023_01D8101",
+    "JAN302023_01D8101",
+    "JUL312024_01D8101",
+    "MAY222025_01D8101",
+    "NOV052025_01D8101"
+  ],
+  "byCriterion": {
+    "published_material": {
+      "n": 12,
+      "caught": 8
+    },
+    "original_contributions": {
+      "n": 20,
+      "caught": 15
+    },
+    "critical_employment": {
+      "n": 10,
+      "caught": 1
+    },
+    "high_remuneration": {
+      "n": 7,
+      "caught": 6
+    },
+    "judging": {
+      "n": 8,
+      "caught": 6
+    },
+    "awards": {
+      "n": 10,
+      "caught": 8
+    },
+    "membership": {
+      "n": 11,
+      "caught": 6
+    },
+    "final_merits": {
+      "n": 5,
+      "caught": 4
+    },
+    "advisory_opinion": {
+      "n": 1,
+      "caught": 0
+    },
+    "CRITERION_NOT_MET": {
+      "n": 10,
+      "caught": 0
+    },
+    "PROCEDURAL": {
+      "n": 3,
+      "caught": 0
+    },
+    "scholarly_articles": {
+      "n": 2,
+      "caught": 1
+    },
+    "FINAL_MERITS_NOT_MET": {
+      "n": 1,
+      "caught": 0
+    }
+  },
+  "humanReviewedCases": 0,
+  "cost": {
+    "usd": 0,
+    "calls": 0,
+    "perCaseUsd": 0
+  },
+  "latency": {
+    "meanSeconds": 222.06332258064515
+  },
+  "cases": [
+    {
+      "id": "APR022026_01D8101",
+      "date": "2026-04-02",
+      "split": "holdout_2026",
+      "field": "global engagement programs coordinator",
+      "reviewed": false,
+      "leakage": false,
+      "judgeMatchesRejectedAsOffTarget": 0,
+      "gold": [
+        {
+          "prong": "criteria",
+          "criterion": "published_material",
+          "reasonCode": "NOT_ABOUT_BENEFICIARY",
+          "summary": "The submitted articles were not substantive material about the Beneficiary's work, but rather cited or referenced her.",
+          "quote": "As it relates to zawya.com, the article reports about the... and the Beneficiary is mentioned one time in the \"References\" section; the article does not constitute published material about the Beneficiary.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": true,
+          "matchedObjection": null
+        },
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "summary": "The evidence of the Beneficiary's presentations at international conferences did not contextualize or demonstrate the impact of her work in the field.",
+          "quote": "Although the Petitioner offered evidence of the Beneficiary's presentations at three conferences, the Petitioner did not contextualize or show the impact of her presentations in the field.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 1
+        },
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "summary": "The Petitioner failed to demonstrate how the Beneficiary's cumulative citation numbers represented contributions of major significance in the field.",
+          "quote": "The Petitioner did not demonstrate how the Beneficiary's cumulative number of citations represents contributions of major significance in the field.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 1
+        },
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "LETTERS_CONCLUSORY",
+          "summary": "The recommendation letters were general and conclusory, failing to elaborate on how the Beneficiary's work was considered majorly significant in the field.",
+          "quote": "Here, the letters point to the Beneficiary's work but do not demonstrate how the field views it as original contributions of major significance in the field, such as widespread impact or influence.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 1
+        }
+      ],
+      "predicted": [
+        {
+          "prong": "criteria",
+          "criterion": "published_material",
+          "reasonCode": "MEDIA_STATUS_UNPROVEN",
+          "severity": "high",
+          "objection": "The petitioner has not provided sufficient documentation to establish that gulfnews.com, zawya.com, or menafn.com are major media outlets. While the petitioner cites circulation/viewer figures, AAO decisions (P1, P2) require objective proof of major media status, such as verified circulation data, readership statistics, or editorial standing. The mere assertion of page views without independent verification fails to meet this standard.",
+          "aaoRefs": [
+            "DEC182024_01D8101",
+            "OCT262023_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "severity": "high",
+          "objection": "The citation record (89 total, with highest at 46) and Clarivate Analytics data (top 10% in social sciences) do not demonstrate major significance to the field. AAO decisions (P3, P6) require evidence of impact such as adoption by others, licensing, revenue, or independent expert letters explaining the contribution's influence. The letters submitted are general and lack specifics on how the work affected the field.",
+          "aaoRefs": [
+            "JUN172026_01D8101",
+            "DEC112025_01D8101"
+          ]
+        }
+      ],
+      "latencyMs": 108627
+    },
+    {
+      "id": "APR272026_01D8101",
+      "date": "2026-04-27",
+      "split": "holdout_2026",
+      "field": "Business",
+      "reviewed": false,
+      "leakage": false,
+      "judgeMatchesRejectedAsOffTarget": 2,
+      "gold": [
+        {
+          "prong": "criteria",
+          "criterion": "published_material",
+          "reasonCode": "MEDIA_STATUS_UNPROVEN",
+          "summary": "The submitted article was not shown to be a professional publication because the intended audience was not established.",
+          "quote": "Even if we were to accept that the article, which only references the Beneficiary a few times, is about the Beneficiary, relating to his work in the field of business, the record is insufficient to substantiate the Petitioner's claim that Sport Aviation is a professional publication.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 0
+        },
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "summary": "The evidence failed to demonstrate that the Beneficiary's contributions were of major significance in the field, given the limited level of adoption of the technology.",
+          "quote": "The limited level of adoption of the technology is insufficient to demonstrate major significance in the field.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        },
+        {
+          "prong": "criteria",
+          "criterion": "critical_employment",
+          "reasonCode": "REPUTATION_UNPROVEN",
+          "summary": "The letters submitted did not establish that the petitioning entity qualified as an organization or establishment that has a distinguished reputation.",
+          "quote": "The letters from._______----.-____do not establish! I has a distinguished reputation, as required under this criterion.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        }
+      ],
+      "predicted": [
+        {
+          "prong": "criteria",
+          "criterion": "published_material",
+          "reasonCode": "MEDIA_STATUS_UNPROVEN",
+          "severity": "high",
+          "objection": "The petitioner claims Sport Aviation is a professional publication but fails to demonstrate it is major media with high circulation/readership. AAO decisions require objective evidence of major media status (P1, P2).",
+          "aaoRefs": [
+            "DEC182024_01D8101",
+            "OCT262023_01D8101"
+          ]
+        },
+        {
+          "prong": "final_merits",
+          "criterion": "scholarly_articles",
+          "reasonCode": "FINAL_MERITS_NOT_MET",
+          "severity": "high",
+          "objection": "The totality of evidence fails to demonstrate sustained national or international acclaim. Published material is not about the beneficiary, original contributions lack impact evidence, and critical employment lacks specificity. The beneficiary is not shown to be among the top of the field (P4, P6).",
+          "aaoRefs": [
+            "FEB252025_01D8101",
+            "DEC112025_01D8101"
+          ]
+        }
+      ],
+      "latencyMs": 83465
+    },
+    {
+      "id": "AUG132024_01D8101",
+      "date": "2024-08-13",
+      "split": "dev_2023_2025",
+      "field": "dance instructor",
+      "reviewed": false,
+      "leakage": false,
+      "judgeMatchesRejectedAsOffTarget": 0,
+      "gold": [
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "summary": "The submitted materials failed to demonstrate that the Beneficiary's work constituted a contribution of major significance in the dance field.",
+          "quote": "For instance, the letter does not provide specific examples of how the Beneficiary's original work has substantially impacted the dance field, has significantly influenced the work of other dancers or dance instructors in the field, or otherwise equates to original contributions of \"major significance\" in the field.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        },
+        {
+          "prong": "criteria",
+          "criterion": "critical_employment",
+          "reasonCode": "ROLE_NOT_CRITICAL",
+          "summary": "The Petitioner failed to demonstrate that the Beneficiary's role in the charity sport event or the dance show was critical or essential to the organization's activities.",
+          "quote": "The Petitioner has not demonstrated how either a charity sport event or a show equates to an \"organization\" or \"establishment,\" and how the Beneficiary's role as a dancer in a charity sport event or a dance instructor/director/choreographer in a show rises to the level of a critical or essential role for the production company of the charity sport event/show.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        },
+        {
+          "prong": "criteria",
+          "criterion": "critical_employment",
+          "reasonCode": "REPUTATION_UNPROVEN",
+          "summary": "The Petitioner did not establish the distinguished stature of the organizations that employed the Beneficiary.",
+          "quote": "But the camp's self-promotional materials cannot establish its reputation in the absence of other corroborating information in the record that documents the distinguished stature of the organization.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        },
+        {
+          "prong": "criteria",
+          "criterion": "high_remuneration",
+          "reasonCode": "NO_COMPARATIVE_WAGE_DATA",
+          "summary": "The Petitioner failed to establish that the Beneficiary's compensation was high relative to others working in similar occupations in the field.",
+          "quote": "The Petitioner did not show that the occupation of a dance instructor is the same as a dancer. Therefore, the Petitioner did not establish that the comparative salary data for dancers is relative to the earnings of dance instructors.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 0
+        }
+      ],
+      "predicted": [
+        {
+          "prong": "criteria",
+          "criterion": "high_remuneration",
+          "reasonCode": "NO_COMPARATIVE_WAGE_DATA",
+          "severity": "medium",
+          "objection": "The $60,000 salary is not compared to others in the field and geography. The screenshots from onetonline.org lack context on how this salary ranks relative to industry standards. (P9, P10)",
+          "aaoRefs": [
+            "APR132023_01D8101",
+            "FEB222023_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "published_material",
+          "reasonCode": "MEDIA_STATUS_UNPROVEN",
+          "severity": "high",
+          "objection": "The Italian publications La Nazione and Gazzettadellaspezia.it are not shown to be major media with high circulation/readership. The petitioner failed to provide circulation figures or other evidence of their major status. (P1, P2)",
+          "aaoRefs": [
+            "DEC182024_01D8101",
+            "OCT262023_01D8101"
+          ]
+        },
+        {
+          "prong": "final_merits",
+          "criterion": "scholarly_articles",
+          "reasonCode": "FINAL_MERITS_NOT_MET",
+          "severity": "high",
+          "objection": "The totality of evidence does not show sustained national or international acclaim. The beneficiary's work is not demonstrated to be among the top tier of the field. (P4, P5)",
+          "aaoRefs": [
+            "FEB252025_01D8101",
+            "MAY132025_01D8101"
+          ]
+        }
+      ],
+      "latencyMs": 98047
+    },
+    {
+      "id": "AUG152024_01D8101",
+      "date": "2024-08-15",
+      "split": "dev_2023_2025",
+      "field": "dance instructor",
+      "reviewed": false,
+      "leakage": true,
+      "judgeMatchesRejectedAsOffTarget": 0,
+      "gold": [
+        {
+          "prong": "criteria",
+          "criterion": "judging",
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The evidence provided did not demonstrate that the Beneficiary participated as a judge of the work of others at a specific event or competition.",
+          "quote": "This additional documentation does not identify any specific competitions in which the Beneficiary participated as a judge.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 0
+        },
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "summary": "The Petitioner failed to show that the Beneficiary's original work constituted a contribution of major significance in the dance field.",
+          "quote": "Here, his letter reflects how he values his collaborations with the Beneficiary, but he does not explain what the Beneficiary has contributed to the field and how those contributions are considered to be of major significance in the field.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 1
+        },
+        {
+          "prong": "criteria",
+          "criterion": "critical_employment",
+          "reasonCode": "REPUTATION_UNPROVEN",
+          "summary": "The Petitioner did not establish the distinguished stature of the organizations that employed the Beneficiary.",
+          "quote": "The Petitioner did not submit evidence that demonstrates that either T-B-D- dance school or T-V-L- dance training camp enjoys a distinguished reputation.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": true,
+          "matchedObjection": null
+        },
+        {
+          "prong": "criteria",
+          "criterion": "high_remuneration",
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The Petitioner failed to demonstrate that the Beneficiary's compensation would be a high one, only an above average or medium one.",
+          "quote": "Therefore, the Petitioner has not shown the Beneficiary's salary would be a high one, only an above average or medium one.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 3
+        }
+      ],
+      "predicted": [
+        {
+          "prong": "criteria",
+          "criterion": "judging",
+          "reasonCode": "JUDGING_NOT_PERFORMED",
+          "severity": "high",
+          "objection": "The Petitioner submitted registration cards and a screenshot indicating the Beneficiary was registered as an adjudicator but did not provide evidence the Beneficiary actually performed judging duties. AAO decision P3 explicitly requires proof of participation, not just invitation.",
+          "aaoRefs": [
+            "MAY052025_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "severity": "high",
+          "objection": "The promotional materials and articles do not demonstrate major significance to the dance field. The articles are about upcoming events, not the Beneficiary's work, and lack citation data or expert analysis. AAO decision P5 requires specific descriptions of impact and field recognition.",
+          "aaoRefs": [
+            "JUN172026_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "critical_employment",
+          "reasonCode": "ROLE_NOT_CRITICAL",
+          "severity": "medium",
+          "objection": "The flyer describes the Beneficiary as a 'special guest' without showing the role was critical or essential to the T-V-L- training camp's operations. AAO decision P9 requires evidence of integral contribution to the organization's goals.",
+          "aaoRefs": [
+            "AUG132024_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "high_remuneration",
+          "reasonCode": "NO_COMPARATIVE_WAGE_DATA",
+          "severity": "medium",
+          "objection": "The $60,000 salary is not compared to U.S. wage data for dance instructors. The onetonline.org data is for the NY-NJ-PA area, but the Beneficiary's work is in Italy. AAO decision P8 requires geographic and occupational comparability.",
+          "aaoRefs": [
+            "DEC112025_01D8101"
+          ]
+        },
+        {
+          "prong": "final_merits",
+          "criterion": "scholarly_articles",
+          "reasonCode": "MEDIA_STATUS_UNPROVEN",
+          "severity": "high",
+          "objection": "The articles from *La Nazione* and *Gazzettadellaspezia.it* lack circulation/readership data to establish major media status. AAO decision P2 requires objective metrics to confirm publication status.",
+          "aaoRefs": [
+            "OCT262023_01D8101"
+          ]
+        },
+        {
+          "prong": "final_merits",
+          "criterion": "awards",
+          "reasonCode": "AWARD_RECOGNITION_UNPROVEN",
+          "severity": "medium",
+          "objection": "The 'Extraordinary technician and judge' designation from Federdanza.it lacks evidence of international recognition or selection criteria. AAO decision P4 requires documented awards with clear excellence criteria.",
+          "aaoRefs": [
+            "NOV052025_01D8101"
+          ]
+        }
+      ],
+      "latencyMs": 121769
+    },
+    {
+      "id": "AUG252026_01D8101",
+      "date": "2026-08-25",
+      "split": "holdout_2026",
+      "field": "General Manager (Professional Baseball)",
+      "reviewed": false,
+      "leakage": false,
+      "judgeMatchesRejectedAsOffTarget": 0,
+      "gold": [
+        {
+          "prong": "criteria",
+          "criterion": "awards",
+          "reasonCode": "AWARD_RECOGNITION_UNPROVEN",
+          "summary": "The Petitioner failed to provide independent, objective evidence demonstrating that the awards received by the Beneficiary possess national or international recognition for excellence.",
+          "quote": "The Petitioner did not demonstrate recognition of the awards, either nationally or internationally, beyond",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 0
+        },
+        {
+          "prong": "criteria",
+          "criterion": "awards",
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The article failed to demonstrate that the award, which was geared towards the 'artistic industry,' related to the Beneficiary's athletic field.",
+          "quote": "Further, the Petitioner did not show than award geared towards the \"artistic industry\" relates to the Beneficiary's athletic field.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": true,
+          "matchedObjection": null
+        }
+      ],
+      "predicted": [
+        {
+          "prong": "final_merits",
+          "criterion": "awards",
+          "reasonCode": "FINAL_MERITS_NOT_MET",
+          "severity": "high",
+          "objection": "The totality of evidence does not show sustained national or international acclaim. The awards lack specificity, and the petitioner has not demonstrated that the beneficiary is among the small percentage at the very top of the field. AAO P1 and P3 emphasize that the evidence must show sustained acclaim, not just one-time recognition.",
+          "aaoRefs": [
+            "OCT022023_02D8101",
+            "DEC182024_01D8101"
+          ]
+        }
+      ],
+      "latencyMs": 109322
+    },
+    {
+      "id": "DEC112025_01D8101",
+      "date": "2025-12-11",
+      "split": "dev_2023_2025",
+      "field": "Chief Technology Officer",
+      "reviewed": false,
+      "leakage": false,
+      "judgeMatchesRejectedAsOffTarget": 0,
+      "gold": [
+        {
+          "prong": "criteria",
+          "criterion": "awards",
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The venture capital funding provided did not qualify as a prize or award because it was an exchange of value between parties, not an honor bestowed without reciprocal obligation.",
+          "quote": "a prize or award does not typically consist of an exchange between parties; rather it is generally an honor that one party gives to another without reciprocal obligation.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 0
+        },
+        {
+          "prong": "criteria",
+          "criterion": "membership",
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The Petitioner failed to demonstrate that the Beneficiary's membership required outstanding achievements, as the letter discussed requirements for potential or prospective benefits rather than a determination of past outstanding achievements.",
+          "quote": "J-F-'s letter discussed the requirements for potential or prospective benefits rather than a determination of past outstanding achievements.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 1
+        },
+        {
+          "prong": "criteria",
+          "criterion": "published_material",
+          "reasonCode": "NOT_ABOUT_BENEFICIARY",
+          "summary": "The submitted articles were not about the Beneficiary, but rather about the study or the competition, and the Beneficiary was never mentioned in the articles.",
+          "quote": "Here, the articles are not about the Beneficiary but regarding the study. In fact, the Beneficiary is never mentioned, and the articles do not qualify as published material about him.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 2
+        },
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "summary": "The Petitioner failed to contextualize the Google Scholar or Altmetrics information to demonstrate that the article represented a contribution of major significance in the field.",
+          "quote": "Without farther information, including the relevance of the Altmetrics statistics and the factors contributing to the data, the Petitioner did not establish that the Beneficiary's article qualifies as a contribution of major significance in the field, consistent with this regulatory criterion.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 3
+        },
+        {
+          "prong": "criteria",
+          "criterion": "critical_employment",
+          "reasonCode": "REPUTATION_UNPROVEN",
+          "summary": "The Petitioner failed to demonstrate that the organization possessed a distinguished reputation, given that it was a startup established only two months prior to the filing.",
+          "quote": "The Petitioner did not demonstrate how in only two months it was able to acquire a distinguished reputation.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 4
+        }
+      ],
+      "predicted": [
+        {
+          "prong": "criteria",
+          "criterion": "awards",
+          "reasonCode": "AWARD_RECOGNITION_UNPROVEN",
+          "severity": "high",
+          "objection": "The Petitioner submitted venture capital funding documentation and letters from investors, but these do not constitute nationally or internationally recognized prizes or awards for excellence. The materials lack evidence of an award process, selection criteria, or third-party recognition of the Beneficiary's excellence. See P1 (Nobel Prize example), P2 (rigorous evaluation process requirement).",
+          "aaoRefs": [
+            "OCT022023_02D8101",
+            "NOV132024_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "membership",
+          "reasonCode": "MEMBERSHIP_NOT_SELECTIVE",
+          "severity": "high",
+          "objection": "The YC membership letter describes a competitive application process but fails to establish that membership requires outstanding achievement judged by recognized experts. The Petitioner did not submit bylaws or admission criteria proving YC's selectivity. See P4 (membership requiring expert judgment), P10 (selectivity requirement).",
+          "aaoRefs": [
+            "FEB202025_01D8101",
+            "MAY052025_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "published_material",
+          "reasonCode": "NOT_ABOUT_BENEFICIARY",
+          "severity": "high",
+          "objection": "Articles from physiciansweekly.com and healthcare.com reference a study co-authored by the Beneficiary, but the Petitioner also submitted articles about the company 'I~----~I I' (amazon.science.com) that do not focus on the Beneficiary's personal work. See P3 (articles must be about the individual), P5 (major media requirement).",
+          "aaoRefs": [
+            "FEB222024_01D8101",
+            "DEC182024_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "severity": "high",
+          "objection": "The Petitioner cites 44 citations and an Altmetric score but fails to demonstrate how the JAMA Network Open publication had major significance to the field. The letters from P-R- and T-M- are conclusory and lack specifics about the work's impact. See P7 (letters must explain significance), P10 (comparable significance requirement).",
+          "aaoRefs": [
+            "JUN172026_01D8101",
+            "MAY052025_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "critical_employment",
+          "reasonCode": "REPUTATION_UNPROVEN",
+          "severity": "medium",
+          "objection": "The Petitioner asserts the Beneficiary held a critical role but failed to document the organization's distinguished reputation. No evidence shows the company has a recognized reputation in the field. See P4 (organization reputation requirement), P10 (reputation documentation).",
+          "aaoRefs": [
+            "FEB202025_01D8101",
+            "MAY052025_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "high_remuneration",
+          "reasonCode": "NO_COMPARATIVE_WAGE_DATA",
+          "severity": "medium",
+          "objection": "The Petitioner cites $250K in venture funding but provides no comparative wage data to show the salary is significantly higher than others in the field. See P8 (comparative wage data requirement).",
+          "aaoRefs": [
+            "FEB252025_01D8101"
+          ]
+        },
+        {
+          "prong": "final_merits",
+          "criterion": "scholarly_articles",
+          "reasonCode": "FINAL_MERITS_NOT_MET",
+          "severity": "high",
+          "objection": "The totality of evidence fails to show sustained national or international acclaim. The submitted materials are weak across all criteria: funding is not an award, YC membership lacks selectivity proof, published materials are not about the Beneficiary, and original contributions lack demonstrated significance. See P1 (totality of evidence requirement).",
+          "aaoRefs": [
+            "OCT022023_02D8101"
+          ]
+        },
+        {
+          "prong": "requirement",
+          "criterion": null,
+          "reasonCode": "NO_ADVISORY_OPINION",
+          "severity": "medium",
+          "objection": "The Petitioner did not submit an advisory opinion from a peer group or labor organization, which is required under 8 CFR 214.2(o)(2)(ii)(D). See P10 (advisory opinion requirement).",
+          "aaoRefs": [
+            "MAY052025_01D8101"
+          ]
+        },
+        {
+          "prong": "requirement",
+          "criterion": null,
+          "reasonCode": "NO_CONTRACT_OR_ITINERARY",
+          "severity": "medium",
+          "objection": "The Petitioner did not submit a contract or itinerary detailing the terms of employment or the Beneficiary's planned activities in the U.S. See P8 (contract/itinerary requirement).",
+          "aaoRefs": [
+            "FEB252025_01D8101"
+          ]
+        }
+      ],
+      "latencyMs": 179657
+    },
+    {
+      "id": "FEB062023_01D8101",
+      "date": "2023-02-06",
+      "split": "dev_2023_2025",
+      "field": "Cardiology",
+      "reviewed": false,
+      "leakage": false,
+      "judgeMatchesRejectedAsOffTarget": 0,
+      "gold": [
+        {
+          "prong": "criteria",
+          "criterion": "judging",
+          "reasonCode": "JUDGING_NOT_PERFORMED",
+          "summary": "The submitted documentation did not establish the Beneficiary's participation as a judge of the work of others in the same or an allied field.",
+          "quote": "Here, the Petitioner did not provide documentary evidence establishing that the Beneficiary reviewed journal submissions for the International Journal of Cardiology, ACC.org, or BMJ Case Reports.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 1
+        },
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "summary": "The testimonial letters and evidence did not provide specific examples of contributions that are indicative of major significance or show impact beyond the employer.",
+          "quote": "Although the authors do not provide specific examples of contributions that are indicative of major significance.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 0
+        },
+        {
+          "prong": "final_merits",
+          "criterion": null,
+          "reasonCode": "FINAL_MERITS_NOT_MET",
+          "summary": "The totality of the evidence did not demonstrate sustained national or international acclaim.",
+          "quote": "Considered together, the evidence consisting of the citations to the Beneficiary's published findings, the citation statistics, and the reference letters from his fellow researchers and other experts, establishes that the Beneficiary has been a productive researcher, and that his published data and findings have been relied upon by others in their own research. It does not demonstrate, however, that the Beneficiary has made a contribution of major significance in the field.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 4
+        }
+      ],
+      "predicted": [
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "severity": "high",
+          "objection": "The evidence does not demonstrate the major significance of the Beneficiary's contributions. Testimonial letters and citation data lack specifics on how the work impacted the field (e.g., adoption by others, licensing, revenue). AAO P7 emphasizes letters must describe the contribution's significance and field impact.",
+          "aaoRefs": [
+            "JUN172026_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "judging",
+          "reasonCode": "JUDGING_NOT_PERFORMED",
+          "severity": "high",
+          "objection": "Invitations to review journals (e.g., ACC.org) are provided but no documentation that the Beneficiary actually performed the judging. AAO P5 requires proof of completed review activities.",
+          "aaoRefs": [
+            "MAY052025_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "published_material",
+          "reasonCode": "MEDIA_STATUS_UNPROVEN",
+          "severity": "medium",
+          "objection": "The Petitioner did not establish that ACC.org or BMJ Case Reports are major media. AAO P3/P4 require circulation/readership data to prove major media status.",
+          "aaoRefs": [
+            "DEC182024_01D8101",
+            "OCT262023_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "awards",
+          "reasonCode": "AWARD_RECOGNITION_UNPROVEN",
+          "severity": "medium",
+          "objection": "The 2019 SCAI poster selection and NIH/AHA funding are not nationally/internationally recognized prizes for excellence. AAO P6 clarifies awards must be explicitly recognized for excellence in the field.",
+          "aaoRefs": [
+            "NOV052025_01D8101"
+          ]
+        },
+        {
+          "prong": "final_merits",
+          "criterion": "scholarly_articles",
+          "reasonCode": "FINAL_MERITS_NOT_MET",
+          "severity": "high",
+          "objection": "The totality of evidence does not demonstrate sustained national/international acclaim. The 132 citations are outdated (as of 2022), and there is no evidence of peer recognition beyond the petitioner's claims.",
+          "aaoRefs": [
+            "FEB252025_01D8101",
+            "MAY132025_01D8101"
+          ]
+        }
+      ],
+      "latencyMs": 114491
+    },
+    {
+      "id": "FEB142023_01D8101",
+      "date": "2023-02-14",
+      "split": "dev_2023_2025",
+      "field": "athletics",
+      "reviewed": false,
+      "leakage": false,
+      "judgeMatchesRejectedAsOffTarget": 0,
+      "gold": [
+        {
+          "prong": "criteria",
+          "criterion": "membership",
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The evidence failed to demonstrate that the membership in the Egyptian National Team (ENT) was judged by recognized national or international experts.",
+          "quote": "In fact, based on the letter's content, ENT's membership is based on medaling in competitions rather than recognized national or international experts judging outstanding achievements for membership.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 0
+        },
+        {
+          "prong": "criteria",
+          "criterion": "published_material",
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The submitted translated articles did not include the required dates and authors, and they did not reflect published material about the Beneficiary.",
+          "quote": "The translations, however, do not include the required dates and authors of the material. In fact, the translations do not show that Al-Ahram published the articles.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 2
+        },
+        {
+          "prong": "criteria",
+          "criterion": "published_material",
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The social media screenshots provided did not mention the Beneficiary, and some material appeared after the filing date.",
+          "quote": "However, none of the screenshots mention the Beneficiary. Although many of the screenshots contain photographs, none of the captions credit the Beneficiary, let alone show published material about him relating to his work.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 2
+        }
+      ],
+      "predicted": [
+        {
+          "prong": "criteria",
+          "criterion": "membership",
+          "reasonCode": "MEMBERSHIP_NOT_SELECTIVE",
+          "severity": "high",
+          "objection": "The Petitioner failed to demonstrate that the Egyptian National Team (ENT) requires outstanding achievement for membership. While the letter from A-A-M-A-S- describes rigorous standards, it does not establish that admission to the ENT is judged by recognized experts in the field of sumo wrestling. The record lacks bylaws or admission criteria from the Egyptian Judo, Aikido, and Sumo Federation (EJASF) to confirm the association's selectivity. See P4 (AAO decision on association selectivity).",
+          "aaoRefs": [
+            "FEB202025_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "published_material",
+          "reasonCode": "MEDIA_STATUS_UNPROVEN",
+          "severity": "high",
+          "objection": "The Petitioner submitted three translated articles from Al-Ahram but failed to establish that Al-Ahram is a major media outlet. The record lacks circulation figures, readership data, or other evidence of its major media status. See P5 (AAO decision on major media requirements).",
+          "aaoRefs": [
+            "DEC182024_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "published_material",
+          "reasonCode": "NOT_ABOUT_BENEFICIARY",
+          "severity": "medium",
+          "objection": "The translated articles from Al-Ahram merely mention the Beneficiary as a participant in wrestling championships, without focusing on their individual achievements or work. The AAO has held that published material must be specifically about the beneficiary, not just their participation in events. See P3 (AAO decision on article focus).",
+          "aaoRefs": [
+            "FEB222024_01D8101"
+          ]
+        },
+        {
+          "prong": "final_merits",
+          "criterion": "scholarly_articles",
+          "reasonCode": "FINAL_MERITS_NOT_MET",
+          "severity": "high",
+          "objection": "The totality of evidence fails to demonstrate sustained national or international acclaim. The ENT membership claim lacks selectivity documentation, and the Al-Ahram articles do not meet major media or beneficiary-specific criteria. The Petitioner also did not submit evidence of the Beneficiary's original contributions, judging roles, or high remuneration to meet the O-1A standard. See P1 (AAO decision on final merits).",
+          "aaoRefs": [
+            "OCT022023_02D8101"
+          ]
+        }
+      ],
+      "latencyMs": 135161
+    },
+    {
+      "id": "FEB142024_01D8101",
+      "date": "2024-02-14",
+      "split": "dev_2023_2025",
+      "field": "Software Development",
+      "reviewed": false,
+      "leakage": false,
+      "judgeMatchesRejectedAsOffTarget": 0,
+      "gold": [
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "summary": "The petitioner failed to demonstrate that the beneficiary's research and work had achieved major significance in the field.",
+          "quote": "Here, the Petitioner has not shown that the citation figures for any of the Beneficiary's published articles are commensurate with contributions of major significance.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 0
+        },
+        {
+          "prong": "criteria",
+          "criterion": "critical_employment",
+          "reasonCode": "ROLE_NOT_CRITICAL",
+          "summary": "The petitioner did not provide specific, detailed information explaining how the beneficiary's duties and performance were of significant importance to the organization's goals.",
+          "quote": "Here, the Petitioner did not provide a detailed letter from a person with personal knowledge of the significance of the Beneficiary's role; rather the record contains an RFE response letter from counsel.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        },
+        {
+          "prong": "criteria",
+          "criterion": "high_remuneration",
+          "reasonCode": "NO_COMPARATIVE_WAGE_DATA",
+          "summary": "The petitioner failed to demonstrate that the beneficiary commanded a high salary relative to others in the field.",
+          "quote": "The Beneficiary's total compensation of $217K falls within the average salary data supplied by the Petitioner rather than at the higher end of the spectrum.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 1
+        }
+      ],
+      "predicted": [
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "severity": "high",
+          "objection": "The submitted letters and articles do not sufficiently demonstrate the major significance of the beneficiary's contributions. AAO decision P3 emphasizes that letters must specifically describe the contribution's significance and its impact on the field, which is lacking here. The citation count increase is noted, but without evidence of widespread adoption, licensing, or expert validation of the work's influence, the significance remains unsubstantiated.",
+          "aaoRefs": [
+            "JUN172026_01D8101",
+            "DEC112025_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "high_remuneration",
+          "reasonCode": "NO_COMPARATIVE_WAGE_DATA",
+          "severity": "high",
+          "objection": "While the petitioner provides wage data from flcdatacenter.com and other companies, AAO decision P9 requires objective comparative wage data (e.g., BLS OEWS). The case materials lack direct comparisons to others in the field and geography, making it impossible to verify the salary is significantly high relative to peers.",
+          "aaoRefs": [
+            "APR132023_01D8101",
+            "FEB222023_01D8101"
+          ]
+        },
+        {
+          "prong": "requirement",
+          "criterion": "scholarly_articles",
+          "reasonCode": "MEDIA_STATUS_UNPROVEN",
+          "severity": "medium",
+          "objection": "The petitioner submitted articles from journals but failed to prove they are professional or major media. AAO decision P1 and P2 require circulation, readership, or viewership data to establish major media status. The case materials do not include such data for the cited journals.",
+          "aaoRefs": [
+            "DEC182024_01D8101",
+            "OCT262023_01D8101"
+          ]
+        },
+        {
+          "prong": "requirement",
+          "criterion": "scholarly_articles",
+          "reasonCode": "NOT_ABOUT_BENEFICIARY",
+          "severity": "medium",
+          "objection": "Some submitted articles may not be about the beneficiary. AAO decision P5 warns that materials must be specifically about the beneficiary's work, not just mentioning them or their employer. The case materials lack explicit confirmation that the articles focus on the beneficiary's contributions.",
+          "aaoRefs": [
+            "MAY132025_01D8101"
+          ]
+        }
+      ],
+      "latencyMs": 126354
+    },
+    {
+      "id": "FEB202025_01D8101",
+      "date": "2025-02-20",
+      "split": "dev_2023_2025",
+      "field": "financial vice president",
+      "reviewed": false,
+      "leakage": false,
+      "judgeMatchesRejectedAsOffTarget": 0,
+      "gold": [
+        {
+          "prong": "criteria",
+          "criterion": "awards",
+          "reasonCode": "AWARD_RECOGNITION_UNPROVEN",
+          "summary": "The Petitioner failed to establish that the claimed awards are nationally or internationally recognized for excellence in the field.",
+          "quote": "Although the evidence reflects purpose and background material, the Petitioner did not establish how the documentation shows the national or international recognition for excellence in the field for the awards.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 0
+        },
+        {
+          "prong": "criteria",
+          "criterion": "membership",
+          "reasonCode": "MEMBERSHIP_NOT_SELECTIVE",
+          "summary": "The Petitioner failed to demonstrate that the Beneficiary's service is comparable to membership in an association that requires outstanding achievements judged by recognized experts.",
+          "quote": "Moreover, the Petitioner did not establish how serving as a financial vice president for a business (the Petitioner) is comparable to being a member of an association that requires outstanding achievements, as judged by recognized national or international experts.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 1
+        },
+        {
+          "prong": "criteria",
+          "criterion": "judging",
+          "reasonCode": "JUDGING_NOT_PERFORMED",
+          "summary": "The Petitioner failed to demonstrate that the Beneficiary's involvement with bank negotiations constitutes participation as a judge of the work of others consistent with the regulatory criterion.",
+          "quote": "Notwithstanding, the Petitioner did not demonstrate that the Beneficiary's involvement with bank negotiations involves participating as a judge of the work of others consistent with this regulatory criterion.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        },
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "summary": "The Petitioner failed to demonstrate that the Beneficiary's work resulted in original contributions of major significance in the field rather than limited to the Petitioner.",
+          "quote": "The Petitioner has not demonstrated that the Beneficiary's involvement in overseeing the Petitioner's hiring process or approving contracts somehow impacted, influenced, or affected the overall or general field in a majorly significant manner.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 2
+        },
+        {
+          "prong": "criteria",
+          "criterion": "scholarly_articles",
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The AAO did not need to reach this ground because the initial evidentiary requirement of at least three criteria was not met.",
+          "quote": "we need not reach this ground, as well as a review of the Director's favorable determination of the critical or essential capacity criterion under 8 C.F.R. § 214.2(o)(3)(iii)(B)(7), because it cannot fulfill the initial evidentiary requirement of at least three criteria under 8 C.F.R. § 214.2(o)(3)(iii)(B).",
+          "dispositive": false,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        }
+      ],
+      "predicted": [
+        {
+          "prong": "criteria",
+          "criterion": "awards",
+          "reasonCode": "AWARD_RECOGNITION_UNPROVEN",
+          "severity": "high",
+          "objection": "The Petitioner provided screenshots from frost.com promoting the 2024 \"___ Awards\" but failed to demonstrate national/international recognition or selection criteria. The evidence lacks objective proof of the award's prestige, as required by 8 CFR 214.2(o)(3)(iii)(B)(1).",
+          "aaoRefs": [
+            "AUG252026_01D8101",
+            "NOV052025_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "membership",
+          "reasonCode": "MEMBERSHIP_NOT_SELECTIVE",
+          "severity": "high",
+          "objection": "The Petitioner claimed membership in an association requiring outstanding achievement but only described the Beneficiary's role as VP Finance at their own company. No association with selection criteria or expert judgment was documented, failing 8 CFR 214.2(o)(3)(iii)(B)(2).",
+          "aaoRefs": [
+            "DEC112025_01D8101",
+            "FEB252025_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "severity": "high",
+          "objection": "The Petitioner claimed the Beneficiary's work on facility construction and contracts was significant but failed to demonstrate field-wide impact. Letters must specify how the work influenced the field, per 8 CFR 214.2(o)(3)(iii)(B)(5).",
+          "aaoRefs": [
+            "JUN172026_01D8101",
+            "FEB252025_01D8101"
+          ]
+        },
+        {
+          "prong": "requirement",
+          "criterion": null,
+          "reasonCode": "NO_CONTRACT_OR_ITINERARY",
+          "severity": "medium",
+          "objection": "The Petitioner claimed eligibility for scholarly articles but failed to submit any actual articles or publication details. Without evidence of authored work in professional journals, this criterion is unmet.",
+          "aaoRefs": [
+            "FEB252025_01D8101"
+          ]
+        }
+      ],
+      "latencyMs": 906066
+    },
+    {
+      "id": "FEB252025_01D8101",
+      "date": "2025-02-25",
+      "split": "dev_2023_2025",
+      "field": "athletics",
+      "reviewed": false,
+      "leakage": true,
+      "judgeMatchesRejectedAsOffTarget": 0,
+      "gold": [
+        {
+          "prong": "criteria",
+          "criterion": "awards",
+          "reasonCode": "AWARD_RECOGNITION_UNPROVEN",
+          "summary": "The submitted documentation failed to establish that the award or prize was nationally or internationally recognized for excellence in the field.",
+          "quote": "Here, the Petitioner has not shown that the [award] qualifies as a lesser nationally or internationally recognized award for excellence in the field.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 0
+        },
+        {
+          "prong": "criteria",
+          "criterion": "membership",
+          "reasonCode": "MEMBERSHIP_NOT_SELECTIVE",
+          "summary": "The Petitioner failed to demonstrate that the provided certificates or licenses represented membership in an association that requires outstanding achievements judged by recognized experts.",
+          "quote": "However, the Petitioner did not demonstrate how the certificates show the Beneficiary's membership in associations, let alone memberships in associations requiring outstanding achievements of their members.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 1
+        },
+        {
+          "prong": "criteria",
+          "criterion": "published_material",
+          "reasonCode": "MEDIA_STATUS_UNPROVEN",
+          "summary": "The Petitioner did not provide sufficient independent, objective evidence to demonstrate that the published material qualified as a professional, major trade, or major media publication.",
+          "quote": "Specifically, USCIS could not determine if the published material was presented in professional or major media.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 4
+        },
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "summary": "The Petitioner failed to demonstrate that the Beneficiary's athletic-related contributions met the regulatory requirement of being scientific, scholarly, or business-related contributions of major significance in the field.",
+          "quote": "The Petitioner did not demonstrate the impact or influence the Beneficiary's contributions have had in the overall field rather than limited to the individuals or teams he has coached.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 8
+        },
+        {
+          "prong": "final_merits",
+          "criterion": null,
+          "reasonCode": "FINAL_MERITS_NOT_MET",
+          "summary": "The totality of the evidence submitted did not demonstrate that the Beneficiary possessed sustained national or international acclaim, placing them among the small percentage at the very top of the field of endeavor.",
+          "quote": "Consequently, the Petitioner has not established the Beneficiary's eligibility for the 0-1 visa classification as an alien of extraordinary ability.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 6
+        },
+        {
+          "prong": "requirement",
+          "criterion": null,
+          "reasonCode": "NO_ADVISORY_OPINION",
+          "summary": "The Petitioner failed to establish the required consultation requirements.",
+          "quote": "Further, we need not decide whether the Petitioner established eligibility for the consultation requirements under 8 C.F.R. § 214.2(o)(2)(ii)(D), 8 C.F.R. § 214.2(o)(5)(i)(B), and 8 C.F.R. § 214.2(o)(5)(i)(C).",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        }
+      ],
+      "predicted": [
+        {
+          "prong": "criteria",
+          "criterion": "awards",
+          "reasonCode": "AWARD_RECOGNITION_UNPROVEN",
+          "severity": "high",
+          "objection": "The submitted evidence for awards (screenshots from globo.com and Wikipedia, trophy photo) does not establish that the tournament or trophy is nationally or internationally recognized for excellence. The 2018 international women's association football competition appears to be a qualification tournament, not a prize or award, and lacks documentation of selection criteria, entrants, or press coverage. This fails to meet 8 CFR 214.2(o)(3)(iii)(B)(1).",
+          "aaoRefs": [
+            "OCT022023_02D8101",
+            "NOV132024_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "membership",
+          "reasonCode": "MEMBERSHIP_NOT_SELECTIVE",
+          "severity": "medium",
+          "objection": "The submitted training certificates and B License from the Qualification Program of Football Professionals do not demonstrate membership in an association requiring outstanding achievement judged by experts. The evidence lacks bylaws or admission criteria showing exclusivity based on merit. This fails 8 CFR 214.2(o)(3)(iii)(B)(2).",
+          "aaoRefs": [
+            "FEB202025_01D8101",
+            "MAY192025_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "published_material",
+          "reasonCode": "NOT_ABOUT_BENEFICIARY",
+          "severity": "high",
+          "objection": "The screenshots of published material (coaching mentions, photo credits) do not establish that the material is about the beneficiary. The content appears to focus on the club or product rather than the beneficiary's work. This fails 8 CFR 214.2(o)(3)(iii)(B)(3).",
+          "aaoRefs": [
+            "FEB222024_01D8101",
+            "MAY192025_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "severity": "high",
+          "objection": "The testimonial letters from athletes describe the beneficiary's techniques and methodology but do not demonstrate how these contributions are original or of major significance to the field. The letters lack specifics about impact, citations, or adoption by others. This fails 8 CFR 214.2(o)(3)(iii)(B)(5).",
+          "aaoRefs": [
+            "JUN172026_01D8101",
+            "MAY192025_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "published_material",
+          "reasonCode": "MEDIA_STATUS_UNPROVEN",
+          "severity": "medium",
+          "objection": "The screenshots of published material lack documentation of the outlets' status as major media or professional publications. Without circulation data or reader demographics, the outlets' status as major media cannot be confirmed. This fails 8 CFR 214.2(o)(3)(iii)(B)(3).",
+          "aaoRefs": [
+            "FEB222024_01D8101",
+            "MAY192025_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "LETTERS_CONCLUSORY",
+          "severity": "high",
+          "objection": "The testimonial letters are general and conclusory, lacking specific details about the beneficiary's contributions and their significance. They do not explain how the work affected the field or provide independent expert validation. This fails 8 CFR 214.2(o)(3)(iii)(B)(5).",
+          "aaoRefs": [
+            "JUN172026_01D8101",
+            "MAY192025_01D8101"
+          ]
+        },
+        {
+          "prong": "final_merits",
+          "criterion": "scholarly_articles",
+          "reasonCode": "FINAL_MERITS_NOT_MET",
+          "severity": "high",
+          "objection": "The totality of the evidence does not demonstrate sustained national or international acclaim. The submitted evidence is insufficient to show that the beneficiary is among the small percentage at the very top of the field. Multiple criteria (awards, membership, published material, original contributions, critical employment) are not met, and the remaining evidence is weak or conclusory.",
+          "aaoRefs": [
+            "OCT022023_02D8101",
+            "JAN042023_01D8101",
+            "MAY192025_01D8101"
+          ]
+        },
+        {
+          "prong": "final_merits",
+          "criterion": "published_material",
+          "reasonCode": "NOT_ABOUT_BENEFICIARY",
+          "severity": "high",
+          "objection": "The published material submitted does not focus on the beneficiary but rather on the club or product. This fails to meet the requirement that the material must be about the beneficiary's work in the field. This fails 8 CFR 214.2(o)(3)(iii)(B)(3).",
+          "aaoRefs": [
+            "FEB222024_01D8101",
+            "MAY192025_01D8101"
+          ]
+        },
+        {
+          "prong": "final_merits",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "severity": "high",
+          "objection": "The letters and testimonials do not demonstrate the significance of the beneficiary's contributions to the field. They lack specifics about how the work affected the field or provided measurable impact. This fails 8 CFR 214.2(o)(3)(iii)(B)(5).",
+          "aaoRefs": [
+            "JUN172026_01D8101",
+            "MAY192025_01D8101"
+          ]
+        }
+      ],
+      "latencyMs": 327972
+    },
+    {
+      "id": "JAN042023_01D8101",
+      "date": "2023-01-04",
+      "split": "dev_2023_2025",
+      "field": "Education",
+      "reviewed": false,
+      "leakage": true,
+      "judgeMatchesRejectedAsOffTarget": 1,
+      "gold": [
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "summary": "The submitted testimonial letters failed to demonstrate that the Beneficiary's contributions were of major significance to the field.",
+          "quote": "the above letters do not establish that the impact of the Beneficiary's student mentoring is consistent with contributions of major significance in the field.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 0
+        },
+        {
+          "prong": "criteria",
+          "criterion": "high_remuneration",
+          "reasonCode": "NO_COMPARATIVE_WAGE_DATA",
+          "summary": "The evidence provided regarding the Beneficiary's compensation was deemed conditional and speculative, failing to establish a high salary relative to others in the field.",
+          "quote": "The Director concluded that based on the evidence provided by the Petitioner, the Beneficiary will earn the average salary compared to other school and career counselors, and the evidence regarding \"additional compensation appears to be conditional and speculative.\"",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        },
+        {
+          "prong": "criteria",
+          "criterion": null,
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The Petitioner failed to assert or demonstrate that a particular regulatory criterion did not readily apply to the Beneficiary's occupation, which was a prerequisite for using comparable evidence.",
+          "quote": "Here, the Petitioner did not assert or demonstrate that a particular regulatory criterion does not readily apply to the Beneficiary's occupation as a school and career counselor.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        },
+        {
+          "prong": "requirement",
+          "criterion": null,
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The submitted consultation did not reflect a peer group in the area of the Beneficiary's occupation (education).",
+          "quote": "The record does not reflect that l is a peer group in the area of education, the Beneficiary's occupation.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        }
+      ],
+      "predicted": [
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "severity": "high",
+          "objection": "The submitted patent applications for a 'multi-media educational/training APP' lack specific evidence of major significance to the field of education. Testimonial letters (P5) must detail how the work impacted the field, but the materials do not explain adoption, citations, or licensing beyond the petitioner's claims. AAO precedent (P5) emphasizes that letters must describe the contribution's significance and field impact.",
+          "aaoRefs": [
+            "JUN172026_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "published_material",
+          "reasonCode": "MEDIA_STATUS_UNPROVEN",
+          "severity": "high",
+          "objection": "The petitioner cites a February 2024 article recommending readers check a former employer's blog, which is not a professional journal or major media (P7). AAO decisions (P3, P4) require circulation/readership data to prove major media status. The materials lack evidence that the digital publication has significant reach or prestige.",
+          "aaoRefs": [
+            "DEC182024_01D8101",
+            "OCT262023_01D8101",
+            "MAY132025_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "scholarly_articles",
+          "reasonCode": "NOT_ABOUT_BENEFICIARY",
+          "severity": "high",
+          "objection": "The petitioner cites a blog post recommending readers check a former employer's blog (P7), which is not scholarly content or about the beneficiary. AAO decisions (P7) require articles to be in professional journals or major media and specifically discuss the beneficiary's work.",
+          "aaoRefs": [
+            "MAY132025_01D8101"
+          ]
+        },
+        {
+          "prong": "requirement",
+          "criterion": "awards",
+          "reasonCode": "CRITERION_NOT_MET",
+          "severity": "low",
+          "objection": "No awards are cited in the materials. The petitioner references a membership in 'I' but this falls under the membership criterion, not awards (P1).",
+          "aaoRefs": [
+            "FEB222024_01D8101"
+          ]
+        },
+        {
+          "prong": "requirement",
+          "criterion": "awards",
+          "reasonCode": "CRITERION_NOT_MET",
+          "severity": "medium",
+          "objection": "The petitioner does not meet the membership criterion as the association's exclusivity and alignment with the education field are not sufficiently proven (P2).",
+          "aaoRefs": [
+            "FEB202025_01D8101"
+          ]
+        },
+        {
+          "prong": "requirement",
+          "criterion": "awards",
+          "reasonCode": "CRITERION_NOT_MET",
+          "severity": "high",
+          "objection": "The petitioner fails to meet the published material criterion as the cited articles are not in major media or professional journals (P3, P4, P7).",
+          "aaoRefs": [
+            "DEC182024_01D8101",
+            "OCT262023_01D8101",
+            "MAY132025_01D8101"
+          ]
+        },
+        {
+          "prong": "requirement",
+          "criterion": "awards",
+          "reasonCode": "CRITERION_NOT_MET",
+          "severity": "high",
+          "objection": "The petitioner does not meet the original contributions criterion as the patents lack evidence of major significance to the field (P5).",
+          "aaoRefs": [
+            "JUN172026_01D8101"
+          ]
+        },
+        {
+          "prong": "requirement",
+          "criterion": "awards",
+          "reasonCode": "CRITERION_NOT_MET",
+          "severity": "medium",
+          "objection": "The petitioner does not meet the high remuneration criterion as comparative wage data is missing (P10).",
+          "aaoRefs": [
+            "APR272026_01D8101"
+          ]
+        },
+        {
+          "prong": "requirement",
+          "criterion": "awards",
+          "reasonCode": "CRITERION_NOT_MET",
+          "severity": "medium",
+          "objection": "The petitioner does not meet the critical employment criterion as the organization's distinguished reputation is not documented (P9).",
+          "aaoRefs": [
+            "AUG132024_01D8101"
+          ]
+        },
+        {
+          "prong": "requirement",
+          "criterion": "awards",
+          "reasonCode": "CRITERION_NOT_MET",
+          "severity": "high",
+          "objection": "The petitioner does not meet the scholarly articles criterion as the cited content is not scholarly or about the beneficiary (P7).",
+          "aaoRefs": [
+            "MAY132025_01D8101"
+          ]
+        }
+      ],
+      "latencyMs": 374539
+    },
+    {
+      "id": "JAN242023_01D8101",
+      "date": "2023-01-24",
+      "split": "dev_2023_2025",
+      "field": "athletics",
+      "reviewed": false,
+      "leakage": false,
+      "judgeMatchesRejectedAsOffTarget": 0,
+      "gold": [
+        {
+          "prong": "requirement",
+          "criterion": null,
+          "reasonCode": "PROCEDURAL",
+          "summary": "The AAO declined to address the petitioner's argument regarding the satisfaction of the three evidentiary categories because the grounds were deemed unnecessary to the results reached.",
+          "quote": "Moreover, since the identified bases for denial are dispositive of the Petitioner's appeal, we decline to reach and hereby reserve the Petitioner's appellate arguments regarding the Beneficiary's satisfaction of at least three categories of evidence.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        },
+        {
+          "prong": "requirement",
+          "criterion": null,
+          "reasonCode": "PROCEDURAL",
+          "summary": "The AAO noted that the petitioner did not dispute or contest the Director's decision regarding the contractual requirement and the nature of the beneficiary's events or activities, leading to the waiver of those issues.",
+          "quote": "However, the Petitioner does not dispute or contest the Director's decision regarding the contractual requirement and the nature of the Beneficiary's events or activities.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        }
+      ],
+      "predicted": [
+        {
+          "prong": "final_merits",
+          "criterion": "original_contributions",
+          "reasonCode": "FINAL_MERITS_NOT_MET",
+          "severity": "high",
+          "objection": "The petition fails to demonstrate sustained national or international acclaim. The record contains no evidence of awards, publications, or peer recognition that would establish the beneficiary's status among the small percentage at the very top of the athletics field. See P1 (OCT022023_02D8101).",
+          "aaoRefs": [
+            "OCT022023_02D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "awards",
+          "reasonCode": "CRITERION_NOT_MET",
+          "severity": "high",
+          "objection": "No evidence of nationally or internationally recognized awards for excellence in athletics was submitted. The petition mentions a contract and itinerary but provides no documentation of awards that meet 8 CFR 214.2(o)(3)(iii)(B)(1). See P2 (NOV132024_01D8101).",
+          "aaoRefs": [
+            "NOV132024_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "published_material",
+          "reasonCode": "NOT_ABOUT_BENEFICIARY",
+          "severity": "high",
+          "objection": "The petition lacks any published material about the beneficiary's work in athletics. The submitted materials do not include articles, press coverage, or other media that specifically highlight the beneficiary's achievements. See P3 (NOV162023_01D8101).",
+          "aaoRefs": [
+            "NOV162023_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "high_remuneration",
+          "reasonCode": "NO_COMPARATIVE_WAGE_DATA",
+          "severity": "medium",
+          "objection": "The petition does not provide comparative wage data to demonstrate that the beneficiary's salary is significantly higher than others in the athletics field. Without objective data (e.g., industry surveys, BLS OEWS), the remuneration criterion cannot be satisfied. See P1 (OCT022023_02D8101).",
+          "aaoRefs": [
+            "OCT022023_02D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "membership",
+          "reasonCode": "MEMBERSHIP_NOT_SELECTIVE",
+          "severity": "medium",
+          "objection": "The petition does not include evidence of membership in associations that require outstanding achievement. Without documentation of such memberships or their selection criteria, this criterion cannot be satisfied. See P2 (NOV132024_01D8101).",
+          "aaoRefs": [
+            "NOV132024_01D8101"
+          ]
+        }
+      ],
+      "latencyMs": 218033
+    },
+    {
+      "id": "JAN302023_01D8101",
+      "date": "2023-01-30",
+      "split": "dev_2023_2025",
+      "field": "research engineer",
+      "reviewed": false,
+      "leakage": true,
+      "judgeMatchesRejectedAsOffTarget": 0,
+      "gold": [
+        {
+          "prong": "criteria",
+          "criterion": "published_material",
+          "reasonCode": "NOT_ABOUT_BENEFICIARY",
+          "summary": "The published material submitted to satisfy this criterion consisted of articles co-authored by the Beneficiary, which did not meet the regulatory requirement that the material be 'about' the Beneficiary and his work.",
+          "quote": "However, articles co-authored by the Beneficiary are not articles about the Beneficiary and his work.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        },
+        {
+          "prong": "final_merits",
+          "criterion": null,
+          "reasonCode": "FINAL_MERITS_NOT_MET",
+          "summary": "The totality of the evidence, even where individual criteria were met, did not demonstrate the sustained national or international acclaim required for this classification.",
+          "quote": "we do not find the record (including the evidence under this criterion) to be indicative of the sustained acclaim and recognition for achievements required for this highly restrictive classification.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 2
+        }
+      ],
+      "predicted": [
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "severity": "high",
+          "objection": "Testimonial letters (e.g., from the lab manager and Caltech professor) describe the Beneficiary's work but fail to explain how the contributions impacted the field. AAO decision P3 states that letters must specifically detail the contribution's significance, such as citations, adoption by others, or influence on the field. The case materials lack this specificity.",
+          "aaoRefs": [
+            "JUN172026_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "scholarly_articles",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "severity": "high",
+          "objection": "The Beneficiary co-authored articles in *Scour and Erosion*, but the case materials do not demonstrate their major significance. AAO decision P6 clarifies that publication in a professional journal alone does not suffice; the articles must show influence on the field (e.g., citations, adoption, or transformative impact). The case lacks evidence of such impact.",
+          "aaoRefs": [
+            "DEC112025_01D8101"
+          ]
+        },
+        {
+          "prong": "final_merits",
+          "criterion": "scholarly_articles",
+          "reasonCode": "FINAL_MERITS_NOT_MET",
+          "severity": "high",
+          "objection": "The totality of evidence fails to demonstrate sustained national or international acclaim. While the Beneficiary has authored articles and developed tools, the lack of major media recognition, peer-reviewed impact, and documented field influence undermines the claim that they are among the top 1% of their field.",
+          "aaoRefs": [
+            "JUN172026_01D8101",
+            "DEC112025_01D8101"
+          ]
+        }
+      ],
+      "latencyMs": 183086
+    },
+    {
+      "id": "JUL312024_01D8101",
+      "date": "2024-07-31",
+      "split": "dev_2023_2025",
+      "field": "tennis coach",
+      "reviewed": false,
+      "leakage": true,
+      "judgeMatchesRejectedAsOffTarget": 1,
+      "gold": [
+        {
+          "prong": "criteria",
+          "criterion": null,
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The submitted Employment Contract Agreement did not satisfy the regulatory requirements because it was not signed by the Beneficiary and lacked a date.",
+          "quote": "Based on the documentation submitted, we agree with the Director's determination that the Petitioner did not satisfy the general evidentiary requirements at 8 C.F.R. § 214.2(o)(2)(ii)(B).",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        }
+      ],
+      "predicted": [
+        {
+          "prong": "criteria",
+          "criterion": "high_remuneration",
+          "reasonCode": "NO_COMPARATIVE_WAGE_DATA",
+          "severity": "high",
+          "objection": "The submitted Employment Contract Agreement lacks comparative wage data to demonstrate the Beneficiary's salary is high relative to others in the field. AAO decisions P3 and P4 emphasize that objective wage data (e.g., BLS OEWS) is required to satisfy this criterion.",
+          "aaoRefs": [
+            "APR132023_01D8101",
+            "FEB222023_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "critical_employment",
+          "reasonCode": "REPUTATION_UNPROVEN",
+          "severity": "high",
+          "objection": "The Petitioner failed to document the distinguished reputation of the tennis training center. AAO decisions P1 and P2 require evidence of the organization's reputation (e.g., media coverage, customer base scale) to satisfy this criterion.",
+          "aaoRefs": [
+            "AUG132024_01D8101",
+            "APR272026_01D8101"
+          ]
+        },
+        {
+          "prong": "final_merits",
+          "criterion": "scholarly_articles",
+          "reasonCode": "FINAL_MERITS_NOT_MET",
+          "severity": "high",
+          "objection": "The Petitioner failed to meet at least three criteria, and the totality of evidence does not demonstrate sustained national or international acclaim. The contract is undated, advisory opinion is missing (P5), and organizational reputation is unproven (P1/P2).",
+          "aaoRefs": [
+            "AUG132024_01D8101",
+            "APR272026_01D8101",
+            "NOV162023_01D8101"
+          ]
+        }
+      ],
+      "latencyMs": 342665
+    },
+    {
+      "id": "JUN172026_01D8101",
+      "date": "2026-06-17",
+      "split": "holdout_2026",
+      "field": "robotics and welding specialist",
+      "reviewed": false,
+      "leakage": false,
+      "judgeMatchesRejectedAsOffTarget": 0,
+      "gold": [
+        {
+          "prong": "criteria",
+          "criterion": "membership",
+          "reasonCode": "MEMBERSHIP_NOT_SELECTIVE",
+          "summary": "The evidence did not indicate that the association required outstanding achievements of its members, as judged by recognized national or international experts.",
+          "quote": "The evidence, however, does not indicate the requirements for admission as an associate inc=]let alone reflecting associate membership requires outstanding achievements of its members, as judged by recognized national or international experts.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        },
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "summary": "The Petitioner did not establish how the Beneficiary's work influenced or impacted the overall field in a majorly significant manner.",
+          "quote": "Without supporting documentation showing the impact, influence, or effect in the field in a majorly significant manner, the Petitioner did not establish that simply presenting at a welding seminar indicates original contributions of major significance in the field.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 0
+        },
+        {
+          "prong": "final_merits",
+          "criterion": null,
+          "reasonCode": "FINAL_MERITS_NOT_MET",
+          "summary": "The Petitioner did not establish the Beneficiary meets the requirement of sustained national or international acclaim.",
+          "quote": "Consequently, the Petitioner has not established the Beneficiary's eligibility for the 0-1 visa classification as an alien of extraordinary ability.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        }
+      ],
+      "predicted": [
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "severity": "high",
+          "objection": "Recommendation letters praise the Beneficiary's skills but do not explain how their methodologies impacted the field (P6). The Petitioner also submitted a seminar program but no evidence of adoption, citations, or revenue impact required for major significance (P8).",
+          "aaoRefs": [
+            "FEB252025_01D8101",
+            "DEC112025_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "scholarly_articles",
+          "reasonCode": "MEDIA_STATUS_UNPROVEN",
+          "severity": "medium",
+          "objection": "The Petitioner submitted a document titled \"IIW - International Institute of Welding Qualification & Certification Systems for Personal\" but did not establish its status as a professional publication (P3).",
+          "aaoRefs": [
+            "DEC182024_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "severity": "medium",
+          "objection": "The Petitioner submitted a program for a welding seminar but did not show how the Beneficiary's methodologies were codified, analyzed, or taught as models for industrial competitiveness (P6).",
+          "aaoRefs": [
+            "FEB252025_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "severity": "medium",
+          "objection": "The Petitioner submitted a letter mentioning a \"training session at an 'Open Housing Welding and Machining Event'\" but did not show how this event demonstrated major significance in the field (P6).",
+          "aaoRefs": [
+            "FEB252025_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "scholarly_articles",
+          "reasonCode": "MEDIA_STATUS_UNPROVEN",
+          "severity": "medium",
+          "objection": "The Petitioner submitted a document titled \"IIW - International Institute of Welding Qualification & Certification Systems for Personal\" but did not establish its status as a professional publication (P3).",
+          "aaoRefs": [
+            "DEC182024_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "scholarly_articles",
+          "reasonCode": "MEDIA_STATUS_UNPROVEN",
+          "severity": "medium",
+          "objection": "The Petitioner submitted a document titled \"IIW - International Institute of Welding Qualification & Certification Systems for Personal\" but did not establish its status as a professional publication (P3).",
+          "aaoRefs": [
+            "DEC182024_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "scholarly_articles",
+          "reasonCode": "MEDIA_STATUS_UNPROVEN",
+          "severity": "medium",
+          "objection": "The Petitioner submitted a document titled \"IIW - International Institute of Welding Qualification & Certification Systems for Personal\" but did not establish its status as a professional publication (P3).",
+          "aaoRefs": [
+            "DEC182024_01D8101"
+          ]
+        }
+      ],
+      "latencyMs": 253732
+    },
+    {
+      "id": "MAR172026_01D8101",
+      "date": "2026-03-17",
+      "split": "holdout_2026",
+      "field": "Equestrian Eventing Trainer",
+      "reviewed": false,
+      "leakage": false,
+      "judgeMatchesRejectedAsOffTarget": 2,
+      "gold": [
+        {
+          "prong": "criteria",
+          "criterion": "membership",
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The Petitioner did not demonstrate that the Beneficiary's competition at the Preliminary level was equivalent to outstanding achievements as required by the regulatory criterion.",
+          "quote": "The Petitioner did not establish that a moderate examination in a regular training program to compete for two-star events rises to the level of outstanding achievements, consistent with this regulatory criterion.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        },
+        {
+          "prong": "criteria",
+          "criterion": "membership",
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The Petitioner failed to show that the membership was judged by recognized national or international experts.",
+          "quote": "the Petitioner did not demonstrate that nationally or internationally recognized experts judge the Preliminary level.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        },
+        {
+          "prong": "criteria",
+          "criterion": "published_material",
+          "reasonCode": "NOT_ABOUT_BENEFICIARY",
+          "summary": "The evidence submitted, consisting of trial and event results, reflected the Beneficiary mentioned among hundreds of competitors rather than published material specifically about the Beneficiary and her work.",
+          "quote": "Here, the evidence reflects trial and event results with the Beneficiary mentioned among hundreds of competitors rather than published material about the Beneficiary.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 0
+        },
+        {
+          "prong": "criteria",
+          "criterion": "published_material",
+          "reasonCode": "MEDIA_STATUS_UNPROVEN",
+          "summary": "The petitioner did not establish that the websites or results reflected professional or major trade publications or major media status.",
+          "quote": "The Petitioner did not establish that the Beneficiary received published material about her and her work in professional or major trade publication or major media.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": true,
+          "matchedObjection": null
+        }
+      ],
+      "predicted": [
+        {
+          "prong": "criteria",
+          "criterion": "published_material",
+          "reasonCode": "NOT_ABOUT_BENEFICIARY",
+          "severity": "high",
+          "objection": "The Petitioner's evidence of horse trial results, ribbons, and photographs does not constitute published material about the Beneficiary. These are event records and promotional images, not articles or media featuring the Beneficiary's work in a professional publication.",
+          "aaoRefs": [
+            "FEB222024_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "judging",
+          "reasonCode": "JUDGING_NOT_PERFORMED",
+          "severity": "high",
+          "objection": "The Petitioner claims the Beneficiary was invited to judge events but provides no evidence the review was completed. The materials only include an invitation email, lacking documentation of actual judging participation.",
+          "aaoRefs": [
+            "MAY052025_01D8101"
+          ]
+        },
+        {
+          "prong": "final_merits",
+          "criterion": "scholarly_articles",
+          "reasonCode": "FINAL_MERITS_NOT_MET",
+          "severity": "high",
+          "objection": "The totality of evidence fails to demonstrate sustained national or international acclaim. The Beneficiary's achievements are limited to competition participation and local event results, without peer recognition or major media coverage.",
+          "aaoRefs": [
+            "NOV052025_01D8101"
+          ]
+        }
+      ],
+      "latencyMs": 165974
+    },
+    {
+      "id": "MAR232023_01D8101",
+      "date": "2023-03-23",
+      "split": "dev_2023_2025",
+      "field": "Ophthalmology",
+      "reviewed": false,
+      "leakage": false,
+      "judgeMatchesRejectedAsOffTarget": 0,
+      "gold": [
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "summary": "The evidence failed to demonstrate that the Beneficiary's original work rose to a level of major significance in the field.",
+          "quote": "In the absence of specific information detailing the impact or influence of the Petitioner's research, the letters do not demonstrate that the work has risen to a level of major significance in the field.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 0
+        },
+        {
+          "prong": "criteria",
+          "criterion": "critical_employment",
+          "reasonCode": "ROLE_NOT_CRITICAL",
+          "summary": "The evidence did not contain specific information explaining how the Beneficiary contributed in a way that was of significant importance to the activities or that the Beneficiary was integral to the institute.",
+          "quote": "Although Dr. B-K-S- described the Beneficiary's various responsibilities, the letter does not contain specific information explaining how the Beneficiary contributed in a way that was of significant importance to the activities or that the Beneficiary was integral to the institute.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        },
+        {
+          "prong": "criteria",
+          "criterion": "critical_employment",
+          "reasonCode": "PETITIONER_NOT_QUALIFYING",
+          "summary": "The Petitioner failed to establish that the Beneficiary had been employed, as one letter discussed the Beneficiary's future role.",
+          "quote": "The regulation 8 C.F.R. § 214.2(o)(3)(iii)(B)(7) requires '[e]vidence that the alien has been employed' rather than evidence that the Beneficiary will be employed; therefore, the Petitioner did not establish that its intended employment of the Beneficiary qualifies for this criterion.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        }
+      ],
+      "predicted": [
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "severity": "high",
+          "objection": "The submitted letters (e.g., from Dr. H-E-W-) assert the Beneficiary's research had 'significant impact' and 'received much commentary,' but they fail to demonstrate how the work influenced the field beyond the petitioner's internal perspective. AAO decision P1 emphasizes letters must specifically describe the contribution's significance and its field-wide impact. The petition lacks citation counts, expert validation of the work's influence, or evidence of adoption by others (e.g., licensing, revenue impact).",
+          "aaoRefs": [
+            "JUN172026_01D8101",
+            "DEC112025_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "severity": "medium",
+          "objection": "The petition mentions the Beneficiary's work 'has been cited multiple times' but does not provide citation data or context (e.g., citation counts, journals, or expert analysis). AAO decision P4 clarifies that publication in a high-impact journal does not automatically equate to major significance. Without specific citation details or field recognition, the claim remains unsubstantiated.",
+          "aaoRefs": [
+            "DEC112025_01D8101"
+          ]
+        }
+      ],
+      "latencyMs": 203546
+    },
+    {
+      "id": "MAR242026_01D8101",
+      "date": "2026-03-24",
+      "split": "holdout_2026",
+      "field": "Science/Pharmaceuticals",
+      "reviewed": false,
+      "leakage": false,
+      "judgeMatchesRejectedAsOffTarget": 0,
+      "gold": [
+        {
+          "prong": "criteria",
+          "criterion": "judging",
+          "reasonCode": "JUDGING_NOT_PERFORMED",
+          "summary": "The evidence provided only reflected requests for manuscript reviews, and did not demonstrate that the Beneficiary completed the judging of the work of others.",
+          "quote": "Without evidence indicating that the Beneficiary completed the manuscript or journal article reviews, the Petitioner did not demonstrate that the Beneficiary participated as a judge of the work of others.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 0
+        },
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "summary": "The Petitioner failed to contextualize or show the impact of the Beneficiary's presentations or funding in a majorly significant manner.",
+          "quote": "The Petitioner did not demonstrate, for example, that any of her presentations resulted in majorly significant contributions in the field.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 1
+        },
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "LETTERS_CONCLUSORY",
+          "summary": "The expert letters were not sufficiently persuasive because they did not elaborate on how the work was considered to be majorly significant in the field.",
+          "quote": "Here, the letters point to the Petitioner's work but do not demonstrate how the field views it as original contributions of major significance in the field, such as widespread impact or influence.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 3
+        }
+      ],
+      "predicted": [
+        {
+          "prong": "criteria",
+          "criterion": "judging",
+          "reasonCode": "JUDGING_NOT_PERFORMED",
+          "severity": "high",
+          "objection": "The petition provides emails requesting manuscript reviews but lacks proof the beneficiary actually completed the judging. Emails show invitations to review papers (e.g., 'agreeing to review a paper on July 28, 2015'), but no documentation of completed reviews or outcomes. See P7 (must show participation in judging, not just invitation).",
+          "aaoRefs": [
+            "MAY052025_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "severity": "high",
+          "objection": "The petition cites 193 citations and Clarivate Analytics' top 1% ranking but fails to demonstrate how the contributions impacted the field. Expert letters praise the work but do not explain its major significance (e.g., adoption by others, citations above norms, licensing, revenue). See P9 (letters must detail contribution's impact on the field).",
+          "aaoRefs": [
+            "JUN172026_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "scholarly_articles",
+          "reasonCode": "MEDIA_STATUS_UNPROVEN",
+          "severity": "medium",
+          "objection": "The petition references co-authored articles but does not establish that the journals are professional or major media. The case lacks circulation/readership data for the publications, which is required to prove major media status. See P5 (need circulation figures), P10 (published material must be in professional/major media).",
+          "aaoRefs": [
+            "DEC182024_01D8101",
+            "FEB252025_01D8101"
+          ]
+        },
+        {
+          "prong": "final_merits",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "severity": "high",
+          "objection": "The petition's evidence of citations and top 1% ranking is insufficient to demonstrate major significance to the field. The contribution's impact must be shown through adoption, citations above norms, or expert validation, not just quantitative metrics. See P9 (letters must explain significance).",
+          "aaoRefs": [
+            "JUN172026_01D8101"
+          ]
+        },
+        {
+          "prong": "final_merits",
+          "criterion": "judging",
+          "reasonCode": "JUDGING_NOT_PERFORMED",
+          "severity": "medium",
+          "objection": "The petition's evidence of manuscript reviews lacks proof of completed judging. Without documentation of actual review activities, the invitation alone does not satisfy the criterion. See P7 (must show participation).",
+          "aaoRefs": [
+            "MAY052025_01D8101"
+          ]
+        }
+      ],
+      "latencyMs": 273025
+    },
+    {
+      "id": "MAY052025_01D8101",
+      "date": "2025-05-05",
+      "split": "dev_2023_2025",
+      "field": "Chief Technology Officer (CTO) in AI Technology",
+      "reviewed": false,
+      "leakage": false,
+      "judgeMatchesRejectedAsOffTarget": 0,
+      "gold": [
+        {
+          "prong": "criteria",
+          "criterion": "awards",
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The seed funding award was not demonstrated to be a nationally or internationally recognized prize or award for excellence in the field.",
+          "quote": "The evidence, however, does not demonstrate that c::J $SOOK seed funding award constitutes a nationally or internationally recognized prize or award for excellence in the field.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 0
+        },
+        {
+          "prong": "criteria",
+          "criterion": "membership",
+          "reasonCode": "LETTERS_CONCLUSORY",
+          "summary": "The supporting letter repeated statutory language regarding outstanding achievements without describing the selection criteria or proving that recognized experts judged the membership.",
+          "quote": "Although H-T- references 'outstanding merits,' 'outstanding achievements,' and 'acclaim on the international level,' repeating the language of the statute or regulations does not establish eligibility for the benefit.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        },
+        {
+          "prong": "criteria",
+          "criterion": "published_material",
+          "reasonCode": "NOT_ABOUT_BENEFICIARY",
+          "summary": "The submitted article did not reflect published material about the Beneficiary relating to his work, as the Beneficiary was only briefly mentioned as a founder.",
+          "quote": "The article does not reflect published material about the Beneficiary relating to his work. In fact, the Beneficiary is briefly indicated as being one of the founders for one of tech startups at the event.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 1
+        },
+        {
+          "prong": "criteria",
+          "criterion": "judging",
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The Petitioner failed to provide documentation establishing that the Beneficiary actually participated as a judge at the event, only providing evidence of the invitation.",
+          "quote": "The petitioner must show that the beneficiary has not only been invited to judge the work of others, but also that the beneficiary actually participated in judging the work of others in the same or allied field of specialization.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 2
+        }
+      ],
+      "predicted": [
+        {
+          "prong": "criteria",
+          "criterion": "awards",
+          "reasonCode": "AWARD_RECOGNITION_UNPROVEN",
+          "severity": "high",
+          "objection": "The letter from S-D- describes a $500,000 venture capital award but fails to show c::J is nationally/internationally recognized for excellence. P1 explicitly requires objective evidence of recognition, not just assertion. The three articles from [website] mention eight students, not the beneficiary, and lack details about the award's selection criteria.",
+          "aaoRefs": [
+            "AUG252026_01D8101",
+            "NOV052025_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "published_material",
+          "reasonCode": "NOT_ABOUT_BENEFICIARY",
+          "severity": "high",
+          "objection": "The article 'Meet the '----.--------------..------------'' from [website] lists the beneficiary as a founder but only in a brief, generic manner. P3 and P5 show the article focuses on the company, not the beneficiary's work, and lacks author/date/medium details.",
+          "aaoRefs": [
+            "FEB222024_01D8101",
+            "DEC182024_01D8101",
+            "OCT262023_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "judging",
+          "reasonCode": "JUDGING_NOT_PERFORMED",
+          "severity": "medium",
+          "objection": "The petitioner claims judging participation but only provides an invitation and registration info. P8 requires proof the beneficiary actually performed judging, not just was invited. No documentation shows the review was completed.",
+          "aaoRefs": [
+            "FEB062023_01D8101"
+          ]
+        }
+      ],
+      "latencyMs": 178278
+    },
+    {
+      "id": "MAY132025_01D8101",
+      "date": "2025-05-13",
+      "split": "dev_2023_2025",
+      "field": "technology entrepreneurship",
+      "reviewed": false,
+      "leakage": false,
+      "judgeMatchesRejectedAsOffTarget": 1,
+      "gold": [
+        {
+          "prong": "criteria",
+          "criterion": "awards",
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The investment in the petitioning organization was not shown to qualify as a nationally or internationally recognized prize or award for excellence in the field of technology entrepreneurship.",
+          "quote": "The record is insufficient to demonstrate that I I investment in the pet1t10ning organization qualifies as a \"nationally or internationally recognized prizes or awards for excellence in the field of technology entrepreneurship.\"",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 0
+        },
+        {
+          "prong": "criteria",
+          "criterion": "membership",
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The evidence did not identify the experts who decided on the Beneficiary's membership in the association.",
+          "quote": "The evidence in the record does not identify the \"experts\" who decided on the Beneficiary's membership.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 1
+        },
+        {
+          "prong": "criteria",
+          "criterion": "scholarly_articles",
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The authorship of short articles posted on the former employer's website was insufficient to confirm the website is comparable to a professional journal, other major media, or a major trade show.",
+          "quote": "They are, however, insufficient to confirm the website is comparable to a professional journal, other major media, or a major trade show.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": true,
+          "matchedObjection": null
+        },
+        {
+          "prong": "criteria",
+          "criterion": "critical_employment",
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The Petitioner failed to satisfy the initial evidentiary requirements by submitting two additional categories of documents listed under 8 C.F.R. § 214.2(o)(3)(iii)(B)(l)-(8).",
+          "quote": "the Petitioner has not satisfied the initial evidentiary requirements of submitting two additional categories of documents listed under 8 C.F.R. § 214.2(o)(3)(iii)(B)(l)-(8).",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        },
+        {
+          "prong": "criteria",
+          "criterion": "high_remuneration",
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The Petitioner did not sufficiently show that the Beneficiary's equity stake satisfies the high remuneration criterion.",
+          "quote": "In short, the Petitioner has not sufficiently shown that the Beneficiary's equity stake inl I satisfies this criterion.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 3
+        }
+      ],
+      "predicted": [
+        {
+          "prong": "criteria",
+          "criterion": "awards",
+          "reasonCode": "AWARD_RECOGNITION_UNPROVEN",
+          "severity": "high",
+          "objection": "The Petitioner submitted venture capital funding and accelerator acceptance, but these do not constitute nationally or internationally recognized prizes for excellence. Venture capital funding is not an award, and accelerator acceptance alone does not meet the criteria for a recognized award (P1).",
+          "aaoRefs": [
+            "OCT022023_02D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "membership",
+          "reasonCode": "MEMBERSHIP_NOT_SELECTIVE",
+          "severity": "high",
+          "objection": "The Forbes Business Council membership is described as invitation-only, but the Petitioner has not provided bylaws or admission criteria demonstrating that membership requires outstanding achievement judged by experts (P4).",
+          "aaoRefs": [
+            "FEB202025_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "published_material",
+          "reasonCode": "MEDIA_STATUS_UNPROVEN",
+          "severity": "high",
+          "objection": "The three articles submitted are described as blog posts on the former employer's website, which do not constitute major media or professional publications. The Petitioner has not provided circulation or readership data to establish the outlet's status as major media (P5, P6).",
+          "aaoRefs": [
+            "DEC182024_01D8101",
+            "OCT262023_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "high_remuneration",
+          "reasonCode": "NO_COMPARATIVE_WAGE_DATA",
+          "severity": "high",
+          "objection": "The Beneficiary's salary of $65,000 and equity valuation of $6.8 million lack comparative wage data to demonstrate that the remuneration is significantly higher than others in the field. The Petitioner has not provided industry salary surveys or BLS data (P9).",
+          "aaoRefs": [
+            "APR132023_01D8101"
+          ]
+        },
+        {
+          "prong": "final_merits",
+          "criterion": "scholarly_articles",
+          "reasonCode": "FINAL_MERITS_NOT_MET",
+          "severity": "high",
+          "objection": "The totality of evidence fails to demonstrate sustained national or international acclaim. The Petitioner has not provided any evidence of original contributions of major significance, peer-reviewed publications, or recognition in major media (P8).",
+          "aaoRefs": [
+            "APR272026_01D8101"
+          ]
+        }
+      ],
+      "latencyMs": 244859
+    },
+    {
+      "id": "MAY222025_01D8101",
+      "date": "2025-05-22",
+      "split": "dev_2023_2025",
+      "field": "Mixology",
+      "reviewed": false,
+      "leakage": true,
+      "judgeMatchesRejectedAsOffTarget": 1,
+      "gold": [
+        {
+          "prong": "requirement",
+          "criterion": null,
+          "reasonCode": "PROCEDURAL",
+          "summary": "The AAO limited its review to the classification requested on the initial filing, disregarding the subsequent attempt to change the classification to O-1B.",
+          "quote": "USCIS will only consider the visa classification that the petitioner annotates on the petition at initial filing.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        },
+        {
+          "prong": "criteria",
+          "criterion": null,
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The AAO determined that the field of arts (mixology) does not fall within the scope of O-1A, which is limited to sciences, education, business, or athletics.",
+          "quote": "Because the field of arts does not fall within the fields under O-lA but rather O-lB, the Petitioner did not demonstrate the Beneficiary's eligibility for O-lA classification.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        }
+      ],
+      "predicted": [
+        {
+          "prong": "criteria",
+          "criterion": "awards",
+          "reasonCode": "CRITERION_NOT_MET",
+          "severity": "high",
+          "objection": "The petition does not provide evidence of nationally or internationally recognized prizes or awards for excellence in mixology. The case materials only reference the beneficiary's role as a business owner, not any awards.",
+          "aaoRefs": [
+            "NOV052025_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "membership",
+          "reasonCode": "CRITERION_NOT_MET",
+          "severity": "high",
+          "objection": "The petition lacks evidence of membership in associations requiring outstanding achievement judged by experts. No association bylaws or admission criteria are provided.",
+          "aaoRefs": [
+            "NOV052025_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "published_material",
+          "reasonCode": "NOT_ABOUT_BENEFICIARY",
+          "severity": "high",
+          "objection": "The petition references evidence about the beneficiary's business ownership but does not include published material specifically about the beneficiary's mixology work in professional or major media.",
+          "aaoRefs": [
+            "NOV162023_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "judging",
+          "reasonCode": "JUDGING_NOT_PERFORMED",
+          "severity": "high",
+          "objection": "The petition mentions an invitation to judge but lacks proof the beneficiary actually performed judging of others' work in mixology or an allied field.",
+          "aaoRefs": [
+            "MAY052025_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "severity": "high",
+          "objection": "The petition does not demonstrate original contributions of major significance to mixology. Business ownership alone does not satisfy this criterion.",
+          "aaoRefs": [
+            "NOV052025_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "critical_employment",
+          "reasonCode": "REPUTATION_UNPROVEN",
+          "severity": "high",
+          "objection": "The petitioner (a restaurant/bar) lacks documentation of a distinguished reputation. No evidence shows the organization's standing in the mixology industry.",
+          "aaoRefs": [
+            "NOV162023_01D8101"
+          ]
+        },
+        {
+          "prong": "final_merits",
+          "criterion": "scholarly_articles",
+          "reasonCode": "FINAL_MERITS_NOT_MET",
+          "severity": "high",
+          "objection": "The totality of evidence fails to demonstrate sustained national or international acclaim. The petition relies on vague claims about business ownership without meeting any of the specified criteria.",
+          "aaoRefs": [
+            "MAY052025_01D8101",
+            "NOV052025_01D8101",
+            "NOV162023_01D8101"
+          ]
+        }
+      ],
+      "latencyMs": 174087
+    },
+    {
+      "id": "MAY252023_01D8101",
+      "date": "2023-05-25",
+      "split": "dev_2023_2025",
+      "field": "athletics",
+      "reviewed": false,
+      "leakage": false,
+      "judgeMatchesRejectedAsOffTarget": 1,
+      "gold": [
+        {
+          "prong": "requirement",
+          "criterion": null,
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The submitted contracts and agreements were found to be inconsistent and lacked sufficient detail to establish the terms of employment.",
+          "quote": "The statements you made on the Form I-129, in the Employment Agreement, and in your letters are inconsistent with the evidence and thus not sufficiently reliable to meet this requirement.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        },
+        {
+          "prong": "requirement",
+          "criterion": null,
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The itinerary provided lacked specific dates and locations for required events, such as photo shoots and training sessions.",
+          "quote": "The itinerary also lacks specific dates and locations for events during which the Beneficiary would assist in the training and preparation of [the Petitioner's] clients.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        },
+        {
+          "prong": "criteria",
+          "criterion": null,
+          "reasonCode": "FINAL_MERITS_NOT_MET",
+          "summary": "The totality of the evidence did not demonstrate that the Beneficiary met at least three of the required evidentiary criteria.",
+          "quote": "In fact, the Director found that the Beneficiary met only one criterion - awards, and she did not meet any of the other claimed criteria relating to memberships, published material, and high salary.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        }
+      ],
+      "predicted": [
+        {
+          "prong": "criteria",
+          "criterion": "awards",
+          "reasonCode": "AWARD_RECOGNITION_UNPROVEN",
+          "severity": "high",
+          "objection": "The petition references awards but does not specify which awards were granted, their recognition level, or selection criteria. The GoFundMe account and tax records for self-employment do not constitute nationally/internationally recognized prizes for excellence. AAO P1 requires evidence of awards with clear recognition and excellence criteria.",
+          "aaoRefs": [
+            "OCT022023_02D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "membership",
+          "reasonCode": "MEMBERSHIP_NOT_SELECTIVE",
+          "severity": "high",
+          "objection": "The petition mentions IFBB membership but does not provide bylaws or admission criteria proving the association requires outstanding achievement. AAO P4 requires evidence of membership criteria judged by recognized experts. The absence of such documentation fails to establish selectivity.",
+          "aaoRefs": [
+            "FEB202025_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "high_remuneration",
+          "reasonCode": "NO_COMPARATIVE_WAGE_DATA",
+          "severity": "medium",
+          "objection": "The petition cites a $200k salary but does not provide comparative wage data against others in the field. AAO P9/P10 require objective data (e.g., BLS OEWS) to show the remuneration is significantly high relative to peers. Tax records for self-employment do not suffice.",
+          "aaoRefs": [
+            "APR132023_01D8101",
+            "FEB222023_01D8101"
+          ]
+        },
+        {
+          "prong": "final_merits",
+          "criterion": "scholarly_articles",
+          "reasonCode": "FINAL_MERITS_NOT_MET",
+          "severity": "high",
+          "objection": "The petition fails to meet at least three criteria. Awards, membership, published material, and original contributions are all lacking sufficient evidence. AAO P1 requires at least three criteria to be met, and the totality of evidence does not show sustained national/international acclaim for a bodybuilder.",
+          "aaoRefs": [
+            "OCT022023_02D8101"
+          ]
+        }
+      ],
+      "latencyMs": 226038
+    },
+    {
+      "id": "NOV052025_01D8101",
+      "date": "2025-11-05",
+      "split": "dev_2023_2025",
+      "field": "Athletics",
+      "reviewed": false,
+      "leakage": true,
+      "judgeMatchesRejectedAsOffTarget": 1,
+      "gold": [
+        {
+          "prong": "criteria",
+          "criterion": "awards",
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The Petitioner claimed the Beneficiary's eligibility based on awards won by students, but did not establish that the Beneficiary himself received nationally or internationally recognized prizes or awards.",
+          "quote": "Although the Petitioner presented letters from individuals who were coached by the Beneficiary and credited him for being impactfol in their athletic accomplishments, the Petitioner did not establish that the Beneficiary received nationally or internationally recognized prizes or awards for excellence in the field.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 0
+        },
+        {
+          "prong": "criteria",
+          "criterion": "judging",
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The Petitioner presented a letter from the Beneficiary asserting participation in various juries, but failed to support the record with corroborating evidence.",
+          "quote": "In response to the request for evidence, the Petitioner presented a letter from the Beneficiary asserting his participation in various juries. However, the Petitioner did not support the record with evidence corroborating any of the Beneficiary's claims.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 1
+        },
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The reviewing body declined to reach this ground because the Beneficiary had not established the initial requirement of meeting at least three alternative criteria.",
+          "quote": "Although the Petitioner claims the Beneficiary's eligibility for an additional criterion on appeal (original contributions under 8 C.F.R. § 214.2(0)(3)(iii)(B)(5)), we need not reach this ground because the Beneficiary cannot fulfill the initial evidentiary requirement of at least three under 8 C.F.R. § 214.2(o)(3)(iii)(B).",
+          "dispositive": false,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": true,
+          "matchedObjection": null
+        }
+      ],
+      "predicted": [
+        {
+          "prong": "criteria",
+          "criterion": "awards",
+          "reasonCode": "CRITERION_NOT_MET",
+          "severity": "high",
+          "objection": "The Petitioner submitted letters from individuals coached by the Beneficiary, but no evidence of nationally/internationally recognized awards for excellence. AAO P1 requires awards like Nobel Prizes, and P2 highlights need for recognition by awarding entities. No awards are documented.",
+          "aaoRefs": [
+            "OCT022023_02D8101",
+            "NOV132024_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "judging",
+          "reasonCode": "JUDGING_NOT_PERFORMED",
+          "severity": "high",
+          "objection": "Petitioner claims Beneficiary participated in juries but only provides invitation letter (P3, P4). AAO requires proof of actual judging activity, not just invitation. No evidence of completed judging roles in the field.",
+          "aaoRefs": [
+            "MAY052025_01D8101",
+            "FEB062023_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "severity": "high",
+          "objection": "Letters from coaches are vague and do not demonstrate original contributions of major significance to the field. AAO P5 requires specific explanations of impact (e.g., citations, adoption, revenue) and expert validation.",
+          "aaoRefs": [
+            "JUN172026_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "published_material",
+          "reasonCode": "MEDIA_STATUS_UNPROVEN",
+          "severity": "medium",
+          "objection": "No evidence of published material in professional/media outlets about the Beneficiary. AAO P6 requires specific articles with author/date and proof of major media status (e.g., circulation data).",
+          "aaoRefs": [
+            "FEB252025_01D8101"
+          ]
+        },
+        {
+          "prong": "final_merits",
+          "criterion": "scholarly_articles",
+          "reasonCode": "FINAL_MERITS_NOT_MET",
+          "severity": "high",
+          "objection": "The totality of evidence fails to show sustained national/international acclaim. Only 2/8 criteria are met (judging and original contributions), and even those lack sufficient detail. AAO P1 requires 3+ criteria and top-tier acclaim.",
+          "aaoRefs": [
+            "OCT022023_02D8101"
+          ]
+        },
+        {
+          "prong": "final_merits",
+          "criterion": "critical_employment",
+          "reasonCode": "REPUTATION_UNPROVEN",
+          "severity": "medium",
+          "objection": "No documentation of the fencing club's distinguished reputation. AAO P7 requires evidence of organizational reputation (e.g., media coverage, customer base) and the Beneficiary's critical role.",
+          "aaoRefs": [
+            "AUG132024_01D8101"
+          ]
+        },
+        {
+          "prong": "final_merits",
+          "criterion": "awards",
+          "reasonCode": "NEW_EVIDENCE_ON_APPEAL",
+          "severity": "high",
+          "objection": "Petitioner submitted new evidence on appeal that was not considered in the initial review. AAO decisions (e.g., P1) prohibit new evidence on appeal unless it's not previously submitted.",
+          "aaoRefs": [
+            "OCT022023_02D8101"
+          ]
+        }
+      ],
+      "latencyMs": 240100
+    },
+    {
+      "id": "NOV132024_01D8101",
+      "date": "2024-11-13",
+      "split": "dev_2023_2025",
+      "field": "Senior IOS Developer",
+      "reviewed": false,
+      "leakage": false,
+      "judgeMatchesRejectedAsOffTarget": 0,
+      "gold": [
+        {
+          "prong": "criteria",
+          "criterion": "awards",
+          "reasonCode": "AWARD_RECOGNITION_UNPROVEN",
+          "summary": "The submitted award was not shown to be nationally or internationally recognized for excellence in the field.",
+          "quote": "The material does not show how the field views winning the as being tantamount to a nationally or internationally recognized prize or award for excellence.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 0
+        },
+        {
+          "prong": "criteria",
+          "criterion": "membership",
+          "reasonCode": "MEMBERSHIP_NOT_SELECTIVE",
+          "summary": "The submitted letters did not explain how the membership requirements constituted outstanding achievements judged by recognized national or international experts.",
+          "quote": "The letters do not explain how having \"highly specialized knowledge,\" \"notable and above-average stream of revenue,\" and being \"known to drive the profit, growth and sales of their respective associations\" are outstanding achievements.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        },
+        {
+          "prong": "criteria",
+          "criterion": "published_material",
+          "reasonCode": "NOT_ABOUT_BENEFICIARY",
+          "summary": "The submitted article was about the importance of mentoring for startup companies, not about the Beneficiary relating to his work.",
+          "quote": "As noted by the Director, the article is not about the Beneficiary relating to his work but is about the importance of mentoring for startup companies, \"to overcome difficulties, professionalize the company and make them progress.\"",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        },
+        {
+          "prong": "criteria",
+          "criterion": "judging",
+          "reasonCode": "JUDGING_NOT_PERFORMED",
+          "summary": "The record lacked documentary evidence to corroborate the Beneficiary's role as a judge, and the role was strictly as a mentor evaluating students' work.",
+          "quote": "As the plain language of this criterion requires evidence of the Beneficiary's \"participation ... as a judge,\" evidence of working as a mentor who evaluates students as a part of that role does not meet this requirement.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        },
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "summary": "The testimonial letters made broad claims regarding the Beneficiary's work for individual companies, but did not explain what the Beneficiary contributed in the field or how it was of major significance.",
+          "quote": "However, the letters do not explain what the Beneficiary has contributed in the field, and how those contributions are considered to be of major significance in the field.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        }
+      ],
+      "predicted": [
+        {
+          "prong": "criteria",
+          "criterion": "awards",
+          "reasonCode": "AWARD_RECOGNITION_UNPROVEN",
+          "severity": "high",
+          "objection": "The 2023 award is described as a \"prestigious distinction in the business sector\" but lacks objective evidence of national or international recognition for excellence. The Petitioner did not provide selection criteria, number of entrants, press coverage, or independent verification of the award's prestige. Per P1, this fails to meet the regulatory standard.",
+          "aaoRefs": [
+            "AUG252026_01D8101"
+          ]
+        }
+      ],
+      "latencyMs": 212527
+    },
+    {
+      "id": "NOV162023_01D8101",
+      "date": "2023-11-16",
+      "split": "dev_2023_2025",
+      "field": "automotive engineering/test driving",
+      "reviewed": false,
+      "leakage": false,
+      "judgeMatchesRejectedAsOffTarget": 0,
+      "gold": [
+        {
+          "prong": "criteria",
+          "criterion": "published_material",
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The submitted foreign-language articles did not meet the specific requirements of the criterion because some lacked required authors, and the website evidence did not demonstrate status as a major medium.",
+          "quote": "As those materials do not include an author, we need not make a determination regarding their status as professional or major trade publications or other major media.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 1
+        },
+        {
+          "prong": "criteria",
+          "criterion": "judging",
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The evidence provided only showed that the Beneficiary was invited to direct graduation projects, but did not demonstrate that he actually performed the evaluation or judging of the work of others.",
+          "quote": "Here, the above letter does not demonstrate that the Beneficiary actually completed the judging of graduation projects of automotive engineering students.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 2
+        }
+      ],
+      "predicted": [
+        {
+          "prong": "criteria",
+          "criterion": "awards",
+          "reasonCode": "AWARD_RECOGNITION_UNPROVEN",
+          "severity": "high",
+          "objection": "The 2017 Ecuadoria Tour and 200X Tour awards lack evidence of national or international recognition. The record does not establish these events as nationally or internationally recognized prizes for excellence in automotive engineering. AAO P1 emphasizes that awards must be recognized at this level, and P2 highlights the need for documentation of recognition criteria.",
+          "aaoRefs": [
+            "OCT022023_02D8101",
+            "NOV132024_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "published_material",
+          "reasonCode": "MEDIA_STATUS_UNPROVEN",
+          "severity": "high",
+          "objection": "The publications (Vistazo.com, Eltelegrafo.com, Quenoticias.com, Carburando) lack evidence of major media status. AAO P3 and P4 require circulation/readership data to establish major media status, which is not provided. The case only includes Similar Web rankings for Quenoticias.com, which is insufficient.",
+          "aaoRefs": [
+            "DEC182024_01D8101",
+            "OCT262023_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "judging",
+          "reasonCode": "JUDGING_NOT_PERFORMED",
+          "severity": "high",
+          "objection": "The letter from J.C.R. only states the beneficiary was 'invited to direct' graduation projects but does not confirm actual participation in judging. AAO P5 requires evidence that the beneficiary completed the judging role, not just received an invitation.",
+          "aaoRefs": [
+            "MAY052025_01D8101"
+          ]
+        },
+        {
+          "prong": "final_merits",
+          "criterion": "scholarly_articles",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "severity": "medium",
+          "objection": "The articles submitted are not scholarly in nature and lack peer-reviewed publication in professional journals. AAO P7 and P8 clarify that authorship of short articles or marketing content does not meet the scholarly article criterion.",
+          "aaoRefs": [
+            "MAY132025_01D8101",
+            "DEC112025_01D8101"
+          ]
+        },
+        {
+          "prong": "final_merits",
+          "criterion": "critical_employment",
+          "reasonCode": "REPUTATION_UNPROVEN",
+          "severity": "medium",
+          "objection": "The record does not establish the reputation of the beneficiary's employer (workshop in Ecuador) as distinguished. AAO P8 requires documentation of the organization's reputation, which is missing.",
+          "aaoRefs": [
+            "DEC112025_01D8101"
+          ]
+        },
+        {
+          "prong": "final_merits",
+          "criterion": "scholarly_articles",
+          "reasonCode": "FINAL_MERITS_NOT_MET",
+          "severity": "high",
+          "objection": "The totality of evidence does not demonstrate sustained national or international acclaim. The awards, publications, and judging evidence are insufficient to show the beneficiary is among the top tier of automotive engineering professionals.",
+          "aaoRefs": [
+            "OCT022023_02D8101"
+          ]
+        },
+        {
+          "prong": "requirement",
+          "criterion": null,
+          "reasonCode": "NO_ADVISORY_OPINION",
+          "severity": "high",
+          "objection": "The petition lacks an advisory opinion from a peer group or labor organization, which is required unless the petitioner demonstrates the absence of such groups. AAO P9 mandates this consultation for extraordinary ability claims.",
+          "aaoRefs": [
+            "JAN172023_01D8101"
+          ]
+        },
+        {
+          "prong": "requirement",
+          "criterion": null,
+          "reasonCode": "NO_CONTRACT_OR_ITINERARY",
+          "severity": "medium",
+          "objection": "The petition does not include a contract or itinerary detailing the beneficiary's proposed work in the U.S. AAO P1 and P2 require this to establish the nature and scope of the employment.",
+          "aaoRefs": [
+            "OCT022023_02D8101",
+            "NOV132024_01D8101"
+          ]
+        }
+      ],
+      "latencyMs": 247381
+    },
+    {
+      "id": "OCT022023_01D8101",
+      "date": "2023-10-02",
+      "split": "dev_2023_2025",
+      "field": "animal science researcher",
+      "reviewed": false,
+      "leakage": false,
+      "judgeMatchesRejectedAsOffTarget": 3,
+      "gold": [
+        {
+          "prong": "requirement",
+          "criterion": null,
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The Petitioner failed to provide contractual agreements between the Beneficiary and other employers, as required by regulation.",
+          "quote": "The regulation at 8 C.F.R. § 214.2(o)(2)(iv)(E)(l) requires \"[a]n agent performing the function of an employer must provide the contractual agreement between the agent and the beneficiary which specifies the wages offered and the other terms and conditions of employment.\"",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        },
+        {
+          "prong": "requirement",
+          "criterion": null,
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The Petitioner did not demonstrate that the agreement showed the Petitioner performing the function of an employer.",
+          "quote": "In fact, the Petitioner did not demonstrate how the agreement shows the Petitioner performing the function of an employer under the regulation at 8 C.F.R. § 214.2(o)(2)(iv)(E)(l).",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        },
+        {
+          "prong": "requirement",
+          "criterion": null,
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The Petitioner did not show that he was in business as an agent and was authorized to act for the other employers.",
+          "quote": "Further, the Petitioner did not show that he is in business as an agent and is authorized to act as an agent for the other employers for purposes of filing the petition.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        },
+        {
+          "prong": "final_merits",
+          "criterion": null,
+          "reasonCode": "NEW_EVIDENCE_ON_APPEAL",
+          "summary": "The AAO declined to reach the Petitioner's appellate arguments regarding the sufficiency of the evidentiary criteria applicable to individuals of extraordinary ability.",
+          "quote": "We decline to reach and hereby reserve the Petitioner's other appellate arguments regarding the sufficiency of the evidentiary criteria applicable to individuals of extraordinary ability.",
+          "dispositive": false,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": true,
+          "matchedObjection": null
+        }
+      ],
+      "predicted": [
+        {
+          "prong": "final_merits",
+          "criterion": "original_contributions",
+          "reasonCode": "FINAL_MERITS_NOT_MET",
+          "severity": "high",
+          "objection": "The petition lacks evidence of sustained national or international acclaim. The submitted materials only include an agent agreement and itinerary, which do not demonstrate the beneficiary's extraordinary ability as required by 8 CFR 214.2(o)(3)(iii).",
+          "aaoRefs": [
+            "AUG132024_01D8101",
+            "APR272026_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "high_remuneration",
+          "reasonCode": "NO_COMPARATIVE_WAGE_DATA",
+          "severity": "high",
+          "objection": "The petition asserts a salary of $75,000 but provides no comparative wage data to show it is significantly high relative to others in the field. 8 CFR 214.2(o)(3)(iii)(B)(8) requires objective wage data (e.g., BLS OEWS).",
+          "aaoRefs": [
+            "APR132023_01D8101",
+            "FEB222023_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "critical_employment",
+          "reasonCode": "REPUTATION_UNPROVEN",
+          "severity": "medium",
+          "objection": "The itinerary lists events with U.S. organizations but lacks evidence of the organizations' distinguished reputations. 8 CFR 214.2(o)(3)(iii)(B)(7) requires documentation of the organization's reputation.",
+          "aaoRefs": [
+            "AUG132024_01D8101",
+            "APR272026_01D8101"
+          ]
+        },
+        {
+          "prong": "requirement",
+          "criterion": null,
+          "reasonCode": "NO_CONTRACT_OR_ITINERARY",
+          "severity": "medium",
+          "objection": "The petition includes an itinerary but no written contract or summary of terms. 8 CFR 214.2(o)(2)(ii)(B) requires a contract or summary of the employment agreement.",
+          "aaoRefs": [
+            "APR132023_01D8101",
+            "FEB222023_01D8101"
+          ]
+        }
+      ],
+      "latencyMs": 215568
+    },
+    {
+      "id": "OCT022023_02D8101",
+      "date": "2023-10-02",
+      "split": "dev_2023_2025",
+      "field": "Athletics",
+      "reviewed": false,
+      "leakage": false,
+      "judgeMatchesRejectedAsOffTarget": 0,
+      "gold": [
+        {
+          "prong": "criteria",
+          "criterion": "awards",
+          "reasonCode": "AWARD_RECOGNITION_UNPROVEN",
+          "summary": "The evidence regarding the AAU National Championship did not demonstrate that the award was nationally or internationally recognized for excellence in the field.",
+          "quote": "Moreover.I ~etter does not further discuss the AAU National Championship and show how the field views winning the AAU National Championship in the under 11 years of age division as being tantamount to a nationally or internationally recognized prize or award for excellence.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        },
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "summary": "The submitted letters and screenshots failed to demonstrate that the Beneficiary's playbook had risen to a level of major significance in the field.",
+          "quote": "In the absence of specific information detailing the impact or influence of the Petitioner's playbook, the letters do not demonstrate that his work has risen to a level of major significance in the field.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 0
+        },
+        {
+          "prong": "final_merits",
+          "criterion": null,
+          "reasonCode": "FINAL_MERITS_NOT_MET",
+          "summary": "The Petitioner failed to establish the required threshold of at least three alternative regulatory criteria, preventing a totality determination of sustained acclaim.",
+          "quote": "Consequently, the Petitioner has not established the Beneficiary's eligibility for the 0-1 visa classification as an individual of extraordinary ability.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 4
+        }
+      ],
+      "predicted": [
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "severity": "high",
+          "objection": "The letters from the NHL player and league president are conclusory and do not demonstrate the playbook's major significance to the field. AAO P3 requires specific evidence of impact (e.g., citations, adoption, revenue) or expert analysis of the contribution's influence. The submitted materials lack such details.",
+          "aaoRefs": [
+            "JUN172026_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "high_remuneration",
+          "reasonCode": "NO_COMPARATIVE_WAGE_DATA",
+          "severity": "high",
+          "objection": "The petition does not provide objective wage data (e.g., BLS, industry surveys) to demonstrate the beneficiary's salary is high relative to others in the field. AAO P5 and P6 require reliable evidence of comparative compensation.",
+          "aaoRefs": [
+            "APR132023_01D8101",
+            "FEB222023_01D8101"
+          ]
+        },
+        {
+          "prong": "final_merits",
+          "criterion": "scholarly_articles",
+          "reasonCode": "MEDIA_STATUS_UNPROVEN",
+          "severity": "medium",
+          "objection": "The playbook's distribution on academia.edu is not a major media outlet or professional publication. AAO P4 requires evidence of publication in major media with circulation data or professional status. The petition lacks such documentation.",
+          "aaoRefs": [
+            "FEB252025_01D8101"
+          ]
+        },
+        {
+          "prong": "final_merits",
+          "criterion": "critical_employment",
+          "reasonCode": "ROLE_NOT_CRITICAL",
+          "severity": "medium",
+          "objection": "The petition does not demonstrate the beneficiary's role is critical or essential to an organization with a distinguished reputation. The AAU's reputation is not documented, and the role is described by title only.",
+          "aaoRefs": [
+            "FEB142023_01D8101"
+          ]
+        },
+        {
+          "prong": "final_merits",
+          "criterion": "critical_employment",
+          "reasonCode": "FINAL_MERITS_NOT_MET",
+          "severity": "high",
+          "objection": "The petition relies on only two criteria (awards and original contributions) rather than at least three. Even if these were fully met, the totality of evidence does not show sustained national or international acclaim placing the beneficiary among the top of the field.",
+          "aaoRefs": [
+            "FEB142023_01D8101"
+          ]
+        }
+      ],
+      "latencyMs": 206957
+    },
+    {
+      "id": "OCT092024_01D8101",
+      "date": "2024-10-09",
+      "split": "dev_2023_2025",
+      "field": "external managers evaluation specialist",
+      "reviewed": false,
+      "leakage": false,
+      "judgeMatchesRejectedAsOffTarget": 0,
+      "gold": [
+        {
+          "prong": "requirement",
+          "criterion": null,
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The submitted advisory opinions failed to describe the nature of the duties or state whether the position required the services of an individual of extraordinary ability.",
+          "quote": "While the submitted reference letters are highly complimentary to the Beneficiary, and mention some of his specific achievements in his field, none of the letters describe the nature of the duties to be performed or state whether the position requires the services of an individual of extraordinary ability.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        },
+        {
+          "prong": "criteria",
+          "criterion": "scholarly_articles",
+          "reasonCode": "NOT_ABOUT_BENEFICIARY",
+          "summary": "The provided articles from various media outlets did not mention the Beneficiary, and the required dates and authors were not consistently provided.",
+          "quote": "As noted by the Director, however, none of the articles mention the Beneficiary, and therefore, they do not show published material about him relating to his work.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 1
+        },
+        {
+          "prong": "criteria",
+          "criterion": "high_remuneration",
+          "reasonCode": "NO_COMPARATIVE_WAGE_DATA",
+          "summary": "The submitted compensation data, including tax returns and salary comparisons, did not establish that the Beneficiary earned a high salary relative to others in the field.",
+          "quote": "For all of these reasons, the Petitioner has not established that the Beneficiary has commanded a high salary or other remuneration based on the Rosstat statistics.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 3
+        }
+      ],
+      "predicted": [
+        {
+          "prong": "criteria",
+          "criterion": "scholarly_articles",
+          "reasonCode": "MEDIA_STATUS_UNPROVEN",
+          "severity": "high",
+          "objection": "The petition cites rbc.ru, reuters.corn (likely a typo for reuters.com), gipp.ru, and other outlets as major media, but provides no circulation/readership data to establish their status as professional/major publications. AAO P1/P2/P4 emphasize that major media status must be demonstrated with objective metrics.",
+          "aaoRefs": [
+            "DEC182024_01D8101",
+            "OCT262023_01D8101",
+            "FEB252025_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "scholarly_articles",
+          "reasonCode": "NOT_ABOUT_BENEFICIARY",
+          "severity": "high",
+          "objection": "The petition claims articles are about the beneficiary's work but provides no specific examples of articles that directly discuss the beneficiary's contributions. AAO P4/P1 require evidence that the material is specifically about the beneficiary and their work.",
+          "aaoRefs": [
+            "DEC182024_01D8101",
+            "FEB252025_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "severity": "high",
+          "objection": "Testimonial letters claim the beneficiary's work impacted $20B transactions but lack specifics on how the contributions were original or of major significance to the field. AAO P3/P6 require detailed explanations of the contribution's impact, including citations, adoption, or expert validation.",
+          "aaoRefs": [
+            "JUN172026_01D8101",
+            "APR272026_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "high_remuneration",
+          "reasonCode": "NO_COMPARATIVE_WAGE_DATA",
+          "severity": "medium",
+          "objection": "The petition cites Russian tax returns and Glassdoor screenshots but fails to compare the beneficiary's salary to U.S. industry benchmarks. AAO P7/P8 require objective wage data (e.g., BLS, industry surveys) showing the salary is high relative to others in the field and geography.",
+          "aaoRefs": [
+            "FEB222023_01D8101",
+            "APR132023_01D8101"
+          ]
+        },
+        {
+          "prong": "final_merits",
+          "criterion": "scholarly_articles",
+          "reasonCode": "FINAL_MERITS_NOT_MET",
+          "severity": "high",
+          "objection": "The petition's evidence for scholarly articles lacks both major media validation and direct beneficiary focus, failing to establish sustained national/international acclaim. AAO P4/P1/P2 emphasize that published material must reflect significant recognition in major outlets.",
+          "aaoRefs": [
+            "DEC182024_01D8101",
+            "OCT262023_01D8101",
+            "FEB252025_01D8101"
+          ]
+        },
+        {
+          "prong": "final_merits",
+          "criterion": "original_contributions",
+          "reasonCode": "FINAL_MERITS_NOT_MET",
+          "severity": "high",
+          "objection": "The testimonial letters and transaction claims do not demonstrate the beneficiary's work is among the top tier of the field. AAO P3/P6 require evidence of field-wide impact, citations, or expert validation of original contributions' significance.",
+          "aaoRefs": [
+            "JUN172026_01D8101",
+            "APR272026_01D8101"
+          ]
+        }
+      ],
+      "latencyMs": 234078
+    },
+    {
+      "id": "OCT172024_01D8101",
+      "date": "2024-10-17",
+      "split": "dev_2023_2025",
+      "field": "athletics",
+      "reviewed": false,
+      "leakage": false,
+      "judgeMatchesRejectedAsOffTarget": 1,
+      "gold": [
+        {
+          "prong": "criteria",
+          "criterion": "membership",
+          "reasonCode": "CRITERION_NOT_MET",
+          "summary": "The submitted letters failed to elaborate on what constitutes outstanding achievements or reference controlling membership requirements, and did not show that national or international experts judged the membership.",
+          "quote": "Although the letters claim that athletes have to prove themselves \"to be worthy of the distinction,\" they do not further explain what constitutes being worthy of distinction and whether it qualifies as outstanding achievements.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 0
+        },
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "summary": "The Petitioner failed to demonstrate how the Beneficiary's Master of Sports title is comparable to a major, significant contribution in the field, or how the title impacted the boxing field in a majorly significant manner.",
+          "quote": "The Petitioner did not demonstrate how the Beneficiary's \"Master of Sport\" is comparable to a major, significant contribution in the field.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        },
+        {
+          "prong": "criteria",
+          "criterion": "high_remuneration",
+          "reasonCode": "NO_COMPARATIVE_WAGE_DATA",
+          "summary": "The Petitioner did not offer evidence comparing how much other boxers received for each fight in Armenia, which is required to establish that the Beneficiary commanded a high salary.",
+          "quote": "Because the Petitioner did not provide the appropriate evidence to compare the Beneficiary's salary to other boxers in Armenia, the Petitioner did not establish the Beneficiary commanded a high salary.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": true,
+          "caughtLenient": true,
+          "matchedObjection": 2
+        }
+      ],
+      "predicted": [
+        {
+          "prong": "criteria",
+          "criterion": "membership",
+          "reasonCode": "MEMBERSHIP_NOT_SELECTIVE",
+          "severity": "high",
+          "objection": "The Armenian Boxing Federation and Armenian Olympic Committee are not shown to require outstanding achievements for membership. The evidence only includes letters stating the beneficiary is a 'key member' without providing bylaws or admission criteria demonstrating that membership is reserved for individuals with exceptional accomplishments judged by recognized experts. AAO P4 emphasizes that associations must have explicit selection criteria for membership to qualify.",
+          "aaoRefs": [
+            "FEB202025_01D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "awards",
+          "reasonCode": "AWARD_RECOGNITION_UNPROVEN",
+          "severity": "high",
+          "objection": "The 'Master of Sports Certificate No. D 2016' is a national award from the Republic of Armenia, but there is no evidence it is internationally recognized for excellence. The screenshot from encyclopedia2.thefreedictionary.com only describes the title's historical use in the USSR, not its current international recognition. AAO P1 requires awards to be nationally or internationally recognized, and the materials fail to establish this.",
+          "aaoRefs": [
+            "OCT022023_02D8101"
+          ]
+        },
+        {
+          "prong": "criteria",
+          "criterion": "high_remuneration",
+          "reasonCode": "NO_COMPARATIVE_WAGE_DATA",
+          "severity": "high",
+          "objection": "The petitioner claims a $25,000 fee per tournament and $8,000 per tournament, but no comparative wage data is provided to show these rates are significantly higher than others in the field. The screenshot from mintsalary.com shows average athlete salaries in Armenia but lacks context (e.g., industry benchmarks, geographic comparisons). AAO P9 and P10 require objective wage data (e.g., BLS OEWS, industry surveys) to establish high remuneration relative to others in the field.",
+          "aaoRefs": [
+            "APR132023_01D8101",
+            "FEB222023_01D8101"
+          ]
+        }
+      ],
+      "latencyMs": 191033
+    },
+    {
+      "id": "SEP192024_01D8101",
+      "date": "2024-09-19",
+      "split": "dev_2023_2025",
+      "field": "Science/Business",
+      "reviewed": false,
+      "leakage": false,
+      "judgeMatchesRejectedAsOffTarget": 1,
+      "gold": [
+        {
+          "prong": "criteria",
+          "criterion": "original_contributions",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "summary": "The Petitioner failed to demonstrate that the Beneficiary's citation figures or journal rankings established contributions of major significance in the field.",
+          "quote": "Here, the Petitioner has not shown how the Beneficiary's citation figures are commensurate with contributions of major significance.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        },
+        {
+          "prong": "criteria",
+          "criterion": "critical_employment",
+          "reasonCode": "ROLE_NOT_CRITICAL",
+          "summary": "The testimonial letters did not provide specific, detailed information explaining how the Beneficiary's contributions were of significant importance to the organization's activities.",
+          "quote": "Without further information explaining the critical nature of the Beneficiary's contributions to the Petitioner did not establish the Beneficiary satisfies this criterion.",
+          "dispositive": true,
+          "quoteVerified": true,
+          "caughtStrict": false,
+          "caughtLenient": false,
+          "matchedObjection": null
+        }
+      ],
+      "predicted": [
+        {
+          "prong": "final_merits",
+          "criterion": "scholarly_articles",
+          "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+          "severity": "high",
+          "objection": "The submitted articles, including the February 2024 blog recommendation, lack evidence of scholarly rigor or professional journal status. P7 explicitly rejects non-scholarly content like blogs, and P5 emphasizes letters must detail specific contributions and field impact. The case materials do not demonstrate the articles meet professional journal standards or show the beneficiary's work influenced the field.",
+          "aaoRefs": [
+            "JUN172026_01D8101",
+            "MAY132025_01D8101",
+            "DEC112025_01D8101"
+          ]
+        },
+        {
+          "prong": "final_merits",
+          "criterion": "high_remuneration",
+          "reasonCode": "NO_COMPARATIVE_WAGE_DATA",
+          "severity": "medium",
+          "objection": "No evidence of high remuneration relative to others in the field is provided. The case materials lack comparative wage data (e.g., BLS OEWS, industry surveys) required to meet this criterion.",
+          "aaoRefs": [
+            "APR272026_01D8101"
+          ]
+        },
+        {
+          "prong": "final_merits",
+          "criterion": "scholarly_articles",
+          "reasonCode": "MEDIA_STATUS_UNPROVEN",
+          "severity": "medium",
+          "objection": "The February 2024 article from an unspecified source lacks documentation of the outlet's major media status. P3 and P4 require circulation/readership data to establish major media status, which is absent in the case materials.",
+          "aaoRefs": [
+            "DEC182024_01D8101",
+            "OCT262023_01D8101"
+          ]
+        }
+      ],
+      "latencyMs": 187526
+    }
+  ]
+}

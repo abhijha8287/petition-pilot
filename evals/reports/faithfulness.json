@@ -1,0 +1,328 @@
+{
+  "eval": "citation-faithfulness",
+  "generatedAt": "2026-11-04T12:37:00.055Z",
+  "judgeModel": "ollama/gemma4",
+  "sentences": 68,
+  "quoteOnPageRate": 1,
+  "uncitedSentences": 0,
+  "supported": {
+    "p": 0.5294117647058824,
+    "lo": 0.4124071581374707,
+    "hi": 0.643270889122056
+  },
+  "partiallySupported": 0.11764705882352941,
+  "unsupported": 0.35294117647058826,
+  "byCase": {
+    "Mateo Alvarez": {
+      "sentences": 10,
+      "supportedRate": 0.6
+    },
+    "Dr. Priya Raman": {
+      "sentences": 54,
+      "supportedRate": 0.5370370370370371
+    },
+    "Dr. Lena Okafor": {
+      "sentences": 4,
+      "supportedRate": 0.25
+    }
+  },
+  "humanCalibration": null,
+  "failures": [
+    {
+      "case": "Mateo Alvarez",
+      "sentence": "Mateo Alvarez is employed as Chief Executive Officer of Ledgerline, Inc., a Delaware-based financial technology company, with an annual base salary of $185,000.",
+      "label": "UNSUPPORTED",
+      "unsupported": [
+        "Ledgerline, Inc. is a Delaware-based financial technology company"
+      ],
+      "reason": "The cited passage confirms the employment, title, and salary, but does not state that Ledgerline, Inc. is based in Delaware or that it is a financial technology company."
+    },
+    {
+      "case": "Mateo Alvarez",
+      "sentence": "Alvarez was recognized as one of \"40 Founders to Watch\" by Fintech Weekly Digest in 2024, a curated list publicly nominated via an online form.",
+      "label": "PARTIALLY_SUPPORTED",
+      "unsupported": [
+        "a curated list"
+      ],
+      "reason": "The passages support that the list was created by Fintech Weekly Digest in 2024 and that nominations were open to the public via an online form, but they do not state that the list was curated."
+    },
+    {
+      "case": "Mateo Alvarez",
+      "sentence": "Ledgerline secured $9 million in Series A funding from Northgate Ventures, reflecting recognition of its innovation and market potential.",
+      "label": "UNSUPPORTED",
+      "unsupported": [
+        "reflecting recognition of its innovation and market potential"
+      ],
+      "reason": "The cited passage only states that Ledgerline announced a $9 million Series A led by Northgate Ventures; it does not contain any information regarding the company's innovation or market potential."
+    },
+    {
+      "case": "Mateo Alvarez",
+      "sentence": "Ledgerline's software serves over 2,000 small businesses, demonstrating measurable impact and scalability.",
+      "label": "UNSUPPORTED",
+      "unsupported": [
+        "demonstrating measurable impact",
+        "scalability"
+      ],
+      "reason": "The passages confirm that the software serves more than 2,000 small businesses, but they do not contain any information regarding 'measurable impact' or 'scalability'."
+    },
+    {
+      "case": "Dr. Priya Raman",
+      "sentence": "The employment location in San Francisco, California, aligns with the geographic scope of the wage data.",
+      "label": "UNSUPPORTED",
+      "unsupported": [
+        "The employment location aligns with the geographic scope of the wage data."
+      ],
+      "reason": "The cited passage only states the work location (San Francisco, California) and does not provide any information regarding the geographic scope of the wage data to which it might align."
+    },
+    {
+      "case": "Dr. Priya Raman",
+      "sentence": "Dr. Priya Raman is a Distributed systems and machine learning infrastructure professional serving as Chief Technology Officer and co-founder of Tessellate Labs, Inc. (Delaware).",
+      "label": "UNSUPPORTED",
+      "unsupported": [
+        "The company is located in Delaware.",
+        "The professional expertise includes machine learning infrastructure."
+      ],
+      "reason": "The passage does not mention the company's location (Delaware). While the passage mentions 'distributed vector database,' it does not specify expertise in machine learning infrastructure."
+    },
+    {
+      "case": "Dr. Priya Raman",
+      "sentence": "She conducted full peer reviews of 19 research papers for SOSD 2024 and 2025, with an acceptance rate of 12.4% for 492 submissions.",
+      "label": "PARTIALLY_SUPPORTED",
+      "unsupported": [
+        "The acceptance rate of 12.4% for 492 submissions applies to both 2024 and 2025."
+      ],
+      "reason": "While the sentence correctly states that 19 reviews were conducted for 2024 and 2025, the acceptance rate of 12.4% for 492 submissions is explicitly limited to 2025 in the cited passages."
+    },
+    {
+      "case": "Dr. Priya Raman",
+      "sentence": "The petitioner offered Dr. Raman a base salary of $310,000 per year, surpassing the 90th percentile wage for Computer and Information Research Scientists in the San Francisco-Oakland-Berkeley MSA.",
+      "label": "UNSUPPORTED",
+      "unsupported": [
+        "The specific occupation ('Computer and Information Research Scientists') is not mentioned in the passages.",
+        "The specific metropolitan area ('San Francisco-Oakland-Berkeley MSA') is not mentioned in the passages."
+      ],
+      "reason": "While the passages confirm the base salary ($310,000) and that it exceeds the 90th percentile for 'the occupation' in 'the same metropolitan area,' the specific names of the occupation and the metropolitan area are not provided."
+    },
+    {
+      "case": "Dr. Priya Raman",
+      "sentence": "The Lindqvist Prize is internationally recognized as one of the two most prestigious honors in distributed systems, established in 1998.",
+      "label": "UNSUPPORTED",
+      "unsupported": [
+        "The Lindqvist Prize is internationally recognized"
+      ],
+      "reason": "The passage states that the prize is 'regarded as one of the two most prestigious honors in distributed systems,' but it does not specify that this recognition is international."
+    },
+    {
+      "case": "Dr. Priya Raman",
+      "sentence": "The Association for Systems Engineering is a peer group of 48,000 practitioners and researchers.",
+      "label": "UNSUPPORTED",
+      "unsupported": [
+        "The Association for Systems Engineering is a peer group of 48,000 practitioners and researchers."
+      ],
+      "reason": "The cited passage only provides the title of the document ('Association for Systems Engineering - Peer Advisory Opinion') and does not contain any information regarding the size (48,000) or the specific membership (practitioners and researchers)."
+    },
+    {
+      "case": "Dr. Priya Raman",
+      "sentence": "The advisory organization explicitly states there are no objections to petition approval.",
+      "label": "PARTIALLY_SUPPORTED",
+      "unsupported": [
+        "The advisory organization explicitly states"
+      ],
+      "reason": "The passages confirm that there are no objections to the petition approval, but the word \"explicitly\" is an evaluative characterization not stated in the text."
+    },
+    {
+      "case": "Dr. Priya Raman",
+      "sentence": "The 2025 Lindqvist Prize for Systems Research was covered in Systems Engineering Quarterly and Meridian Technology Review, both of which are professional/major media publications.",
+      "label": "UNSUPPORTED",
+      "unsupported": [
+        "both of which are professional/major media publications."
+      ],
+      "reason": "The cited passage only states that the coverage appeared in the two publications; it does not provide any information regarding whether they are professional or major media publications."
+    },
+    {
+      "case": "Dr. Priya Raman",
+      "sentence": "Meridian Technology Review has an audited paid circulation of 1,180,000 print and digital subscribers, confirming its status as a major media publication.",
+      "label": "UNSUPPORTED",
+      "unsupported": [
+        "its status as a major media publication"
+      ],
+      "reason": "The cited passage provides only numerical data (audited paid circulation and monthly unique online readers) and does not contain any evaluative characterizations such as 'major'."
+    },
+    {
+      "case": "Dr. Priya Raman",
+      "sentence": "Dr. Raman was invited to serve on the Program Committee of SOSD 2024 and SOSD 2025.",
+      "label": "UNSUPPORTED",
+      "unsupported": [
+        "that Dr. Raman was invited to serve"
+      ],
+      "reason": "The passage states that Dr. Raman served on the Program Committee, but it does not state that she was invited to serve."
+    },
+    {
+      "case": "Dr. Priya Raman",
+      "sentence": "SOSD 2025 had a 12.4% acceptance rate for 492 submissions, indicating high selectivity.",
+      "label": "UNSUPPORTED",
+      "unsupported": [
+        "indicating high selectivity"
+      ],
+      "reason": "The passage provides the acceptance rate and number of submissions but does not contain any evaluative words such as \"high selectivity.\""
+    },
+    {
+      "case": "Dr. Priya Raman",
+      "sentence": "Expert opinion confirms that the Fennel protocol is a contribution of major significance to distributed systems, solving a key problem in consistency vs latency tradeoffs.",
+      "label": "PARTIALLY_SUPPORTED",
+      "unsupported": [
+        "solving a key problem"
+      ],
+      "reason": "The passage describes the consistency vs. latency trade-off that Fennel addresses, but it does not qualify this problem as a 'key' problem."
+    },
+    {
+      "case": "Dr. Priya Raman",
+      "sentence": "The protocol's adoption by multiple companies, including Halcyon Cloud, Arcadia Compute, and Northwind Data, demonstrates its industry-wide impact.",
+      "label": "PARTIALLY_SUPPORTED",
+      "unsupported": [
+        "The adoption demonstrates its industry-wide impact"
+      ],
+      "reason": "The passage supports the factual claims regarding the adoption by Halcyon Cloud, Arcadia Compute, and Northwind Data, but the phrase 'industry-wide impact' is an evaluative characterization not stated in the text."
+    },
+    {
+      "case": "Dr. Priya Raman",
+      "sentence": "Dr. Raman authored 'Fennel: Bounded-Staleness Reads at Planetary Scale', published in SOSD 2022, a peer-reviewed conference with 412 citations.",
+      "label": "PARTIALLY_SUPPORTED",
+      "unsupported": [
+        "SOSD 2022 is a peer-reviewed conference"
+      ],
+      "reason": "The cited passage does not state that the conference is peer-reviewed."
+    },
+    {
+      "case": "Dr. Priya Raman",
+      "sentence": "Dr. Raman authored 'Quorum Leases Revisited', published in the Journal of Distributed Computing Systems (vol. 31, 2021), a peer-reviewed journal with 268 citations.",
+      "label": "UNSUPPORTED",
+      "unsupported": [
+        "the journal is peer-reviewed"
+      ],
+      "reason": "The cited passage does not state that the Journal of Distributed Computing Systems is a peer-reviewed journal."
+    },
+    {
+      "case": "Dr. Priya Raman",
+      "sentence": "Dr. Raman authored 'Learned Compaction Policies for LSM Trees', published in VLDS 2024, a peer-reviewed conference with 97 citations.",
+      "label": "PARTIALLY_SUPPORTED",
+      "unsupported": [
+        "VLDS 2024 is a peer-reviewed conference"
+      ],
+      "reason": "The passage does not state that the conference is peer-reviewed."
+    },
+    {
+      "case": "Dr. Priya Raman",
+      "sentence": "All three articles are original research, with citations to prior work, and address technical challenges in distributed systems, meeting the regulatory test for scholarly_articles under 8 CFR 214.2(o)(3)(iii)(B)(6).",
+      "label": "UNSUPPORTED",
+      "unsupported": [
+        "All three articles are original research",
+        "All three articles, with citations to prior work, and address technical challenges in distributed systems",
+        "All three articles, meeting the regulatory test for scholarly_articles under 8 CFR 214.2(o)(3)(iii)(B)(6)"
+      ],
+      "reason": "The passages list the titles and publication venues of the articles but do not state whether they are original research, whether they cite prior work, whether they address technical challenges in distributed systems, or whether they meet the specific regulatory test cited."
+    },
+    {
+      "case": "Dr. Priya Raman",
+      "sentence": "The Fennel paper has been cited 412 times, placing it in the top 1% of systems papers published in 2022, and inspired at least 37 follow-up papers, demonstrating its scholarly impact.",
+      "label": "UNSUPPORTED",
+      "unsupported": [
+        "demonstrating its scholarly impact"
+      ],
+      "reason": "The passages provide factual data regarding citations, ranking, and follow-up papers, but they do not state that this demonstrates scholarly impact, which is an evaluative conclusion."
+    },
+    {
+      "case": "Dr. Priya Raman",
+      "sentence": "The Ferrous storage engine, developed under Dr. Raman's leadership, reduced cross-continent database read times from over 300 milliseconds to under 40 milliseconds, with adoption by at least six major cloud providers.",
+      "label": "UNSUPPORTED",
+      "unsupported": [
+        "The Ferrous storage engine"
+      ],
+      "reason": "The cited passage refers to 'Her Fennel protocol,' not 'The Ferrous storage engine.'"
+    },
+    {
+      "case": "Dr. Priya Raman",
+      "sentence": "Dr. Raman's Fennel protocol, developed while at Halcyon Cloud Services, introduced bounded-staleness reads with a formally verified upper bound, solving a key problem in consistency vs. latency tradeoffs.",
+      "label": "UNSUPPORTED",
+      "unsupported": [
+        "Dr. Raman's Fennel protocol, developed while at Halcyon Cloud Services, introduced bounded-staleness reads with a formally verified upper bound, solving a key problem in consistency vs. latency tradeoffs."
+      ],
+      "reason": "The cited passage discusses only the circulation numbers of a publication and does not mention Dr. Raman, the Fennel protocol, Halcyon Cloud Services, or any technical details regarding bounded-staleness reads or consistency vs. latency tradeoffs."
+    },
+    {
+      "case": "Dr. Priya Raman",
+      "sentence": "The Lindqvist Prize for Systems Research, awarded annually and regarded as one of the two most prestigious honors in distributed systems, recognizes originality, adoption outside the nominee's organization, and influence on subsequent research.",
+      "label": "PARTIALLY_SUPPORTED",
+      "unsupported": [
+        "The specific field of research (Systems Research) is not mentioned in the cited passages."
+      ],
+      "reason": "The passages support that the prize is awarded annually, is one of the two most prestigious honors in distributed systems, and that the selection criteria include originality, adoption outside the nominee's organization, and influence on subsequent research. However, the passages do not specify that the prize is for 'Systems Research'."
+    },
+    {
+      "case": "Dr. Priya Raman",
+      "sentence": "Dr. Raman received the Lindqvist Prize in 2025, selected by a committee of nine past recipients and fellows for work with transformative industry impact, including the Fennel protocol adopted by multiple companies.",
+      "label": "UNSUPPORTED",
+      "unsupported": [
+        "selected by a committee of nine past recipients and fellows",
+        "work with transformative industry impact"
+      ],
+      "reason": "The passages do not state that the selection committee consisted of nine past recipients and fellows. Furthermore, while the passages mention the Fennel protocol is a 'contribution of major significance,' the claim uses the evaluative word 'transformative,' which is not stated."
+    },
+    {
+      "case": "Dr. Priya Raman",
+      "sentence": "The Fennel protocol, described in a paper cited 412 times (top 1% of 2022 systems papers), has inspired at least 37 follow-up papers and is implemented by Halcyon Cloud, Arcadia Compute, Northwind Data, and at least three other providers.",
+      "label": "UNSUPPORTED",
+      "unsupported": [
+        "The Fennel protocol is implemented by Halcyon Cloud, Arcadia Compute, Northwind Data, and at least three other providers."
+      ],
+      "reason": "The provided passage mentions the citation count and the number of follow-up papers but does not mention any specific companies or providers that implement the protocol."
+    },
+    {
+      "case": "Dr. Priya Raman",
+      "sentence": "Dr. Raman's base salary of $310,000 per year exceeds the 90th percentile annual wage of $239,000 for Computer and Information Research Scientists in the San Francisco-Oakland-Berkeley MSA.",
+      "label": "UNSUPPORTED",
+      "unsupported": [
+        "The passages do not specify that the wage data is for Computer and Information Research Scientists.",
+        "The passages do not specify the geographic area (San Francisco-Oakland-Berkeley MSA)."
+      ],
+      "reason": "While the base salary ($310,000) and the 90th percentile wage ($239,000) are stated, the passages do not provide the profession or the geographic location required to support the full claim."
+    },
+    {
+      "case": "Dr. Priya Raman",
+      "sentence": "The 90th percentile wage data is sourced from the Bureau of Labor Statistics (BLS) Occupational Employment and Wages (OEWS) survey for May 2024.",
+      "label": "UNSUPPORTED",
+      "unsupported": [
+        "The data is sourced from the Bureau of Labor Statistics (BLS) Occupational Employment and Wages (OEWS) survey for May 2024."
+      ],
+      "reason": "The cited passage only provides the value of the 90th percentile annual wage and does not mention the Bureau of Labor Statistics (BLS), the Occupational Employment and Wages (OEWS) survey, or the date May 2024."
+    },
+    {
+      "case": "Dr. Lena Okafor",
+      "sentence": "Dr. Lena Okafor is a computational biology professional currently employed as a Research Scientist at Corvid Therapeutics, Inc., where she will begin work on February 1, 2026, in Boston, Massachusetts, for an initial term of two years.",
+      "label": "UNSUPPORTED",
+      "unsupported": [
+        "Dr. Lena Okafor is a computational biology professional",
+        "currently employed"
+      ],
+      "reason": "The passage is an offer letter, not a statement of current employment. Furthermore, the passage does not mention that the beneficiary is a computational biology professional."
+    },
+    {
+      "case": "Dr. Lena Okafor",
+      "sentence": "She has also published a bioRxiv preprint titled 'A Benchmark for Single-Cell Clustering,' cited three times, and received the Best Poster Award at Westmere Graduate Research Day in 2023.",
+      "label": "UNSUPPORTED",
+      "unsupported": [
+        "The bioRxiv preprint was published in 2023."
+      ],
+      "reason": "The preprint is listed as being from 2024 in Ex. A, not 2023."
+    },
+    {
+      "case": "Dr. Lena Okafor",
+      "sentence": "The petitioner’s letter acknowledges her benchmark for single-cell clustering as a useful resource with anticipated future use.",
+      "label": "UNSUPPORTED",
+      "unsupported": [
+        "The petitioner’s letter acknowledges her benchmark for single-cell clustering as a useful resource with anticipated future use."
+      ],
+      "reason": "The cited passage is a recommendation letter from Prof. Martin Brandt, not a letter from the petitioner."
+    }
+  ]
+}

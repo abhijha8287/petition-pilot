@@ -1,0 +1,58 @@
+{
+  "id": "MAY132025_01D8101",
+  "date": "2025-05-13",
+  "sourceUrl": "https://www.uscis.gov/sites/default/files/err/D8-Aliens-of-Extraordinary-Ability-or-Achievement_O-1_O-2_and_O-3/Decisions_Issued_in_2025/MAY132025_01D8101.pdf",
+  "split": "dev_2023_2025",
+  "field": "technology entrepreneurship",
+  "facts": "The Petitioner, a technology company, seeks to classify the Beneficiary as an alien of extraordinary ability in the field of technology entrepreneurship. The Beneficiary is the cofounder and chief executive officer (CEO) of the Petitioner. The Petitioner's promotional materials state that the company develops physics-based foundational models for engineering simulations. The Beneficiary's annual salary as CEO is $65,000.\n\nThe Petitioner claims the Beneficiary meets the initial evidentiary requirements by submitting evidence of national or international acclaim. Regarding awards, the Petitioner submitted documentation showing the company received $500,000 in venture capital funding. The Petitioner also submitted materials indicating the company was accepted into a startup accelerator described as one of the \"top three accelerators\" with a low acceptance rate.\n\nFor membership, the Petitioner submitted a May 2024 letter from a cofounder and chief operating officer, stating the Beneficiary is a member of the Forbes Business Council, which is described as an \"invitation-only organization for successful small and mid-sized business owners.\" The Petitioner also submitted materials regarding the Beneficiary's prior employment at a company, where he was the \"Founding Engineer and AI Lead.\" This prior role was described as instrumental in scaling the company and helping to raise over $115 million from venture capital investors.\n\nIn terms of scholarly articles, the Petitioner submitted three articles listing the Beneficiary as an author, which were posted on the former employer's website as blog posts. For high remuneration, the Petitioner claimed the Beneficiary commands 641,744 shares of equity in the Petitioner, valued at $10.65 per share, totaling $6,834,573.60.",
+  "factsLeakage": [],
+  "grounds": [
+    {
+      "prong": "criteria",
+      "criterion": "awards",
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The investment in the petitioning organization was not shown to qualify as a nationally or internationally recognized prize or award for excellence in the field of technology entrepreneurship.",
+      "quote": "The record is insufficient to demonstrate that I I investment in the pet1t10ning organization qualifies as a \"nationally or internationally recognized prizes or awards for excellence in the field of technology entrepreneurship.\"",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "membership",
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The evidence did not identify the experts who decided on the Beneficiary's membership in the association.",
+      "quote": "The evidence in the record does not identify the \"experts\" who decided on the Beneficiary's membership.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "scholarly_articles",
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The authorship of short articles posted on the former employer's website was insufficient to confirm the website is comparable to a professional journal, other major media, or a major trade show.",
+      "quote": "They are, however, insufficient to confirm the website is comparable to a professional journal, other major media, or a major trade show.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "critical_employment",
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The Petitioner failed to satisfy the initial evidentiary requirements by submitting two additional categories of documents listed under 8 C.F.R. § 214.2(o)(3)(iii)(B)(l)-(8).",
+      "quote": "the Petitioner has not satisfied the initial evidentiary requirements of submitting two additional categories of documents listed under 8 C.F.R. § 214.2(o)(3)(iii)(B)(l)-(8).",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "high_remuneration",
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The Petitioner did not sufficiently show that the Beneficiary's equity stake satisfies the high remuneration criterion.",
+      "quote": "In short, the Petitioner has not sufficiently shown that the Beneficiary's equity stake inl I satisfies this criterion.",
+      "dispositive": true,
+      "quoteVerified": true
+    }
+  ],
+  "reviewed": false,
+  "reviewNotes": ""
+}

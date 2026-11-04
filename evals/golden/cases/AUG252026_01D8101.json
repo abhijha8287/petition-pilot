@@ -1,0 +1,49 @@
+{
+  "id": "AUG252026_01D8101",
+  "date": "2026-08-25",
+  "sourceUrl": "https://www.uscis.gov/sites/default/files/err/D8-Aliens-of-Extraordinary-Ability-or-Achievement_O-1_O-2_and_O-3/Decisions_Issued_in_2026/AUG252026_01D8101.pdf",
+  "split": "holdout_2026",
+  "field": "General Manager (Professional Baseball)",
+  "facts": "The Petitioner, a professional baseball organization, sought to classify the Beneficiary as a general manager of extraordinary ability. The petition claimed that the Beneficiary met the requirements for O-1 classification through sustained national or international acclaim.\n\nThe Petitioner submitted evidence related to the awards criterion. Specifically, the Petitioner provided documentation showing the Beneficiary received the following awards: 'Gold Mention for [Name]' in 2018, 'Gold Mention for [Name]' in 2024, 'Award for [Name]' in 2024, and 'Award for [Name]' in 2025.\n\nIn addition to the awards, the Petitioner submitted a letter from the president of the organization. This letter described the history and background of the awards, stating that \"all types of talents of any nationality may apply, the idea being that they are people who develop their talents for the benefit of the world and are applauded by their audience,\" and that \"since its creation [in 2009], more than three thousand important figures have been recipients.\"\n\nThe Petitioner also submitted an article posted on a website reporting on the upcoming fifth edition of the awards in 2025. This article described the awards as \"the country's coolest awards,\" and mentioned that \"[t]he objective [illegible] the impeccable work carried out daily by the media, journalists, presenters, musicians, singers, influencers, and entrepreneurs who are part of the artistic industry.\"",
+  "factsLeakage": [],
+  "grounds": [
+    {
+      "prong": "criteria",
+      "criterion": "awards",
+      "reasonCode": "AWARD_RECOGNITION_UNPROVEN",
+      "summary": "The Petitioner failed to provide independent, objective evidence demonstrating that the awards received by the Beneficiary possess national or international recognition for excellence.",
+      "quote": "The Petitioner did not demonstrate recognition of the awards, either nationally or internationally, beyond",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "awards",
+      "reasonCode": "LETTERS_CONCLUSORY",
+      "summary": "The letter provided by the president of the organization was deemed insufficient because it lacked independent, objective evidence showing the national or international recognition of the awards.",
+      "quote": "However, the Petitioner did not offer any independent, objective evidence showing the national or international recognition for excellence of any of the awards.",
+      "dispositive": true,
+      "quoteVerified": false
+    },
+    {
+      "prong": "criteria",
+      "criterion": "awards",
+      "reasonCode": "MEDIA_STATUS_UNPROVEN",
+      "summary": "The article submitted did not establish that the publication showed the field's recognition of the award as a national or international award for excellence.",
+      "quote": "However, the Petitioner did not establish that the article shows the field's recognition o[f] '...' as a national or international award for excellence.",
+      "dispositive": true,
+      "quoteVerified": false
+    },
+    {
+      "prong": "criteria",
+      "criterion": "awards",
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The article failed to demonstrate that the award, which was geared towards the 'artistic industry,' related to the Beneficiary's athletic field.",
+      "quote": "Further, the Petitioner did not show than award geared towards the \"artistic industry\" relates to the Beneficiary's athletic field.",
+      "dispositive": true,
+      "quoteVerified": true
+    }
+  ],
+  "reviewed": false,
+  "reviewNotes": ""
+}

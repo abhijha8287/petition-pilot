@@ -1,0 +1,49 @@
+{
+  "id": "OCT092024_01D8101",
+  "date": "2024-10-09",
+  "sourceUrl": "https://www.uscis.gov/sites/default/files/err/D8-Aliens-of-Extraordinary-Ability-or-Achievement_O-1_O-2_and_O-3/Decisions_Issued_in_2024/OCT092024_01D8101.pdf",
+  "split": "dev_2023_2025",
+  "field": "external managers evaluation specialist",
+  "facts": "The Petitioner, an investment and advisory firm, sought to classify the Beneficiary, an external managers evaluation specialist, as an individual of extraordinary ability. The petition claimed that the Beneficiary demonstrated sustained national or international acclaim through the submission of evidence. The Petitioner indicated that an appropriate labor organization did not exist for the petition, and submitted advisory opinions from experts in the field. The Petitioner claimed the Beneficiary met the evidentiary criterion of scholarly articles, providing articles from various media outlets, including rbc.ru, reuters.corn, gipp.ru, and others. The Petitioner also claimed the Beneficiary met the criterion of original contributions of major significance, asserting that the Beneficiary had participated in $20 billion worth of transactions and submitted testimonial letters from five colleagues. The Petitioner claimed the Beneficiary met the criterion of commanding a high salary, providing employee compensation statements from 2009 through 2015, Russian tax returns for 2011 through 2016, a screenshot from glassdoor.com, and a Rosstat Salary Data Comparison.\n\nIn the submitted letters, the Petitioner described the Beneficiary's work, such as developing a restructuring mechanism that had never been used in Russia before, and advising a mobile telecom carrier in Russia on acquisition transactions. The Petitioner also provided two letters from Russian financial industry recruiters stating that the Beneficiary's total annual compensation was 'above industry average by approximately 20 to 30%.' The Petitioner also submitted U.S. salary data from investopedia.com, wallstreetprep.com, and finexecutive.com for comparison.",
+  "factsLeakage": [],
+  "grounds": [
+    {
+      "prong": "requirement",
+      "criterion": null,
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The submitted advisory opinions failed to describe the nature of the duties or state whether the position required the services of an individual of extraordinary ability.",
+      "quote": "While the submitted reference letters are highly complimentary to the Beneficiary, and mention some of his specific achievements in his field, none of the letters describe the nature of the duties to be performed or state whether the position requires the services of an individual of extraordinary ability.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "scholarly_articles",
+      "reasonCode": "NOT_ABOUT_BENEFICIARY",
+      "summary": "The provided articles from various media outlets did not mention the Beneficiary, and the required dates and authors were not consistently provided.",
+      "quote": "As noted by the Director, however, none of the articles mention the Beneficiary, and therefore, they do not show published material about him relating to his work.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "original_contributions",
+      "reasonCode": "LETTERS_CONCLUSORY",
+      "summary": "The testimonial letters made broad claims regarding the Beneficiary's work for individual companies but failed to explain how those contributions were of major significance in the field.",
+      "quote": "However, the letters do not identify the Beneficiary's contributions and explain how they have been majorly significant in the field.",
+      "dispositive": true,
+      "quoteVerified": false
+    },
+    {
+      "prong": "criteria",
+      "criterion": "high_remuneration",
+      "reasonCode": "NO_COMPARATIVE_WAGE_DATA",
+      "summary": "The submitted compensation data, including tax returns and salary comparisons, did not establish that the Beneficiary earned a high salary relative to others in the field.",
+      "quote": "For all of these reasons, the Petitioner has not established that the Beneficiary has commanded a high salary or other remuneration based on the Rosstat statistics.",
+      "dispositive": true,
+      "quoteVerified": true
+    }
+  ],
+  "reviewed": false,
+  "reviewNotes": ""
+}

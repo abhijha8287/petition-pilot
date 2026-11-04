@@ -1,0 +1,24 @@
+{
+  "id": "JUL312024_01D8101",
+  "date": "2024-07-31",
+  "sourceUrl": "https://www.uscis.gov/sites/default/files/err/D8-Aliens-of-Extraordinary-Ability-or-Achievement_O-1_O-2_and_O-3/Decisions_Issued_in_2024/JUL312024_01D8101.pdf",
+  "split": "dev_2023_2025",
+  "field": "tennis coach",
+  "facts": "The Petitioner, a tennis training center, filed a petition to classify the Beneficiary, a tennis coach, as an O-1 nonimmigrant, asserting that the Beneficiary possesses extraordinary ability in the field of athletics. The Petitioner claimed that the Beneficiary's achievements were recognized through extensive documentation and sustained national or international acclaim. The Petitioner initially stated that an exclusive agreement had been signed for the Beneficiary to work as a Tennis Instructor for the Center. In response to a Request for Evidence, the Petitioner submitted an undated Employment Contract Agreement. This agreement, which was signed only by the Petitioner, detailed the parties, duties and responsibilities, pay, and benefits. The Petitioner also indicated that the agreement represented the terms of a pre-existing oral agreement. The Petitioner asserted that the provided contract included all necessary requirements, such as the parties, duties, and compensation. The Petitioner also claimed that the Beneficiary's events and activities were documented and that an advisory opinion was submitted.",
+  "factsLeakage": [
+    "request for evidence"
+  ],
+  "grounds": [
+    {
+      "prong": "criteria",
+      "criterion": null,
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The submitted Employment Contract Agreement did not satisfy the regulatory requirements because it was not signed by the Beneficiary and lacked a date.",
+      "quote": "Based on the documentation submitted, we agree with the Director's determination that the Petitioner did not satisfy the general evidentiary requirements at 8 C.F.R. § 214.2(o)(2)(ii)(B).",
+      "dispositive": true,
+      "quoteVerified": true
+    }
+  ],
+  "reviewed": false,
+  "reviewNotes": ""
+}

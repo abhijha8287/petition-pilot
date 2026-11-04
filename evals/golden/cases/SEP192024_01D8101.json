@@ -1,0 +1,40 @@
+{
+  "id": "SEP192024_01D8101",
+  "date": "2024-09-19",
+  "sourceUrl": "https://www.uscis.gov/sites/default/files/err/D8-Aliens-of-Extraordinary-Ability-or-Achievement_O-1_O-2_and_O-3/Decisions_Issued_in_2024/SEP192024_01D8101.pdf",
+  "split": "dev_2023_2025",
+  "field": "Science/Business",
+  "facts": "The Petitioner, an international management consulting firm, sought to classify the Beneficiary as an individual of extraordinary ability. The Beneficiary's claimed field of endeavor was related to scientific research, with roles cited including \"Ph.D. research assistant\" and \"Research Fellow in Neurobiology.\"\n\nThe Petitioner claimed the Beneficiary met the criteria for scholarly articles based on the Beneficiary's authorship of articles in professional publications and the reference and citation of the Beneficiary's work by others in their published works. The Petitioner claimed the Beneficiary met the criterion for original contributions of major significance based on \"authored publications that have been published in massively impactful professional journals.\" The Petitioner also submitted evidence of the Beneficiary's citations from Google Scholar, and testimonial letters from experts, such as Dr. C-A-F- and Dr. C-G-.\n\nThe Petitioner claimed the Beneficiary met the criterion for employment in a critical or essential capacity. The Petitioner referenced a letter from Dr. A-E- who indicated the Beneficiary served as a \"Ph.D. research assistant\" and \"played a pivotal role in fulfilling this mission by constantly generating novel ideas and producing solid research data.\" The Petitioner also referenced a letter from Dr. C-G- who indicated the Beneficiary served as a \"Research Fellow in Neurobiology\" and \"managed to use the AAV and mouse genetic platform in my lab and achieved screening of 5 candidate genes.\"\n\nIn summary, the Petitioner submitted evidence related to the Beneficiary's publications, citations, and specific roles within research organizations to establish sustained national or international acclaim.",
+  "factsLeakage": [],
+  "grounds": [
+    {
+      "prong": "criteria",
+      "criterion": "scholarly_articles",
+      "reasonCode": "NOT_ABOUT_BENEFICIARY",
+      "summary": "The evidence of reference and citation of the Beneficiary's work by others was found not to be 'about the alien' as required by the regulation.",
+      "quote": "Because the Beneficiary's research and articles citing to the Beneficiary's work are not \"about the alien,\" they do not meet the plain language of this regulatory criterion.",
+      "dispositive": true,
+      "quoteVerified": false
+    },
+    {
+      "prong": "criteria",
+      "criterion": "original_contributions",
+      "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+      "summary": "The Petitioner failed to demonstrate that the Beneficiary's citation figures or journal rankings established contributions of major significance in the field.",
+      "quote": "Here, the Petitioner has not shown how the Beneficiary's citation figures are commensurate with contributions of major significance.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "critical_employment",
+      "reasonCode": "ROLE_NOT_CRITICAL",
+      "summary": "The testimonial letters did not provide specific, detailed information explaining how the Beneficiary's contributions were of significant importance to the organization's activities.",
+      "quote": "Without further information explaining the critical nature of the Beneficiary's contributions to the Petitioner did not establish the Beneficiary satisfies this criterion.",
+      "dispositive": true,
+      "quoteVerified": true
+    }
+  ],
+  "reviewed": false,
+  "reviewNotes": ""
+}

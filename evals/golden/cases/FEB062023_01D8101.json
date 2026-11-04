@@ -1,0 +1,40 @@
+{
+  "id": "FEB062023_01D8101",
+  "date": "2023-02-06",
+  "sourceUrl": "https://www.uscis.gov/sites/default/files/err/D8-Aliens-of-Extraordinary-Ability-or-Achievement_O-1_O-2_and_O-3/Decisions_Issued_in_2023/FEB062023_01D8101.pdf",
+  "split": "dev_2023_2025",
+  "field": "Cardiology",
+  "facts": "The Petitioner sought to classify the Beneficiary, a cardiology fellow, as a person of extraordinary ability. The Beneficiary's CV indicated that since November 2020, he has been employed as a preventive cardiology fellow at I I University in Maryland. Prior to this, he was a chief resident and postdoctoral researcher. The Petitioner claimed the Beneficiary met the requirements of at least three of the eight regulatory categories of evidence.\n\nEvidence submitted included testimonial letters discussing the Beneficiary's research, copies of excerpts of published articles, and information regarding the journals in which he was published. The Petitioner asserted that the Beneficiary had made original scientific contributions of major significance, citing his leading research on preventive cardiology and the co-founding of the I I Clinic at I I University in 2021. The Petitioner also submitted a 2019 poster selection by the Society for Cardiovascular Angiography and Interventions (SCAI) and evidence of NIH and AHA funding.\n\nRegarding the judging criterion, the Petitioner asserted that the Beneficiary was a reviewer for International Journal of Cardiology, ACC.org, and BMJ Case Reports. The record included invitations to the Beneficiary and his co-authors to submit Expert Analysis articles, a letter dated March 2022 regarding an article published in Dyslipidemia Clinical Topic Collection on ACC.org, and screenshots of co-authored ExpertAnalyses published on the ACC.org website between 2021 and 2022.\n\nIn terms of scholarly articles, the Petitioner emphasized that the Beneficiary had authored 30 articles in professional journals. The Petitioner also provided an April 2022 Google Scholar citation history reflecting 132 cumulative citations to articles authored by him between 2016 and 2021.",
+  "factsLeakage": [],
+  "grounds": [
+    {
+      "prong": "criteria",
+      "criterion": "judging",
+      "reasonCode": "JUDGING_NOT_PERFORMED",
+      "summary": "The submitted documentation did not establish the Beneficiary's participation as a judge of the work of others in the same or an allied field.",
+      "quote": "Here, the Petitioner did not provide documentary evidence establishing that the Beneficiary reviewed journal submissions for the International Journal of Cardiology, ACC.org, or BMJ Case Reports.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "original_contributions",
+      "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+      "summary": "The testimonial letters and evidence did not provide specific examples of contributions that are indicative of major significance or show impact beyond the employer.",
+      "quote": "Although the authors do not provide specific examples of contributions that are indicative of major significance.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "final_merits",
+      "criterion": null,
+      "reasonCode": "FINAL_MERITS_NOT_MET",
+      "summary": "The totality of the evidence did not demonstrate sustained national or international acclaim.",
+      "quote": "Considered together, the evidence consisting of the citations to the Beneficiary's published findings, the citation statistics, and the reference letters from his fellow researchers and other experts, establishes that the Beneficiary has been a productive researcher, and that his published data and findings have been relied upon by others in their own research. It does not demonstrate, however, that the Beneficiary has made a contribution of major significance in the field.",
+      "dispositive": true,
+      "quoteVerified": true
+    }
+  ],
+  "reviewed": false,
+  "reviewNotes": ""
+}

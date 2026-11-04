@@ -1,0 +1,40 @@
+{
+  "id": "MAR232023_01D8101",
+  "date": "2023-03-23",
+  "sourceUrl": "https://www.uscis.gov/sites/default/files/err/D8-Aliens-of-Extraordinary-Ability-or-Achievement_O-1_O-2_and_O-3/Decisions_Issued_in_2023/MAR232023_01D8101.pdf",
+  "split": "dev_2023_2025",
+  "field": "Ophthalmology",
+  "facts": "The Petitioner, an international management consulting firm, sought to classify the Beneficiary, an ophthalmology specialist, as an individual of extraordinary ability. The petition claimed that the Beneficiary met the criteria for original contributions of major significance and employment in a critical or essential capacity for a distinguished organization.\n\nRegarding original contributions, the Petitioner submitted recommendation letters, including one from Dr. H-E-W-, who claimed that the Beneficiary's research had \"a significant impact in my clinical care\" and \"received much commentary and widespread discussion.\" The Petitioner also referenced evidence indicating that the Beneficiary's work \"has been cited multiple times.\" The Petitioner argued that the Beneficiary's research and findings were published in journals and highlighted their rankings.\n\nRegarding critical employment, the Petitioner submitted a letter from Dr. B-K-S-, who described the Beneficiary's responsibilities, which included performing independent research around vision impairment and cognitive decline, training medical students, and organizing meetings. A supplemental letter from Dr. B-K-S- stated the Beneficiary \"was an integral and critical part of my team.\" The Petitioner also submitted a letter from Dr. J-R-E-, who indicated the Beneficiary \"has played an instrumental role in planning a large longitudinal population-based study\" and \"is currently engaged in the creation of a survey instrument.\" A letter from Dr. J-M-L-, a partner for the Petitioner, discussed the Beneficiary's future role, stating the Beneficiary \"will hold a critical and essential role.\"\n\nIn summary, the Petitioner presented evidence related to the Beneficiary's research impact, citation count, and specific roles within various institutions and projects.",
+  "factsLeakage": [],
+  "grounds": [
+    {
+      "prong": "criteria",
+      "criterion": "original_contributions",
+      "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+      "summary": "The evidence failed to demonstrate that the Beneficiary's original work rose to a level of major significance in the field.",
+      "quote": "In the absence of specific information detailing the impact or influence of the Petitioner's research, the letters do not demonstrate that the work has risen to a level of major significance in the field.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "critical_employment",
+      "reasonCode": "ROLE_NOT_CRITICAL",
+      "summary": "The evidence did not contain specific information explaining how the Beneficiary contributed in a way that was of significant importance to the activities or that the Beneficiary was integral to the institute.",
+      "quote": "Although Dr. B-K-S- described the Beneficiary's various responsibilities, the letter does not contain specific information explaining how the Beneficiary contributed in a way that was of significant importance to the activities or that the Beneficiary was integral to the institute.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "critical_employment",
+      "reasonCode": "PETITIONER_NOT_QUALIFYING",
+      "summary": "The Petitioner failed to establish that the Beneficiary had been employed, as one letter discussed the Beneficiary's future role.",
+      "quote": "The regulation 8 C.F.R. § 214.2(o)(3)(iii)(B)(7) requires '[e]vidence that the alien has been employed' rather than evidence that the Beneficiary will be employed; therefore, the Petitioner did not establish that its intended employment of the Beneficiary qualifies for this criterion.",
+      "dispositive": true,
+      "quoteVerified": true
+    }
+  ],
+  "reviewed": false,
+  "reviewNotes": ""
+}

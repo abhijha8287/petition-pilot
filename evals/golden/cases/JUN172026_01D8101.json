@@ -1,0 +1,40 @@
+{
+  "id": "JUN172026_01D8101",
+  "date": "2026-06-17",
+  "sourceUrl": "https://www.uscis.gov/sites/default/files/err/D8-Aliens-of-Extraordinary-Ability-or-Achievement_O-1_O-2_and_O-3/Decisions_Issued_in_2026/JUN172026_01D8101.pdf",
+  "split": "holdout_2026",
+  "field": "robotics and welding specialist",
+  "facts": "The Petitioner, an automation/repair and maintenance business, sought to classify the Beneficiary as a robotics and welding specialist of extraordinary ability. The Petitioner claimed that the Beneficiary's achievements demonstrated sustained national or international acclaim. The record included evidence submitted under the criteria of membership, original contributions, and scholarly articles.\n\nRegarding membership, the Petitioner provided a certificate stating that the Beneficiary was admitted as an associate, joining an exclusive network of professionals and companies committed to excellence, innovation, and technological advancement in the welding sector. The Petitioner also submitted screenshots from the association's website and a document titled, \"IIW - International Institute of Welding Qualification & Certification Systems for Personal.\"\n\nFor original contributions, the Petitioner submitted recommendation letters praising the Beneficiary's skills and abilities. One letter mentioned that the Beneficiary delivered a training session at an \"Open Housing Welding and Machining Event.\" The Petitioner also submitted a program for the welding seminar. The Petitioner argued that the Beneficiary's methodologies, as documented in scholarly articles, were codified, analyzed, and taught as models for industrial competitiveness.\n\nIn addition, the Petitioner noted that the Beneficiary's publications were accepted under the \"authorship of scholarly articles\" criterion. The Petitioner asserted that the Beneficiary's work constituted original contributions of major significance in the field.",
+  "factsLeakage": [],
+  "grounds": [
+    {
+      "prong": "criteria",
+      "criterion": "membership",
+      "reasonCode": "MEMBERSHIP_NOT_SELECTIVE",
+      "summary": "The evidence did not indicate that the association required outstanding achievements of its members, as judged by recognized national or international experts.",
+      "quote": "The evidence, however, does not indicate the requirements for admission as an associate inc=]let alone reflecting associate membership requires outstanding achievements of its members, as judged by recognized national or international experts.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "original_contributions",
+      "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+      "summary": "The Petitioner did not establish how the Beneficiary's work influenced or impacted the overall field in a majorly significant manner.",
+      "quote": "Without supporting documentation showing the impact, influence, or effect in the field in a majorly significant manner, the Petitioner did not establish that simply presenting at a welding seminar indicates original contributions of major significance in the field.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "final_merits",
+      "criterion": null,
+      "reasonCode": "FINAL_MERITS_NOT_MET",
+      "summary": "The Petitioner did not establish the Beneficiary meets the requirement of sustained national or international acclaim.",
+      "quote": "Consequently, the Petitioner has not established the Beneficiary's eligibility for the 0-1 visa classification as an alien of extraordinary ability.",
+      "dispositive": true,
+      "quoteVerified": true
+    }
+  ],
+  "reviewed": false,
+  "reviewNotes": ""
+}

@@ -1,0 +1,31 @@
+{
+  "id": "JAN242023_01D8101",
+  "date": "2023-01-24",
+  "sourceUrl": "https://www.uscis.gov/sites/default/files/err/D8-Aliens-of-Extraordinary-Ability-or-Achievement_O-1_O-2_and_O-3/Decisions_Issued_in_2023/JAN242023_01D8101.pdf",
+  "split": "dev_2023_2025",
+  "field": "athletics",
+  "facts": "The petitioner sought to classify the beneficiary, a basketball player, as an O-1 nonimmigrant worker. The petition claimed that the beneficiary possessed extraordinary ability in the field of athletics, demonstrating sustained national or international acclaim. The petitioner submitted documentation to establish eligibility, which required either a major, internationally recognized award or the submission of evidence meeting at least three of eight alternative criteria. The record includes a contract or a summary of the terms of the oral agreement between the petitioner and the beneficiary. The petition also included an explanation of the nature of the events or activities, along with corresponding dates and any available itinerary. The petitioner asserted that the beneficiary met the required evidentiary standards for O-1 classification.",
+  "factsLeakage": [],
+  "grounds": [
+    {
+      "prong": "requirement",
+      "criterion": null,
+      "reasonCode": "PROCEDURAL",
+      "summary": "The AAO declined to address the petitioner's argument regarding the satisfaction of the three evidentiary categories because the grounds were deemed unnecessary to the results reached.",
+      "quote": "Moreover, since the identified bases for denial are dispositive of the Petitioner's appeal, we decline to reach and hereby reserve the Petitioner's appellate arguments regarding the Beneficiary's satisfaction of at least three categories of evidence.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "requirement",
+      "criterion": null,
+      "reasonCode": "PROCEDURAL",
+      "summary": "The AAO noted that the petitioner did not dispute or contest the Director's decision regarding the contractual requirement and the nature of the beneficiary's events or activities, leading to the waiver of those issues.",
+      "quote": "However, the Petitioner does not dispute or contest the Director's decision regarding the contractual requirement and the nature of the Beneficiary's events or activities.",
+      "dispositive": true,
+      "quoteVerified": true
+    }
+  ],
+  "reviewed": false,
+  "reviewNotes": ""
+}

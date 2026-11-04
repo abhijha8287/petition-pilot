@@ -1,0 +1,40 @@
+{
+  "id": "APR272026_01D8101",
+  "date": "2026-04-27",
+  "sourceUrl": "https://www.uscis.gov/sites/default/files/err/D8-Aliens-of-Extraordinary-Ability-or-Achievement_O-1_O-2_and_O-3/Decisions_Issued_in_2026/APR272026_01D8101.pdf",
+  "split": "holdout_2026",
+  "field": "Business",
+  "facts": "The Petitioner, a technology company, sought to classify the Beneficiary as an alien of extraordinary ability in the business field. The Petitioner submitted an employment offer letter, which stated the Beneficiary would serve as Vice President of Strategy and Business Development for two years, with compensation including an annual wage of $100,000, commission, stock grant, and bonus. The Petitioner claimed the Beneficiary met the initial evidentiary requirements by submitting evidence related to Published Material, Original Contributions, and Critical Employment.\n\nRegarding Published Material, the record included an August 2021 Sport Aviation article that discussed the work of a European engine company and mentioned the Beneficiary as its chief operating officer. The Petitioner maintained that this article constituted a professional publication.\n\nFor Original Contributions, the Petitioner submitted letters of support from the president of I U IGeorgia, a retired major general of U.S. Air Force, and the president and chief executive officer of I. These letters praised the Beneficiary's technical expertise and business acumen. The Petitioner also cited a June 2022 letter from I I, which claimed that the company collaborated to market and sell a proprietary single stroke engine operating with a unique propulsion system to the U.S. Department of Defense.\n\nFor Critical Employment, the Petitioner submitted letters from the president of the chamber of Commerce and the chief executive officer of I. These letters praised the Beneficiary's contributions to the petitioning entity. The Petitioner also provided an August 2025 letter from the chief executive officer of the petitioning entity, stating the Beneficiary currently served as Vice President of Strategy and Business Development.",
+  "factsLeakage": [],
+  "grounds": [
+    {
+      "prong": "criteria",
+      "criterion": "published_material",
+      "reasonCode": "MEDIA_STATUS_UNPROVEN",
+      "summary": "The submitted article was not shown to be a professional publication because the intended audience was not established.",
+      "quote": "Even if we were to accept that the article, which only references the Beneficiary a few times, is about the Beneficiary, relating to his work in the field of business, the record is insufficient to substantiate the Petitioner's claim that Sport Aviation is a professional publication.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "original_contributions",
+      "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+      "summary": "The evidence failed to demonstrate that the Beneficiary's contributions were of major significance in the field, given the limited level of adoption of the technology.",
+      "quote": "The limited level of adoption of the technology is insufficient to demonstrate major significance in the field.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "critical_employment",
+      "reasonCode": "REPUTATION_UNPROVEN",
+      "summary": "The letters submitted did not establish that the petitioning entity qualified as an organization or establishment that has a distinguished reputation.",
+      "quote": "The letters from._______----.-____do not establish! I has a distinguished reputation, as required under this criterion.",
+      "dispositive": true,
+      "quoteVerified": true
+    }
+  ],
+  "reviewed": false,
+  "reviewNotes": ""
+}

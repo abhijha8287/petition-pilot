@@ -1,0 +1,58 @@
+{
+  "id": "DEC112025_01D8101",
+  "date": "2025-12-11",
+  "sourceUrl": "https://www.uscis.gov/sites/default/files/err/D8-Aliens-of-Extraordinary-Ability-or-Achievement_O-1_O-2_and_O-3/Decisions_Issued_in_2025/DEC112025_01D8101.pdf",
+  "split": "dev_2023_2025",
+  "field": "Chief Technology Officer",
+  "facts": "The Petitioner, a healthcare artificial intelligence business, sought to classify the Beneficiary as a chief technology officer of extraordinary ability. The Petitioner submitted evidence to demonstrate the Beneficiary's sustained national or international acclaim. The Beneficiary's role was co-founder and chief technology officer for the Petitioner.\n\nRegarding awards, the Petitioner submitted Post-Money Valuation Cap documentation reflecting $250K investments from investors T-M- and A-K-. The Petitioner also provided a joint letter from T-M- and A-K- claiming they 'awarded [the Beneficiary] venture capital funding.' Additionally, the Petitioner submitted an October 2024 letter from G-T-, president and CEO of I I, stating that the Beneficiary 'received $500,000 in venture funding' in connection with I I's acceptance into a program.\n\nFor membership, the Petitioner provided a letter from J-F-, general partner at YC, who stated that YC is an 'elite network of entrepreneurs' and that the application process is 'extremely competitive.' J-F- also stated that '[the Beneficiary] and his co founding team were accepted into the YC program.'\n\nIn the area of published material, the Petitioner submitted two articles posted on physiciansweekly.com and healthcare.com referencing a study co-authored by the Beneficiary. The Petitioner also submitted three articles posted on amazon.science.com about the 'I~----~I I' along with the Beneficiary's co-authored article.\n\nFor original contributions, the Petitioner claimed the 'measurable impact of [the Beneficiary's] publication in JAMA Network Open.' The Petitioner provided Google Scholar information showing the article received 44 citations and Altmetrics data, including an 'Altmetric Attention Score of 59' and claims that the article was 'in the 97th percentile.' The Petitioner also provided letters from P-R- and T-M- and A-K- generally asserting that the Beneficiary's 'publications have received dozens of citations, earned strong Altmetric scores, and been featured in industry media.'\n\nFinally, regarding capacity, the Petitioner asserted that the Beneficiary served in a critical or essential capacity for the Petitioner, and the Petitioner provided evidence of securing capital venture funding from three investors totaling $250K.",
+  "factsLeakage": [],
+  "grounds": [
+    {
+      "prong": "criteria",
+      "criterion": "awards",
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The venture capital funding provided did not qualify as a prize or award because it was an exchange of value between parties, not an honor bestowed without reciprocal obligation.",
+      "quote": "a prize or award does not typically consist of an exchange between parties; rather it is generally an honor that one party gives to another without reciprocal obligation.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "membership",
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The Petitioner failed to demonstrate that the Beneficiary's membership required outstanding achievements, as the letter discussed requirements for potential or prospective benefits rather than a determination of past outstanding achievements.",
+      "quote": "J-F-'s letter discussed the requirements for potential or prospective benefits rather than a determination of past outstanding achievements.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "published_material",
+      "reasonCode": "NOT_ABOUT_BENEFICIARY",
+      "summary": "The submitted articles were not about the Beneficiary, but rather about the study or the competition, and the Beneficiary was never mentioned in the articles.",
+      "quote": "Here, the articles are not about the Beneficiary but regarding the study. In fact, the Beneficiary is never mentioned, and the articles do not qualify as published material about him.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "original_contributions",
+      "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+      "summary": "The Petitioner failed to contextualize the Google Scholar or Altmetrics information to demonstrate that the article represented a contribution of major significance in the field.",
+      "quote": "Without farther information, including the relevance of the Altmetrics statistics and the factors contributing to the data, the Petitioner did not establish that the Beneficiary's article qualifies as a contribution of major significance in the field, consistent with this regulatory criterion.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "critical_employment",
+      "reasonCode": "REPUTATION_UNPROVEN",
+      "summary": "The Petitioner failed to demonstrate that the organization possessed a distinguished reputation, given that it was a startup established only two months prior to the filing.",
+      "quote": "The Petitioner did not demonstrate how in only two months it was able to acquire a distinguished reputation.",
+      "dispositive": true,
+      "quoteVerified": true
+    }
+  ],
+  "reviewed": false,
+  "reviewNotes": ""
+}

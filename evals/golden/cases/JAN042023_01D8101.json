@@ -1,0 +1,53 @@
+{
+  "id": "JAN042023_01D8101",
+  "date": "2023-01-04",
+  "sourceUrl": "https://www.uscis.gov/sites/default/files/err/D8-Aliens-of-Extraordinary-Ability-or-Achievement_O-1_O-2_and_O-3/Decisions_Issued_in_2023/JAN042023_01D8101.pdf",
+  "split": "dev_2023_2025",
+  "field": "Education",
+  "facts": "The Petitioner, an education counseling business, sought to classify the Beneficiary, a school and career counselor, as a person of extraordinary ability. The Petitioner claimed that the Beneficiary met the requirements for sustained national or international acclaim. The Petitioner submitted evidence to demonstrate the Beneficiary's original scientific, scholarly, or business-related contributions of major significance. This evidence included testimonial letters from a Director of the Youth Career Connect Program, a business professor at College of Business at University of I I, and a vice chairman of rovides. The Petitioner also submitted a letter from the membership director of I, which described the organization as a \"premier association and an established peer group of advertising creatives and students of the industry.\" The Petitioner claimed the Beneficiary had commanded a high salary, submitting annual wage data for \"School and Career Counselors\" showing a median wage of $56,310 in May 2018. The Petitioner also submitted a letter stating that the Beneficiary was qualified and approved for a raise of annual salary to $72,000, effective as of January 1, 2020. The Petitioner also submitted two patent applications, pertaining to a \"multi-media educational/training APP,\" filed with the Chinese Intellectual Property Bureau in September 2019. The Petitioner also submitted a letter from a membership director of I raising no objection to the requested visa classification, asserting that the organization was an established peer group.\n\nIn addition to the above, the Petitioner claimed the Beneficiary's authorship of scholarly articles in professional journals. The Petitioner also sought to establish the advisory opinion requirement, referencing the submitted testimonial letters.",
+  "factsLeakage": [
+    "director",
+    "director",
+    "director"
+  ],
+  "grounds": [
+    {
+      "prong": "criteria",
+      "criterion": "original_contributions",
+      "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+      "summary": "The submitted testimonial letters failed to demonstrate that the Beneficiary's contributions were of major significance to the field.",
+      "quote": "the above letters do not establish that the impact of the Beneficiary's student mentoring is consistent with contributions of major significance in the field.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "high_remuneration",
+      "reasonCode": "NO_COMPARATIVE_WAGE_DATA",
+      "summary": "The evidence provided regarding the Beneficiary's compensation was deemed conditional and speculative, failing to establish a high salary relative to others in the field.",
+      "quote": "The Director concluded that based on the evidence provided by the Petitioner, the Beneficiary will earn the average salary compared to other school and career counselors, and the evidence regarding \"additional compensation appears to be conditional and speculative.\"",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": null,
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The Petitioner failed to assert or demonstrate that a particular regulatory criterion did not readily apply to the Beneficiary's occupation, which was a prerequisite for using comparable evidence.",
+      "quote": "Here, the Petitioner did not assert or demonstrate that a particular regulatory criterion does not readily apply to the Beneficiary's occupation as a school and career counselor.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "requirement",
+      "criterion": null,
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The submitted consultation did not reflect a peer group in the area of the Beneficiary's occupation (education).",
+      "quote": "The record does not reflect that l is a peer group in the area of education, the Beneficiary's occupation.",
+      "dispositive": true,
+      "quoteVerified": true
+    }
+  ],
+  "reviewed": false,
+  "reviewNotes": ""
+}

@@ -1,0 +1,49 @@
+{
+  "id": "APR022026_01D8101",
+  "date": "2026-04-02",
+  "sourceUrl": "https://www.uscis.gov/sites/default/files/err/D8-Aliens-of-Extraordinary-Ability-or-Achievement_O-1_O-2_and_O-3/Decisions_Issued_in_2026/APR022026_01D8101.pdf",
+  "split": "holdout_2026",
+  "field": "global engagement programs coordinator",
+  "facts": "The Petitioner, a university, sought to classify the Beneficiary as a global engagement programs coordinator of extraordinary ability. The petition claimed that the Beneficiary met the requirements for O-1 nonimmigrant classification through sustained national or international acclaim.\n\nThe Petitioner submitted evidence related to published material, including three articles from gulfnews.com, zawya.com, and menafn.com. The articles were presented to demonstrate the Beneficiary's work in the field. For gulfnews.com, the article quoted the Beneficiary. For zawya.com, the Beneficiary was mentioned one time in the \"References\" section, and for menafn.com, the Beneficiary was mentioned one time as the developer of the survey. The Petitioner provided metrics, noting that gulfnews.com has \"8.27 million monthly average page views,\" zawya.com has \"over 573,000 monthly average page views,\" and menafn.com has \"over 225,000 monthly average page views.\" The Petitioner also provided global rankings for gulfnews.com and zawya.com.\n\nIn addition, the Petitioner claimed original contributions of major significance. The Petitioner provided evidence that the Beneficiary was invited to present her original research at three international conferences. Regarding the Beneficiary's citation record, the Petitioner submitted Google Scholar profiles, with the most recent profile reflecting 89 citations to co-authored publications, and three highest-cited articles receiving 46, 20, and 16 citations, respectively. The Petitioner also provided 2024 data from Clarivate Analytics (InCites Essential Science Indicators), which the Petitioner contended placed the Beneficiary among the top 10% of all cited researchers in the field of social sciences.\n\nFinally, the Petitioner submitted recommendation letters. These letters generally highlighted the Beneficiary's work and opined on its importance, with one letter stating that \"policymakers and cultural institutions rely on these findings to develop more nuanced strategies for digital engagement.\"",
+  "factsLeakage": [],
+  "grounds": [
+    {
+      "prong": "criteria",
+      "criterion": "published_material",
+      "reasonCode": "NOT_ABOUT_BENEFICIARY",
+      "summary": "The submitted articles were not substantive material about the Beneficiary's work, but rather cited or referenced her.",
+      "quote": "As it relates to zawya.com, the article reports about the... and the Beneficiary is mentioned one time in the \"References\" section; the article does not constitute published material about the Beneficiary.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "original_contributions",
+      "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+      "summary": "The evidence of the Beneficiary's presentations at international conferences did not contextualize or demonstrate the impact of her work in the field.",
+      "quote": "Although the Petitioner offered evidence of the Beneficiary's presentations at three conferences, the Petitioner did not contextualize or show the impact of her presentations in the field.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "original_contributions",
+      "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+      "summary": "The Petitioner failed to demonstrate how the Beneficiary's cumulative citation numbers represented contributions of major significance in the field.",
+      "quote": "The Petitioner did not demonstrate how the Beneficiary's cumulative number of citations represents contributions of major significance in the field.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "original_contributions",
+      "reasonCode": "LETTERS_CONCLUSORY",
+      "summary": "The recommendation letters were general and conclusory, failing to elaborate on how the Beneficiary's work was considered majorly significant in the field.",
+      "quote": "Here, the letters point to the Beneficiary's work but do not demonstrate how the field views it as original contributions of major significance in the field, such as widespread impact or influence.",
+      "dispositive": true,
+      "quoteVerified": true
+    }
+  ],
+  "reviewed": false,
+  "reviewNotes": ""
+}

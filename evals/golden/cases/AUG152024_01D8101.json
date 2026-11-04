@@ -1,0 +1,51 @@
+{
+  "id": "AUG152024_01D8101",
+  "date": "2024-08-15",
+  "sourceUrl": "https://www.uscis.gov/sites/default/files/err/D8-Aliens-of-Extraordinary-Ability-or-Achievement_O-1_O-2_and_O-3/Decisions_Issued_in_2024/AUG152024_01D8101.pdf",
+  "split": "dev_2023_2025",
+  "field": "dance instructor",
+  "facts": "The Petitioner, a dance studio, sought to classify the Beneficiary, a dance instructor, as an individual of extraordinary ability in athletics. The Petitioner submitted evidence to satisfy the alternative regulatory criteria. Regarding judging, the Petitioner provided two cards indicating the Beneficiary was registered in Italy as an \"International Adjudicator Qualified in Ballroom (Standard) & Latin\" in 2019 and 2020. The Petitioner also submitted a screenshot from Federdanza.it, which indicated the Beneficiary renewed registration in 2023 with the Italian DanceSport Federation as an \"Extraordinary technician and judge.\"\n\nFor original contributions, the Petitioner claimed the Beneficiary's involvement as the director and choreographer of a musical show produced by the dance school, which was performed in Italy in 2019. The Petitioner submitted a promotional poster, a flyer, and a program of the performance. The record also contained two articles discussing upcoming events, including an uncaptioned photograph of the Beneficiary, and articles from Italian print publications, *La Nazione* and *Gazzettadellaspezia.it*, which mentioned the show. An undated recommendation letter from choreographer L-S- was also provided.\n\nRegarding critical employment, the Petitioner argued the Beneficiary was employed in a critical capacity for the T-V-L- dance training camp. The Petitioner submitted a promotional flyer advertising the Beneficiary's appearance as a \"special guest\" at a three-day session in 2019. For high remuneration, the Petitioner submitted a job offer letter for the Beneficiary with an annual salary of $60,000. The Petitioner also provided screenshots from onetonline.org showing that \"Dancers\" in the NY-NJ-PA area earn a median wage of $26.08 per hour, with the 75th percentile earning $36.84 and the 90th percentile earning $51.01.",
+  "factsLeakage": [
+    "director"
+  ],
+  "grounds": [
+    {
+      "prong": "criteria",
+      "criterion": "judging",
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The evidence provided did not demonstrate that the Beneficiary participated as a judge of the work of others at a specific event or competition.",
+      "quote": "This additional documentation does not identify any specific competitions in which the Beneficiary participated as a judge.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "original_contributions",
+      "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+      "summary": "The Petitioner failed to show that the Beneficiary's original work constituted a contribution of major significance in the dance field.",
+      "quote": "Here, his letter reflects how he values his collaborations with the Beneficiary, but he does not explain what the Beneficiary has contributed to the field and how those contributions are considered to be of major significance in the field.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "critical_employment",
+      "reasonCode": "REPUTATION_UNPROVEN",
+      "summary": "The Petitioner did not establish the distinguished stature of the organizations that employed the Beneficiary.",
+      "quote": "The Petitioner did not submit evidence that demonstrates that either T-B-D- dance school or T-V-L- dance training camp enjoys a distinguished reputation.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "high_remuneration",
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The Petitioner failed to demonstrate that the Beneficiary's compensation would be a high one, only an above average or medium one.",
+      "quote": "Therefore, the Petitioner has not shown the Beneficiary's salary would be a high one, only an above average or medium one.",
+      "dispositive": true,
+      "quoteVerified": true
+    }
+  ],
+  "reviewed": false,
+  "reviewNotes": ""
+}

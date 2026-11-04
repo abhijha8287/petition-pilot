@@ -1,0 +1,49 @@
+{
+  "id": "MAR242026_01D8101",
+  "date": "2026-03-24",
+  "sourceUrl": "https://www.uscis.gov/sites/default/files/err/D8-Aliens-of-Extraordinary-Ability-or-Achievement_O-1_O-2_and_O-3/Decisions_Issued_in_2026/MAR242026_01D8101.pdf",
+  "split": "holdout_2026",
+  "field": "Science/Pharmaceuticals",
+  "facts": "The Petitioner, a pharmaceutical business, sought to classify the Beneficiary as a senior scientist of extraordinary ability. The Petitioner claimed that the Beneficiary met the requirements for O-1 nonimmigrant classification through sustained national or international acclaim.\n\nIn support of the petition, the Petitioner submitted evidence across several categories. Regarding Awards, the Petitioner provided screenshots from a website reflecting that the Beneficiary was the winner in the I I category for I I at the D Fall Meeting 2018. The Petitioner also submitted a confirmation letter of the Beneficiary's postdoctoral fellowship from I I, which stated that the fellowships were determined to cover the costs of living to the most promising candidates.\n\nFor the Judging criterion, the Petitioner submitted emails from third parties requesting the Beneficiary to conduct manuscript reviews. These emails included dates such as April 2, 2015, and April 28, 2022, and the Beneficiary's response agreeing to review a paper on July 28, 2015.\n\nFor Original Contributions, the Petitioner provided evidence of the Beneficiary's presentations at several conferences, including winning best poster. The Petitioner also provided co-authored articles indicating funding sources from the U.S. National Institute of Health and the U.S. National Science Foundation. The Petitioner submitted Google Scholar profiles from March 2025 and July 2025, which reflected 193 citations to co-authored publications. Furthermore, the Petitioner provided 2024 data from Clarivate Analytics (InCites Essential Science Indicators), which the Petitioner contended placed the Beneficiary among the top 1% of all cited researchers in the field of chemistry. The Petitioner also submitted detailed letters from experts in the field, which highlighted the Beneficiary's work and indicated implementation of the findings into their own work.",
+  "factsLeakage": [],
+  "grounds": [
+    {
+      "prong": "criteria",
+      "criterion": "awards",
+      "reasonCode": "AWARD_RECOGNITION_UNPROVEN",
+      "summary": "The award and fellowship submitted were not shown to be nationally or internationally recognized for excellence in the field.",
+      "quote": "However, none of the material is about the Beneficiary's particular ...",
+      "dispositive": true,
+      "quoteVerified": false
+    },
+    {
+      "prong": "criteria",
+      "criterion": "judging",
+      "reasonCode": "JUDGING_NOT_PERFORMED",
+      "summary": "The evidence provided only reflected requests for manuscript reviews, and did not demonstrate that the Beneficiary completed the judging of the work of others.",
+      "quote": "Without evidence indicating that the Beneficiary completed the manuscript or journal article reviews, the Petitioner did not demonstrate that the Beneficiary participated as a judge of the work of others.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "original_contributions",
+      "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+      "summary": "The Petitioner failed to contextualize or show the impact of the Beneficiary's presentations or funding in a majorly significant manner.",
+      "quote": "The Petitioner did not demonstrate, for example, that any of her presentations resulted in majorly significant contributions in the field.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "original_contributions",
+      "reasonCode": "LETTERS_CONCLUSORY",
+      "summary": "The expert letters were not sufficiently persuasive because they did not elaborate on how the work was considered to be majorly significant in the field.",
+      "quote": "Here, the letters point to the Petitioner's work but do not demonstrate how the field views it as original contributions of major significance in the field, such as widespread impact or influence.",
+      "dispositive": true,
+      "quoteVerified": true
+    }
+  ],
+  "reviewed": false,
+  "reviewNotes": ""
+}

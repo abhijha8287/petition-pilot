@@ -1,0 +1,49 @@
+{
+  "id": "AUG132024_01D8101",
+  "date": "2024-08-13",
+  "sourceUrl": "https://www.uscis.gov/sites/default/files/err/D8-Aliens-of-Extraordinary-Ability-or-Achievement_O-1_O-2_and_O-3/Decisions_Issued_in_2024/AUG132024_01D8101.pdf",
+  "split": "dev_2023_2025",
+  "field": "dance instructor",
+  "facts": "The Petitioner, a dance studio, sought to classify the Beneficiary, a dance instructor, as an individual of extraordinary ability. The Petitioner submitted evidence to support the criteria of original contributions, critical employment, and high remuneration. Regarding original contributions, the Petitioner provided a promotional poster, a flyer, and a program of a performance held in Italy in 2019. The record also contained two articles from Italian print publications, La Nazione and Gazzettadellaspezia.it, which discussed upcoming events and included an uncaptioned photograph of the Beneficiary. The Petitioner also submitted an undated recommendation letter from dancer and choreographer L-S-, who stated he and the Beneficiary worked together on dance camps and choreography. For critical employment, the Petitioner claimed the Beneficiary participated in a two-day charity sport event and was employed at the T-V-L- dance training camp. The Petitioner submitted a promotional flyer for the T-V-L- dance training camp, which listed the Beneficiary as a \"special guest\" in 2019. For high remuneration, the Petitioner provided a job offer letter for the Beneficiary's position as a dance instructor, reflecting an annual salary of $60,000. The Petitioner also submitted screenshots from onetonline.org showing median and 75th percentile wages for \"Dancers\" in the NY-NJ-PA area.",
+  "factsLeakage": [],
+  "grounds": [
+    {
+      "prong": "criteria",
+      "criterion": "original_contributions",
+      "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+      "summary": "The submitted materials failed to demonstrate that the Beneficiary's work constituted a contribution of major significance in the dance field.",
+      "quote": "For instance, the letter does not provide specific examples of how the Beneficiary's original work has substantially impacted the dance field, has significantly influenced the work of other dancers or dance instructors in the field, or otherwise equates to original contributions of \"major significance\" in the field.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "critical_employment",
+      "reasonCode": "ROLE_NOT_CRITICAL",
+      "summary": "The Petitioner failed to demonstrate that the Beneficiary's role in the charity sport event or the dance show was critical or essential to the organization's activities.",
+      "quote": "The Petitioner has not demonstrated how either a charity sport event or a show equates to an \"organization\" or \"establishment,\" and how the Beneficiary's role as a dancer in a charity sport event or a dance instructor/director/choreographer in a show rises to the level of a critical or essential role for the production company of the charity sport event/show.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "critical_employment",
+      "reasonCode": "REPUTATION_UNPROVEN",
+      "summary": "The Petitioner did not establish the distinguished stature of the organizations that employed the Beneficiary.",
+      "quote": "But the camp's self-promotional materials cannot establish its reputation in the absence of other corroborating information in the record that documents the distinguished stature of the organization.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "high_remuneration",
+      "reasonCode": "NO_COMPARATIVE_WAGE_DATA",
+      "summary": "The Petitioner failed to establish that the Beneficiary's compensation was high relative to others working in similar occupations in the field.",
+      "quote": "The Petitioner did not show that the occupation of a dance instructor is the same as a dancer. Therefore, the Petitioner did not establish that the comparative salary data for dancers is relative to the earnings of dance instructors.",
+      "dispositive": true,
+      "quoteVerified": true
+    }
+  ],
+  "reviewed": false,
+  "reviewNotes": ""
+}

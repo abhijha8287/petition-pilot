@@ -1,0 +1,40 @@
+{
+  "id": "FEB142023_01D8101",
+  "date": "2023-02-14",
+  "sourceUrl": "https://www.uscis.gov/sites/default/files/err/D8-Aliens-of-Extraordinary-Ability-or-Achievement_O-1_O-2_and_O-3/Decisions_Issued_in_2023/FEB142023_01D8101.pdf",
+  "split": "dev_2023_2025",
+  "field": "athletics",
+  "facts": "The Petitioner, a sports equipment and athlete management business, sought to classify the Beneficiary, a sumo wrestler, as an individual of extraordinary ability. The petition claimed that the Beneficiary met the requirements for O-1 nonimmigrant status by demonstrating sustained national or international acclaim through extensive documentation. The Petitioner claimed eligibility under the membership criterion, asserting that the Beneficiary was a member of the Egyptian National Team (ENT) through the Egyptian Judo, Aikido, and Sumo Federation (EJASF). To support this claim, the Petitioner submitted a letter from A-A-M-A-S-, which described the rigorous standards for ENT membership, including the requirement to medal in various competitions to maintain a place on the team. The Petitioner also asserted that the ENT was a prestigious organization that sent members to the Olympics. The Petitioner claimed eligibility under the published material criterion, asserting that the Beneficiary had been featured in Al-Ahram. The record included three translated articles from Al-Ahram, which mentioned the Beneficiary as a participant in wrestling championships. Additionally, the Petitioner submitted screenshots from the U.S. Sumo Federation and USA Sumo's social media and websites, claiming these were major trade publications. The Petitioner also referenced an interview conducted by NTD Television after the initial filing date.",
+  "factsLeakage": [],
+  "grounds": [
+    {
+      "prong": "criteria",
+      "criterion": "membership",
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The evidence failed to demonstrate that the membership in the Egyptian National Team (ENT) was judged by recognized national or international experts.",
+      "quote": "In fact, based on the letter's content, ENT's membership is based on medaling in competitions rather than recognized national or international experts judging outstanding achievements for membership.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "published_material",
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The submitted translated articles did not include the required dates and authors, and they did not reflect published material about the Beneficiary.",
+      "quote": "The translations, however, do not include the required dates and authors of the material. In fact, the translations do not show that Al-Ahram published the articles.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "published_material",
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The social media screenshots provided did not mention the Beneficiary, and some material appeared after the filing date.",
+      "quote": "However, none of the screenshots mention the Beneficiary. Although many of the screenshots contain photographs, none of the captions credit the Beneficiary, let alone show published material about him relating to his work.",
+      "dispositive": true,
+      "quoteVerified": true
+    }
+  ],
+  "reviewed": false,
+  "reviewNotes": ""
+}

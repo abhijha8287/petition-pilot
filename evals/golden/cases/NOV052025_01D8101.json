@@ -1,0 +1,44 @@
+{
+  "id": "NOV052025_01D8101",
+  "date": "2025-11-05",
+  "sourceUrl": "https://www.uscis.gov/sites/default/files/err/D8-Aliens-of-Extraordinary-Ability-or-Achievement_O-1_O-2_and_O-3/Decisions_Issued_in_2025/NOV052025_01D8101.pdf",
+  "split": "dev_2023_2025",
+  "field": "Athletics",
+  "facts": "The Petitioner, a fencing club, sought to classify the Beneficiary as a fencing master of extraordinary ability. The Petitioner claimed that the Beneficiary met the requirements for sustained national or international acclaim. The Petitioner submitted evidence across several criteria, including awards, judging, and original contributions.\n\nRegarding awards, the Petitioner presented letters from individuals who were coached by the Beneficiary and who credited the Beneficiary for being impactful in their athletic accomplishments. Regarding the judging criterion, the Petitioner initially claimed the Beneficiary was a director of the organization. The Petitioner later presented a letter from the Beneficiary asserting his participation in various juries. The Petitioner also claimed eligibility based on original contributions.\n\nThe administrative review focused on whether the Beneficiary satisfied at least three of the alternative regulatory criteria. The Petitioner submitted new evidence on appeal, which the reviewing body noted would not be considered for the first time on appeal.",
+  "factsLeakage": [
+    "director",
+    "appeal",
+    "appeal"
+  ],
+  "grounds": [
+    {
+      "prong": "criteria",
+      "criterion": "awards",
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The Petitioner claimed the Beneficiary's eligibility based on awards won by students, but did not establish that the Beneficiary himself received nationally or internationally recognized prizes or awards.",
+      "quote": "Although the Petitioner presented letters from individuals who were coached by the Beneficiary and credited him for being impactfol in their athletic accomplishments, the Petitioner did not establish that the Beneficiary received nationally or internationally recognized prizes or awards for excellence in the field.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "judging",
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The Petitioner presented a letter from the Beneficiary asserting participation in various juries, but failed to support the record with corroborating evidence.",
+      "quote": "In response to the request for evidence, the Petitioner presented a letter from the Beneficiary asserting his participation in various juries. However, the Petitioner did not support the record with evidence corroborating any of the Beneficiary's claims.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "original_contributions",
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The reviewing body declined to reach this ground because the Beneficiary had not established the initial requirement of meeting at least three alternative criteria.",
+      "quote": "Although the Petitioner claims the Beneficiary's eligibility for an additional criterion on appeal (original contributions under 8 C.F.R. § 214.2(0)(3)(iii)(B)(5)), we need not reach this ground because the Beneficiary cannot fulfill the initial evidentiary requirement of at least three under 8 C.F.R. § 214.2(o)(3)(iii)(B).",
+      "dispositive": false,
+      "quoteVerified": true
+    }
+  ],
+  "reviewed": false,
+  "reviewNotes": ""
+}

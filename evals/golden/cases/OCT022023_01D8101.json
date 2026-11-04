@@ -1,0 +1,49 @@
+{
+  "id": "OCT022023_01D8101",
+  "date": "2023-10-02",
+  "sourceUrl": "https://www.uscis.gov/sites/default/files/err/D8-Aliens-of-Extraordinary-Ability-or-Achievement_O-1_O-2_and_O-3/Decisions_Issued_in_2023/OCT022023_01D8101.pdf",
+  "split": "dev_2023_2025",
+  "field": "animal science researcher",
+  "facts": "The Petitioner, an agent, sought to classify the Beneficiary, an animal science researcher, as an individual of extraordinary ability. The petition claimed that the Beneficiary met the requirements for sustained national or international acclaim and extensive documentation. The Petitioner submitted an \"AGENT - RESEARCHER IN ANIMAL SCIENCE REPRESENTATION AGREEMENT,\" which was signed by both the Petitioner and the Beneficiary. The agreement stated that the Beneficiary retained the Petitioner for representation in contracts and negotiations as a RESEARCHER. The Petitioner agreed to negotiate contracts and agreements on the Beneficiary's behalf for the rendition of research services and agreed to use reasonable efforts to procure and negotiate employment for the Beneficiary as a Researcher in Animal Products. The Petitioner also provided an itinerary listing 19 anticipated events with organizations across the United States, spanning from September 2021 to April 2023. The Petitioner asserted that the agent agreement complied with the regulations regarding the arrangement of short-term employment. The Petitioner also asserted that the regulations did not require evidence to document an established relationship with the entities listed in the itinerary. The Petitioner indicated in Part 5 of Form 1-129 that the Beneficiary would earn $75,000 per year.",
+  "factsLeakage": [],
+  "grounds": [
+    {
+      "prong": "requirement",
+      "criterion": null,
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The Petitioner failed to provide contractual agreements between the Beneficiary and other employers, as required by regulation.",
+      "quote": "The regulation at 8 C.F.R. § 214.2(o)(2)(iv)(E)(l) requires \"[a]n agent performing the function of an employer must provide the contractual agreement between the agent and the beneficiary which specifies the wages offered and the other terms and conditions of employment.\"",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "requirement",
+      "criterion": null,
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The Petitioner did not demonstrate that the agreement showed the Petitioner performing the function of an employer.",
+      "quote": "In fact, the Petitioner did not demonstrate how the agreement shows the Petitioner performing the function of an employer under the regulation at 8 C.F.R. § 214.2(o)(2)(iv)(E)(l).",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "requirement",
+      "criterion": null,
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The Petitioner did not show that he was in business as an agent and was authorized to act for the other employers.",
+      "quote": "Further, the Petitioner did not show that he is in business as an agent and is authorized to act as an agent for the other employers for purposes of filing the petition.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "final_merits",
+      "criterion": null,
+      "reasonCode": "NEW_EVIDENCE_ON_APPEAL",
+      "summary": "The AAO declined to reach the Petitioner's appellate arguments regarding the sufficiency of the evidentiary criteria applicable to individuals of extraordinary ability.",
+      "quote": "We decline to reach and hereby reserve the Petitioner's other appellate arguments regarding the sufficiency of the evidentiary criteria applicable to individuals of extraordinary ability.",
+      "dispositive": false,
+      "quoteVerified": true
+    }
+  ],
+  "reviewed": false,
+  "reviewNotes": ""
+}

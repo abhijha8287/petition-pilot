@@ -1,0 +1,40 @@
+{
+  "id": "OCT172024_01D8101",
+  "date": "2024-10-17",
+  "sourceUrl": "https://www.uscis.gov/sites/default/files/err/D8-Aliens-of-Extraordinary-Ability-or-Achievement_O-1_O-2_and_O-3/Decisions_Issued_in_2024/OCT172024_01D8101.pdf",
+  "split": "dev_2023_2025",
+  "field": "athletics",
+  "facts": "The Petitioner, an agent, sought to classify the Beneficiary, a boxer and trainer, as an individual of extraordinary ability. The Petitioner claimed that the Beneficiary met the requirements for O-1 classification through sustained national or international acclaim. The record includes evidence submitted to support the claim. The Petitioner submitted documentation related to the Beneficiary's membership in the Armenian national boxing team, which is governed by the Armenian Boxing Federation and the Armenian Olympic Committee. This claim was supported by three letters asserting that the Beneficiary is a key member of the national team, a distinction bestowed upon a select few accomplished athletes worldwide. The Petitioner also claimed eligibility under the original contributions criterion, presenting a Master of Sports Certificate No. D 2016 awarded by the Republic of Armenia. This claim was supported by a screenshot from encyclopedia2.thefreedictionary.com, which provided information regarding the title's history in the USSR. Furthermore, the Petitioner claimed the Beneficiary commanded a high salary. This claim was supported by two reference documents from G-H-, President and General Secretary of the II, which stated the Beneficiary's fees were $25,000 per tournament, and that the Beneficiary's monthly income was $1000 USD in AMD, in addition to $8000 USD per tournament. The Petitioner also submitted screenshots from mintsalary.com showing the average Athlete salary in Armenia.",
+  "factsLeakage": [],
+  "grounds": [
+    {
+      "prong": "criteria",
+      "criterion": "membership",
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The submitted letters failed to elaborate on what constitutes outstanding achievements or reference controlling membership requirements, and did not show that national or international experts judged the membership.",
+      "quote": "Although the letters claim that athletes have to prove themselves \"to be worthy of the distinction,\" they do not further explain what constitutes being worthy of distinction and whether it qualifies as outstanding achievements.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "original_contributions",
+      "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+      "summary": "The Petitioner failed to demonstrate how the Beneficiary's Master of Sports title is comparable to a major, significant contribution in the field, or how the title impacted the boxing field in a majorly significant manner.",
+      "quote": "The Petitioner did not demonstrate how the Beneficiary's \"Master of Sport\" is comparable to a major, significant contribution in the field.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "high_remuneration",
+      "reasonCode": "NO_COMPARATIVE_WAGE_DATA",
+      "summary": "The Petitioner did not offer evidence comparing how much other boxers received for each fight in Armenia, which is required to establish that the Beneficiary commanded a high salary.",
+      "quote": "Because the Petitioner did not provide the appropriate evidence to compare the Beneficiary's salary to other boxers in Armenia, the Petitioner did not establish the Beneficiary commanded a high salary.",
+      "dispositive": true,
+      "quoteVerified": true
+    }
+  ],
+  "reviewed": false,
+  "reviewNotes": ""
+}

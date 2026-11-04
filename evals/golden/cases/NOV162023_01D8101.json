@@ -1,0 +1,31 @@
+{
+  "id": "NOV162023_01D8101",
+  "date": "2023-11-16",
+  "sourceUrl": "https://www.uscis.gov/sites/default/files/err/D8-Aliens-of-Extraordinary-Ability-or-Achievement_O-1_O-2_and_O-3/Decisions_Issued_in_2023/NOV162023_01D8101.pdf",
+  "split": "dev_2023_2025",
+  "field": "automotive engineering/test driving",
+  "facts": "The Petitioner sought to classify the Beneficiary, a master automotive technician and test driver, as a person of extraordinary ability. The petition claimed the Beneficiary met the requirements for the O-1 nonimmigrant classification. The Petitioner submitted evidence across several criteria, including awards, published material, and judging.\n\nRegarding awards, the record included documentation of the Beneficiary placing first in the 2017 Ecuadoria Tour of the Republic of Ecuador and third in the 200X Tour of the Republic of Ecuador. Regarding published material, the Petitioner submitted four foreign-language articles, dated 2022, published on Vistazo.com, Eltelegrafo.com, Quenoticias.com, and in the print publication Carburando. These articles mentioned the Beneficiary's degree in automotive engineering, his experience as the owner of a \"conventional and competition car workshop\" in Ecuador, and his work modifying a Honda Civic SI 2007 to meet international rally competition rules. Supporting evidence for Quenoticias.com included screenshots from Similar Web detailing global and country rankings and total visits.\n\nFor the judging criterion, the Petitioner provided a letter dated 2022 from J.C.R., coordinator of automotive engineering, which stated that the Beneficiary taught electronic injection, aerodynamics, and engine preparation at the College of Automotive Engineering in Ecuador between 2008 and 2010. The letter also indicated that the Beneficiary \"was invited to direct several graduation projects,\" which are required for students to obtain the engineering degree.",
+  "factsLeakage": [],
+  "grounds": [
+    {
+      "prong": "criteria",
+      "criterion": "published_material",
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The submitted foreign-language articles did not meet the specific requirements of the criterion because some lacked required authors, and the website evidence did not demonstrate status as a major medium.",
+      "quote": "As those materials do not include an author, we need not make a determination regarding their status as professional or major trade publications or other major media.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "judging",
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The evidence provided only showed that the Beneficiary was invited to direct graduation projects, but did not demonstrate that he actually performed the evaluation or judging of the work of others.",
+      "quote": "Here, the above letter does not demonstrate that the Beneficiary actually completed the judging of graduation projects of automotive engineering students.",
+      "dispositive": true,
+      "quoteVerified": true
+    }
+  ],
+  "reviewed": false,
+  "reviewNotes": ""
+}

@@ -1,0 +1,49 @@
+{
+  "id": "MAR172026_01D8101",
+  "date": "2026-03-17",
+  "sourceUrl": "https://www.uscis.gov/sites/default/files/err/D8-Aliens-of-Extraordinary-Ability-or-Achievement_O-1_O-2_and_O-3/Decisions_Issued_in_2026/MAR172026_01D8101.pdf",
+  "split": "holdout_2026",
+  "field": "Equestrian Eventing Trainer",
+  "facts": "The Petitioner, an equestrian eventing business, sought to classify the Beneficiary as an equestrian eventing trainer of extraordinary ability. The Petitioner submitted evidence to demonstrate that the Beneficiary satisfied at least three of the alternative regulatory criteria. The Petitioner provided evidence of the Beneficiary's membership with the United States Equestrian Federation (USEF) and the United States Eventing Association (USEA). The Petitioner stated that the USEA is the national and international regulator for the sport of eventing, enacting standards for training, competition, and judging. The Petitioner submitted screenshots from useventing.com detailing seven distinct levels of competition, ranging from Beginner Novice to Advanced. The Petitioner claimed the Beneficiary's competition at the Preliminary level demonstrated outstanding achievements. The Petitioner also submitted evidence consisting of horse trial and event results, photographs of ribbons, and photographs of the Beneficiary competing in various events. The Petitioner asserted that these results, correlated with the photographs, constituted published material reflecting the Beneficiary's outstanding training and work. The Petitioner argued that the membership requirements, which involve stringent national and international standards, required the Beneficiary to be judged by recognized national or international experts to attain the level of membership she held.",
+  "factsLeakage": [],
+  "grounds": [
+    {
+      "prong": "criteria",
+      "criterion": "membership",
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The Petitioner did not demonstrate that the Beneficiary's competition at the Preliminary level was equivalent to outstanding achievements as required by the regulatory criterion.",
+      "quote": "The Petitioner did not establish that a moderate examination in a regular training program to compete for two-star events rises to the level of outstanding achievements, consistent with this regulatory criterion.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "membership",
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The Petitioner failed to show that the membership was judged by recognized national or international experts.",
+      "quote": "the Petitioner did not demonstrate that nationally or internationally recognized experts judge the Preliminary level.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "published_material",
+      "reasonCode": "NOT_ABOUT_BENEFICIARY",
+      "summary": "The evidence submitted, consisting of trial and event results, reflected the Beneficiary mentioned among hundreds of competitors rather than published material specifically about the Beneficiary and her work.",
+      "quote": "Here, the evidence reflects trial and event results with the Beneficiary mentioned among hundreds of competitors rather than published material about the Beneficiary.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "published_material",
+      "reasonCode": "MEDIA_STATUS_UNPROVEN",
+      "summary": "The petitioner did not establish that the websites or results reflected professional or major trade publications or major media status.",
+      "quote": "The Petitioner did not establish that the Beneficiary received published material about her and her work in professional or major trade publication or major media.",
+      "dispositive": true,
+      "quoteVerified": true
+    }
+  ],
+  "reviewed": false,
+  "reviewNotes": ""
+}

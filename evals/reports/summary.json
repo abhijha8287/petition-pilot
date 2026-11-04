@@ -1,0 +1,346 @@
+{
+  "generatedAt": "2026-11-04T13:17:44.793Z",
+  "objectionRecall": {
+    "cases": 31,
+    "grounds": 100,
+    "recallStrict": {
+      "p": 0.55,
+      "lo": 0.45244427031643447,
+      "hi": 0.6438562489359654
+    },
+    "recallLenient": {
+      "p": 0.6,
+      "lo": 0.5020007846184025,
+      "hi": 0.6906002538863971
+    },
+    "casesFullyCaught": {
+      "p": 0.1935483870967742,
+      "lo": 0.09186883586347633,
+      "hi": 0.36280603555459856
+    },
+    "matchedPredictionRate": 0.36363636363636365,
+    "bySplit": {
+      "dev_2023_2025": {
+        "cases": 25,
+        "dispositiveGrounds": 81,
+        "recallStrict": {
+          "p": 0.5555555555555556,
+          "lo": 0.44727379297278025,
+          "hi": 0.6588062432358722
+        },
+        "recallLenient": {
+          "p": 0.5802469135802469,
+          "lo": 0.471534628313757,
+          "hi": 0.6816920906542965
+        },
+        "casesFullyCaught": {
+          "p": 0.2,
+          "lo": 0.08860454100652487,
+          "hi": 0.3913133553653824
+        },
+        "objectionsPerCase": 4.92,
+        "matchedPredictionRate": 0.35772357723577236,
+        "errors": 0
+      },
+      "holdout_2026": {
+        "cases": 6,
+        "dispositiveGrounds": 19,
+        "recallStrict": {
+          "p": 0.5263157894736842,
+          "lo": 0.31707482511825114,
+          "hi": 0.7267049451255145
+        },
+        "recallLenient": {
+          "p": 0.6842105263157895,
+          "lo": 0.4601001017506463,
+          "hi": 0.846358289955714
+        },
+        "casesFullyCaught": {
+          "p": 0.16666666666666666,
+          "lo": 0.03005258587173032,
+          "hi": 0.563509436563646
+        },
+        "objectionsPerCase": 3.3333333333333335,
+        "matchedPredictionRate": 0.4,
+        "errors": 0
+      }
+    },
+    "noLeakage": {
+      "cases": 24,
+      "dispositiveGrounds": 79,
+      "recallStrict": {
+        "p": 0.5443037974683544,
+        "lo": 0.4349813769749742,
+        "hi": 0.6495172324193399
+      },
+      "recallLenient": {
+        "p": 0.5949367088607594,
+        "lo": 0.48472952838439765,
+        "hi": 0.6963389203177036
+      },
+      "casesFullyCaught": {
+        "p": 0.20833333333333334,
+        "lo": 0.0924468910478809,
+        "hi": 0.40470844485235474
+      },
+      "objectionsPerCase": 4.083333333333333,
+      "matchedPredictionRate": 0.40816326530612246,
+      "errors": 0
+    },
+    "leakedCases": [
+      "AUG152024_01D8101",
+      "FEB252025_01D8101",
+      "JAN042023_01D8101",
+      "JAN302023_01D8101",
+      "JUL312024_01D8101",
+      "MAY222025_01D8101",
+      "NOV052025_01D8101"
+    ],
+    "byCriterion": {
+      "published_material": {
+        "n": 12,
+        "caught": 8
+      },
+      "original_contributions": {
+        "n": 20,
+        "caught": 15
+      },
+      "critical_employment": {
+        "n": 10,
+        "caught": 1
+      },
+      "high_remuneration": {
+        "n": 7,
+        "caught": 6
+      },
+      "judging": {
+        "n": 8,
+        "caught": 6
+      },
+      "awards": {
+        "n": 10,
+        "caught": 8
+      },
+      "membership": {
+        "n": 11,
+        "caught": 6
+      },
+      "final_merits": {
+        "n": 5,
+        "caught": 4
+      },
+      "advisory_opinion": {
+        "n": 1,
+        "caught": 0
+      },
+      "CRITERION_NOT_MET": {
+        "n": 10,
+        "caught": 0
+      },
+      "PROCEDURAL": {
+        "n": 3,
+        "caught": 0
+      },
+      "scholarly_articles": {
+        "n": 2,
+        "caught": 1
+      },
+      "FINAL_MERITS_NOT_MET": {
+        "n": 1,
+        "caught": 0
+      }
+    },
+    "models": {
+      "officer": "ollama/qwen3:8b",
+      "judge": "ollama/gemma4"
+    },
+    "humanReviewedCases": 0,
+    "costPerCaseUsd": 0
+  },
+  "faithfulness": {
+    "sentences": 68,
+    "supported": {
+      "p": 0.5294117647058824,
+      "lo": 0.4124071581374707,
+      "hi": 0.643270889122056
+    },
+    "partiallySupported": 0.11764705882352941,
+    "unsupported": 0.35294117647058826,
+    "quoteOnPageRate": 1,
+    "humanCalibration": null,
+    "judgeModel": "ollama/gemma4",
+    "failures": [
+      {
+        "case": "Mateo Alvarez",
+        "sentence": "Mateo Alvarez is employed as Chief Executive Officer of Ledgerline, Inc., a Delaware-based financial technology company, with an annual base salary of $185,000.",
+        "label": "UNSUPPORTED",
+        "unsupported": [
+          "Ledgerline, Inc. is a Delaware-based financial technology company"
+        ],
+        "reason": "The cited passage confirms the employment, title, and salary, but does not state that Ledgerline, Inc. is based in Delaware or that it is a financial technology company."
+      },
+      {
+        "case": "Mateo Alvarez",
+        "sentence": "Alvarez was recognized as one of \"40 Founders to Watch\" by Fintech Weekly Digest in 2024, a curated list publicly nominated via an online form.",
+        "label": "PARTIALLY_SUPPORTED",
+        "unsupported": [
+          "a curated list"
+        ],
+        "reason": "The passages support that the list was created by Fintech Weekly Digest in 2024 and that nominations were open to the public via an online form, but they do not state that the list was curated."
+      },
+      {
+        "case": "Mateo Alvarez",
+        "sentence": "Ledgerline secured $9 million in Series A funding from Northgate Ventures, reflecting recognition of its innovation and market potential.",
+        "label": "UNSUPPORTED",
+        "unsupported": [
+          "reflecting recognition of its innovation and market potential"
+        ],
+        "reason": "The cited passage only states that Ledgerline announced a $9 million Series A led by Northgate Ventures; it does not contain any information regarding the company's innovation or market potential."
+      },
+      {
+        "case": "Mateo Alvarez",
+        "sentence": "Ledgerline's software serves over 2,000 small businesses, demonstrating measurable impact and scalability.",
+        "label": "UNSUPPORTED",
+        "unsupported": [
+          "demonstrating measurable impact",
+          "scalability"
+        ],
+        "reason": "The passages confirm that the software serves more than 2,000 small businesses, but they do not contain any information regarding 'measurable impact' or 'scalability'."
+      },
+      {
+        "case": "Dr. Priya Raman",
+        "sentence": "The employment location in San Francisco, California, aligns with the geographic scope of the wage data.",
+        "label": "UNSUPPORTED",
+        "unsupported": [
+          "The employment location aligns with the geographic scope of the wage data."
+        ],
+        "reason": "The cited passage only states the work location (San Francisco, California) and does not provide any information regarding the geographic scope of the wage data to which it might align."
+      },
+      {
+        "case": "Dr. Priya Raman",
+        "sentence": "Dr. Priya Raman is a Distributed systems and machine learning infrastructure professional serving as Chief Technology Officer and co-founder of Tessellate Labs, Inc. (Delaware).",
+        "label": "UNSUPPORTED",
+        "unsupported": [
+          "The company is located in Delaware.",
+          "The professional expertise includes machine learning infrastructure."
+        ],
+        "reason": "The passage does not mention the company's location (Delaware). While the passage mentions 'distributed vector database,' it does not specify expertise in machine learning infrastructure."
+      },
+      {
+        "case": "Dr. Priya Raman",
+        "sentence": "She conducted full peer reviews of 19 research papers for SOSD 2024 and 2025, with an acceptance rate of 12.4% for 492 submissions.",
+        "label": "PARTIALLY_SUPPORTED",
+        "unsupported": [
+          "The acceptance rate of 12.4% for 492 submissions applies to both 2024 and 2025."
+        ],
+        "reason": "While the sentence correctly states that 19 reviews were conducted for 2024 and 2025, the acceptance rate of 12.4% for 492 submissions is explicitly limited to 2025 in the cited passages."
+      },
+      {
+        "case": "Dr. Priya Raman",
+        "sentence": "The petitioner offered Dr. Raman a base salary of $310,000 per year, surpassing the 90th percentile wage for Computer and Information Research Scientists in the San Francisco-Oakland-Berkeley MSA.",
+        "label": "UNSUPPORTED",
+        "unsupported": [
+          "The specific occupation ('Computer and Information Research Scientists') is not mentioned in the passages.",
+          "The specific metropolitan area ('San Francisco-Oakland-Berkeley MSA') is not mentioned in the passages."
+        ],
+        "reason": "While the passages confirm the base salary ($310,000) and that it exceeds the 90th percentile for 'the occupation' in 'the same metropolitan area,' the specific names of the occupation and the metropolitan area are not provided."
+      },
+      {
+        "case": "Dr. Priya Raman",
+        "sentence": "The Lindqvist Prize is internationally recognized as one of the two most prestigious honors in distributed systems, established in 1998.",
+        "label": "UNSUPPORTED",
+        "unsupported": [
+          "The Lindqvist Prize is internationally recognized"
+        ],
+        "reason": "The passage states that the prize is 'regarded as one of the two most prestigious honors in distributed systems,' but it does not specify that this recognition is international."
+      },
+      {
+        "case": "Dr. Priya Raman",
+        "sentence": "The Association for Systems Engineering is a peer group of 48,000 practitioners and researchers.",
+        "label": "UNSUPPORTED",
+        "unsupported": [
+          "The Association for Systems Engineering is a peer group of 48,000 practitioners and researchers."
+        ],
+        "reason": "The cited passage only provides the title of the document ('Association for Systems Engineering - Peer Advisory Opinion') and does not contain any information regarding the size (48,000) or the specific membership (practitioners and researchers)."
+      }
+    ]
+  },
+  "reliability": {
+    "k": 3,
+    "pooled": {
+      "fleissKappaStrength": 0.6916488222698074,
+      "fleissKappaMet": -0.02127659574468143,
+      "strengthModalAgreement": 0.9375,
+      "metDecisionAgreement": 0.9791666666666667,
+      "verdictPassK": 1,
+      "claimJaccardMean": 0.45971555618294746
+    },
+    "perCase": [
+      {
+        "case": "Mateo Alvarez",
+        "k": 3,
+        "runSeconds": [
+          1188.793,
+          1109.712,
+          949.317
+        ],
+        "likelyMetRange": [
+          0,
+          1
+        ],
+        "verdictConsistentAllRuns": true,
+        "strengthModalAgreement": 0.9583333333333334,
+        "claimJaccardMean": 0.5533596837944663
+      },
+      {
+        "case": "Dr. Lena Okafor",
+        "k": 3,
+        "runSeconds": [
+          509.055,
+          557.199,
+          560.571
+        ],
+        "likelyMetRange": [
+          0,
+          0
+        ],
+        "verdictConsistentAllRuns": true,
+        "strengthModalAgreement": 0.9166666666666666,
+        "claimJaccardMean": 0.36607142857142855
+      }
+    ],
+    "recovery": {
+      "runId": "be517b2d-5890-44ee-8807-9b455ac9806b",
+      "injectedFailures": 2,
+      "finalStatus": "suspended",
+      "reachedAttorneyCheckpoint": true,
+      "reusedSteps": 0,
+      "seconds": 826.754,
+      "stepsCommittedOnce": true
+    }
+  },
+  "costLatency": {
+    "perCase": [
+      {
+        "case": "Mateo Alvarez",
+        "costUsd": 0,
+        "seconds": 1779.429,
+        "modelCalls": 14
+      },
+      {
+        "case": "Dr. Priya Raman",
+        "costUsd": 0,
+        "seconds": 23676.709,
+        "modelCalls": 28
+      },
+      {
+        "case": "Dr. Lena Okafor",
+        "costUsd": 0,
+        "seconds": 769.608,
+        "modelCalls": 8
+      }
+    ],
+    "meanCostUsd": 0,
+    "meanSeconds": 8741.915333333332
+  }
+}

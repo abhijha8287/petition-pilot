@@ -1,0 +1,58 @@
+{
+  "id": "FEB202025_01D8101",
+  "date": "2025-02-20",
+  "sourceUrl": "https://www.uscis.gov/sites/default/files/err/D8-Aliens-of-Extraordinary-Ability-or-Achievement_O-1_O-2_and_O-3/Decisions_Issued_in_2025/FEB202025_01D8101.pdf",
+  "split": "dev_2023_2025",
+  "field": "financial vice president",
+  "facts": "The Petitioner, a business providing design, development, and customer service/account management for original equipment manufacturers, sought to classify the Beneficiary as a financial vice president of extraordinary ability. The classification requires sustained national or international acclaim and achievements recognized in the field through extensive documentation. The Petitioner submitted evidence across several criteria, including Awards, Membership, Judging, Original Contributions, and Scholarly Articles.\n\nRegarding Awards, the Petitioner provided screenshots from frost.com promoting the 2024 \"___ Awards,\" claiming them to be \"the country's earliest and most respected assessment-based manufacturing award.\" The Petitioner also offered presentation slides indicating that \"these awards acknowledge the best facilities in India that have achieved and sustained manufacturing excellence.\" The Petitioner argued that this evidence was appropriate comparable evidence for this prong.\n\nFor Membership, the Petitioner submitted a letter from the Petitioner detailing the work the Beneficiary performed, arguing that the Beneficiary's role as the Vice President (Finance) of the Petitioner's first venture into the United States puts him in a rare association of executives who have successfully grown operations from the ground up.\n\nIn the area of Judging, the Petitioner requested consideration of the Beneficiary's work on negotiations with banks in funding, foreign investment, and equipment purchasing, asserting that comparable evidence was appropriate.\n\nFor Original Contributions, the Petitioner highlighted the Beneficiary's work overseeing the construction of the Petitioner's facilities in the United States, overseeing the hiring/job creation process, and approving contracts, arguing that the success of the company is directly attributable to the actions of the leadership.\n\nRegarding Scholarly Articles, the Petitioner claimed eligibility for this criterion.",
+  "factsLeakage": [],
+  "grounds": [
+    {
+      "prong": "criteria",
+      "criterion": "awards",
+      "reasonCode": "AWARD_RECOGNITION_UNPROVEN",
+      "summary": "The Petitioner failed to establish that the claimed awards are nationally or internationally recognized for excellence in the field.",
+      "quote": "Although the evidence reflects purpose and background material, the Petitioner did not establish how the documentation shows the national or international recognition for excellence in the field for the awards.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "membership",
+      "reasonCode": "MEMBERSHIP_NOT_SELECTIVE",
+      "summary": "The Petitioner failed to demonstrate that the Beneficiary's service is comparable to membership in an association that requires outstanding achievements judged by recognized experts.",
+      "quote": "Moreover, the Petitioner did not establish how serving as a financial vice president for a business (the Petitioner) is comparable to being a member of an association that requires outstanding achievements, as judged by recognized national or international experts.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "judging",
+      "reasonCode": "JUDGING_NOT_PERFORMED",
+      "summary": "The Petitioner failed to demonstrate that the Beneficiary's involvement with bank negotiations constitutes participation as a judge of the work of others consistent with the regulatory criterion.",
+      "quote": "Notwithstanding, the Petitioner did not demonstrate that the Beneficiary's involvement with bank negotiations involves participating as a judge of the work of others consistent with this regulatory criterion.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "original_contributions",
+      "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+      "summary": "The Petitioner failed to demonstrate that the Beneficiary's work resulted in original contributions of major significance in the field rather than limited to the Petitioner.",
+      "quote": "The Petitioner has not demonstrated that the Beneficiary's involvement in overseeing the Petitioner's hiring process or approving contracts somehow impacted, influenced, or affected the overall or general field in a majorly significant manner.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "scholarly_articles",
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The AAO did not need to reach this ground because the initial evidentiary requirement of at least three criteria was not met.",
+      "quote": "we need not reach this ground, as well as a review of the Director's favorable determination of the critical or essential capacity criterion under 8 C.F.R. § 214.2(o)(3)(iii)(B)(7), because it cannot fulfill the initial evidentiary requirement of at least three criteria under 8 C.F.R. § 214.2(o)(3)(iii)(B).",
+      "dispositive": false,
+      "quoteVerified": true
+    }
+  ],
+  "reviewed": false,
+  "reviewNotes": ""
+}

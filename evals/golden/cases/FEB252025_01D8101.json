@@ -1,0 +1,69 @@
+{
+  "id": "FEB252025_01D8101",
+  "date": "2025-02-25",
+  "sourceUrl": "https://www.uscis.gov/sites/default/files/err/D8-Aliens-of-Extraordinary-Ability-or-Achievement_O-1_O-2_and_O-3/Decisions_Issued_in_2025/FEB252025_01D8101.pdf",
+  "split": "dev_2023_2025",
+  "field": "athletics",
+  "facts": "The Petitioner, a youth soccer club, sought to classify the Beneficiary as a goalkeeper program director of extraordinary ability. The Petitioner claimed that the Beneficiary met the requirements for O-1 nonimmigrant classification through sustained national or international acclaim.\n\nTo support the claim, the Petitioner submitted evidence across several categories. Regarding awards, the Petitioner provided screenshots from globo.com and Wikipedia detailing a 2018 international women's association football competition, which served as a qualification tournament for the FIFA U-17 Woman's World Cup. The Petitioner also submitted a photograph purportedly showing the Beneficiary holding a trophy from that tournament.\n\nFor membership, the Petitioner provided various training and preparation certificates and coaching licenses, including the Qualification Program of Football Professionals, B License.\n\nIn the area of published material, the Petitioner submitted screenshots of various material, some of which identified the Beneficiary as a coach, and some listed his name in a credit to a photograph.\n\nFor original contributions, the Petitioner submitted testimonial letters from various athletes. These letters discussed the Beneficiary's \"many specific techniques about soccer and goalkeeping,\" \"different technical and work methodology,\" and \"specific scouting system.\"\n\nAdditionally, the Petitioner claimed the Beneficiary met the critical or essential capacity criterion for employment.\n\nIn summary, the Petitioner asserted that the totality of the submitted evidence demonstrated the Beneficiary's status as a top-tier professional in the field of soccer.",
+  "factsLeakage": [
+    "director"
+  ],
+  "grounds": [
+    {
+      "prong": "criteria",
+      "criterion": "awards",
+      "reasonCode": "AWARD_RECOGNITION_UNPROVEN",
+      "summary": "The submitted documentation failed to establish that the award or prize was nationally or internationally recognized for excellence in the field.",
+      "quote": "Here, the Petitioner has not shown that the [award] qualifies as a lesser nationally or internationally recognized award for excellence in the field.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "membership",
+      "reasonCode": "MEMBERSHIP_NOT_SELECTIVE",
+      "summary": "The Petitioner failed to demonstrate that the provided certificates or licenses represented membership in an association that requires outstanding achievements judged by recognized experts.",
+      "quote": "However, the Petitioner did not demonstrate how the certificates show the Beneficiary's membership in associations, let alone memberships in associations requiring outstanding achievements of their members.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "published_material",
+      "reasonCode": "MEDIA_STATUS_UNPROVEN",
+      "summary": "The Petitioner did not provide sufficient independent, objective evidence to demonstrate that the published material qualified as a professional, major trade, or major media publication.",
+      "quote": "Specifically, USCIS could not determine if the published material was presented in professional or major media.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "original_contributions",
+      "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+      "summary": "The Petitioner failed to demonstrate that the Beneficiary's athletic-related contributions met the regulatory requirement of being scientific, scholarly, or business-related contributions of major significance in the field.",
+      "quote": "The Petitioner did not demonstrate the impact or influence the Beneficiary's contributions have had in the overall field rather than limited to the individuals or teams he has coached.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "final_merits",
+      "criterion": null,
+      "reasonCode": "FINAL_MERITS_NOT_MET",
+      "summary": "The totality of the evidence submitted did not demonstrate that the Beneficiary possessed sustained national or international acclaim, placing them among the small percentage at the very top of the field of endeavor.",
+      "quote": "Consequently, the Petitioner has not established the Beneficiary's eligibility for the 0-1 visa classification as an alien of extraordinary ability.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "requirement",
+      "criterion": null,
+      "reasonCode": "NO_ADVISORY_OPINION",
+      "summary": "The Petitioner failed to establish the required consultation requirements.",
+      "quote": "Further, we need not decide whether the Petitioner established eligibility for the consultation requirements under 8 C.F.R. § 214.2(o)(2)(ii)(D), 8 C.F.R. § 214.2(o)(5)(i)(B), and 8 C.F.R. § 214.2(o)(5)(i)(C).",
+      "dispositive": true,
+      "quoteVerified": true
+    }
+  ],
+  "reviewed": false,
+  "reviewNotes": ""
+}

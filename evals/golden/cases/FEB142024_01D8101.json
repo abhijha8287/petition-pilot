@@ -1,0 +1,40 @@
+{
+  "id": "FEB142024_01D8101",
+  "date": "2024-02-14",
+  "sourceUrl": "https://www.uscis.gov/sites/default/files/err/D8-Aliens-of-Extraordinary-Ability-or-Achievement_O-1_O-2_and_O-3/Decisions_Issued_in_2024/FEB142024_01D8101.pdf",
+  "split": "dev_2023_2025",
+  "field": "Software Development",
+  "facts": "The Petitioner, a semiconductor manufacturing business, sought to classify the Beneficiary, a senior software development engineer, as an individual of extraordinary ability. The Petitioner claimed that the Beneficiary met the criteria for original contributions of major significance, critical employment, and high remuneration.\n\nRegarding original contributions, the Petitioner submitted articles published in highly ranked journals, asserting the Beneficiary was the first author in most publications. The Petitioner also provided data showing the Beneficiary's citation count increased by almost three-fold in a five-month period. Testimonial letters were submitted, which recounted the Beneficiary's research and findings, such as creating a machine learning model to predict the size, power, and speed of an FPGA chip.\n\nFor critical employment, the Petitioner argued the Beneficiary held a highly specialized role within the Software Development team, working on Radiant software, which is included in the company's FPGA products. The Petitioner asserted that the Beneficiary's experience was critical to the success of the Mid-Range FPGA launch. The Petitioner also claimed the Beneficiary was one of only five employees in the same role out of a total US employee count of 343.\n\nFor high remuneration, the Petitioner initially provided a job offer letter reflecting a total compensation package including a $150K base salary, 10% cash incentive, $10K sign-on bonus, and $40K in restricted stock units. A letter confirmed the Beneficiary's annual compensation was $217K. The Petitioner also offered wage data from flcdatacenter.com, which reflected Level 4 annual wages for \"Software Developers\" in the California area earning $193K. Additional comparable data was provided from Cadence Design Systems, Intel, Synopsis, and Xilinx.",
+  "factsLeakage": [],
+  "grounds": [
+    {
+      "prong": "criteria",
+      "criterion": "original_contributions",
+      "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+      "summary": "The petitioner failed to demonstrate that the beneficiary's research and work had achieved major significance in the field.",
+      "quote": "Here, the Petitioner has not shown that the citation figures for any of the Beneficiary's published articles are commensurate with contributions of major significance.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "critical_employment",
+      "reasonCode": "ROLE_NOT_CRITICAL",
+      "summary": "The petitioner did not provide specific, detailed information explaining how the beneficiary's duties and performance were of significant importance to the organization's goals.",
+      "quote": "Here, the Petitioner did not provide a detailed letter from a person with personal knowledge of the significance of the Beneficiary's role; rather the record contains an RFE response letter from counsel.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "high_remuneration",
+      "reasonCode": "NO_COMPARATIVE_WAGE_DATA",
+      "summary": "The petitioner failed to demonstrate that the beneficiary commanded a high salary relative to others in the field.",
+      "quote": "The Beneficiary's total compensation of $217K falls within the average salary data supplied by the Petitioner rather than at the higher end of the spectrum.",
+      "dispositive": true,
+      "quoteVerified": true
+    }
+  ],
+  "reviewed": false,
+  "reviewNotes": ""
+}

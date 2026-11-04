@@ -1,0 +1,58 @@
+{
+  "id": "NOV132024_01D8101",
+  "date": "2024-11-13",
+  "sourceUrl": "https://www.uscis.gov/sites/default/files/err/D8-Aliens-of-Extraordinary-Ability-or-Achievement_O-1_O-2_and_O-3/Decisions_Issued_in_2024/NOV132024_01D8101.pdf",
+  "split": "dev_2023_2025",
+  "field": "Senior IOS Developer",
+  "facts": "The Petitioner, a mobile application and software development business, sought to classify the Beneficiary, a Senior IOS Developer, as an individual of extraordinary ability. The Petitioner claimed the Beneficiary met the requirements for this classification by submitting evidence across several criteria.\n\nRegarding awards, the Petitioner submitted evidence of a 2023 award, which the Petitioner claimed was a \"prestigious distinction in the business sector\" and was based on the merit of the individual's achievements.\n\nFor membership, the Petitioner claimed the Beneficiary met the criteria through membership in Grupo de Lideres Empresariais in Illinois (LIDE II) and the Central Florida Brazilian American Chamber of Commerce (CFBACC). The Petitioner submitted two letters from the CEO of LIDE II and a membership certificate and a letter from the president of CFBACC.\n\nIn relation to published material, the Petitioner submitted a 2014 article in Jornal Estado de I and a 2023 article in Nossa Gente. The Petitioner also submitted articles authored by the Beneficiary.\n\nFor judging, the Petitioner asserted the Beneficiary met the criterion by providing a letter thanking the Beneficiary for accepting an invitation to mentor startups at the School of Business, and two letters from A-R- ofl for Startups, which described the Beneficiary as a mentor in several programs.\n\nFor original contributions, the Petitioner submitted testimonial letters from colleagues, M-M-M- and C-G-, and an advisory opinion letter from D-H-, an associate professor of computer science and information systems. The Petitioner argued that these materials demonstrated the Beneficiary's contributions of major significance in the field.",
+  "factsLeakage": [],
+  "grounds": [
+    {
+      "prong": "criteria",
+      "criterion": "awards",
+      "reasonCode": "AWARD_RECOGNITION_UNPROVEN",
+      "summary": "The submitted award was not shown to be nationally or internationally recognized for excellence in the field.",
+      "quote": "The material does not show how the field views winning the as being tantamount to a nationally or internationally recognized prize or award for excellence.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "membership",
+      "reasonCode": "MEMBERSHIP_NOT_SELECTIVE",
+      "summary": "The submitted letters did not explain how the membership requirements constituted outstanding achievements judged by recognized national or international experts.",
+      "quote": "The letters do not explain how having \"highly specialized knowledge,\" \"notable and above-average stream of revenue,\" and being \"known to drive the profit, growth and sales of their respective associations\" are outstanding achievements.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "published_material",
+      "reasonCode": "NOT_ABOUT_BENEFICIARY",
+      "summary": "The submitted article was about the importance of mentoring for startup companies, not about the Beneficiary relating to his work.",
+      "quote": "As noted by the Director, the article is not about the Beneficiary relating to his work but is about the importance of mentoring for startup companies, \"to overcome difficulties, professionalize the company and make them progress.\"",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "judging",
+      "reasonCode": "JUDGING_NOT_PERFORMED",
+      "summary": "The record lacked documentary evidence to corroborate the Beneficiary's role as a judge, and the role was strictly as a mentor evaluating students' work.",
+      "quote": "As the plain language of this criterion requires evidence of the Beneficiary's \"participation ... as a judge,\" evidence of working as a mentor who evaluates students as a part of that role does not meet this requirement.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "original_contributions",
+      "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+      "summary": "The testimonial letters made broad claims regarding the Beneficiary's work for individual companies, but did not explain what the Beneficiary contributed in the field or how it was of major significance.",
+      "quote": "However, the letters do not explain what the Beneficiary has contributed in the field, and how those contributions are considered to be of major significance in the field.",
+      "dispositive": true,
+      "quoteVerified": true
+    }
+  ],
+  "reviewed": false,
+  "reviewNotes": ""
+}

@@ -1,0 +1,42 @@
+{
+  "id": "JAN302023_01D8101",
+  "date": "2023-01-30",
+  "sourceUrl": "https://www.uscis.gov/sites/default/files/err/D8-Aliens-of-Extraordinary-Ability-or-Achievement_O-1_O-2_and_O-3/Decisions_Issued_in_2023/JAN302023_01D8101.pdf",
+  "split": "dev_2023_2025",
+  "field": "research engineer",
+  "facts": "The Petitioner, an engineering business, seeks to classify the Beneficiary, a research engineer, as a person of extraordinary ability. The Beneficiary specializes in thermofluidic engineering and bridge erosion. The Petitioner has employed the Beneficiary since 2016 as a research engineer on a services contract for the JLaboratory at the U.S. Federal Highway Administration (FHWA) Research Center II in Virginia.\n\nTo establish eligibility, the Petitioner submitted evidence relating to four regulatory criteria: published materials, original contributions, scholarly articles, and employment in a critical or essential capacity. The Petitioner submitted articles authored by the Beneficiary to satisfy the published material criterion. The Petitioner also provided evidence of original contributions, including presentations at professional international conferences and work that involved creating a new device (the In-situ Scour Testing Device, ISTD) and developing control programs for the lab's Multi-Functional Flume System (MFS).\n\nTo support the claim of major significance, the Petitioner submitted several testimonial letters. These letters, from the lab manager, the president of the petitioning organization, a program manager in Colorado, and a professor at California Institute of Technology, described the Beneficiary's achievements. The letters detailed the Beneficiary's work on the FHWA's I Ire search program, the development of the Portable Scour Testing Device (PSTD), and the creation of research observation stages and safety protective systems. The letters also mentioned the Beneficiary's involvement in field tests and the development of tools to evaluate soil erodibility. The Beneficiary also submitted evidence of authorship of scholarly articles in professional scientific journals, specifically co-authoring at least two articles in *Scour and Erosion*.\n\nOn appeal, the Petitioner provided additional recommendation letters from a third party, which were submitted for review.",
+  "factsLeakage": [
+    "appeal"
+  ],
+  "grounds": [
+    {
+      "prong": "criteria",
+      "criterion": "published_material",
+      "reasonCode": "NOT_ABOUT_BENEFICIARY",
+      "summary": "The published material submitted to satisfy this criterion consisted of articles co-authored by the Beneficiary, which did not meet the regulatory requirement that the material be 'about' the Beneficiary and his work.",
+      "quote": "However, articles co-authored by the Beneficiary are not articles about the Beneficiary and his work.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": "original_contributions",
+      "reasonCode": "SIGNIFICANCE_NOT_SHOWN",
+      "summary": "The record failed to demonstrate that the Beneficiary's original contributions were of major significance in the field, as there was no evidence of widespread implementation or extensive citation.",
+      "quote": "nor does the record include documentary evidence showing the widespread implementation of the Beneficiary's work, that it has been extensively referenced or cited by others, or other evidence that they were of \"major significance.\"",
+      "dispositive": true,
+      "quoteVerified": false
+    },
+    {
+      "prong": "final_merits",
+      "criterion": null,
+      "reasonCode": "FINAL_MERITS_NOT_MET",
+      "summary": "The totality of the evidence, even where individual criteria were met, did not demonstrate the sustained national or international acclaim required for this classification.",
+      "quote": "we do not find the record (including the evidence under this criterion) to be indicative of the sustained acclaim and recognition for achievements required for this highly restrictive classification.",
+      "dispositive": true,
+      "quoteVerified": true
+    }
+  ],
+  "reviewed": false,
+  "reviewNotes": ""
+}

@@ -1,0 +1,40 @@
+{
+  "id": "MAY252023_01D8101",
+  "date": "2023-05-25",
+  "sourceUrl": "https://www.uscis.gov/sites/default/files/err/D8-Aliens-of-Extraordinary-Ability-or-Achievement_O-1_O-2_and_O-3/Decisions_Issued_in_2023/MAY252023_01D8101.pdf",
+  "split": "dev_2023_2025",
+  "field": "athletics",
+  "facts": "The Petitioner, a fitness management company, sought to classify the Beneficiary, a bodybuilder, as an individual of extraordinary ability. The Petitioner submitted a job description, which stated the Beneficiary would represent the company at bodybuilding competitions and participate in media events. The Petitioner also provided a signed \"Employment Agreement\" and multiple Contractor Agreements, which reflected a yearly salary of $200,000 and full health insurance coverage. The Petitioner submitted an itinerary detailing tournament events from 2017 to 2019, along with documentation relating to awards, memberships, published material, and high salary.\n\nIn addition to the employment documentation, the Petitioner submitted tax records, including a 2018 Form 1040 and a 2019 spreadsheet, which indicated the Beneficiary was self-employed as a personal trainer. The Petitioner also provided PayPal printouts and a letter from a bodybuilding video producer. The Petitioner submitted a letter from the company's vice-president. The Petitioner's documentation included references to the Beneficiary's membership in the International Federation of Bodybuilding and Fitness (IFBB) and articles from MuscleMag and muscleinsider.com. The Petitioner also referenced a GoFundMe account established to raise funds for the Beneficiary's surgery.",
+  "factsLeakage": [],
+  "grounds": [
+    {
+      "prong": "requirement",
+      "criterion": null,
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The submitted contracts and agreements were found to be inconsistent and lacked sufficient detail to establish the terms of employment.",
+      "quote": "The statements you made on the Form I-129, in the Employment Agreement, and in your letters are inconsistent with the evidence and thus not sufficiently reliable to meet this requirement.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "requirement",
+      "criterion": null,
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The itinerary provided lacked specific dates and locations for required events, such as photo shoots and training sessions.",
+      "quote": "The itinerary also lacks specific dates and locations for events during which the Beneficiary would assist in the training and preparation of [the Petitioner's] clients.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": null,
+      "reasonCode": "FINAL_MERITS_NOT_MET",
+      "summary": "The totality of the evidence did not demonstrate that the Beneficiary met at least three of the required evidentiary criteria.",
+      "quote": "In fact, the Director found that the Beneficiary met only one criterion - awards, and she did not meet any of the other claimed criteria relating to memberships, published material, and high salary.",
+      "dispositive": true,
+      "quoteVerified": true
+    }
+  ],
+  "reviewed": false,
+  "reviewNotes": ""
+}

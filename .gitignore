@@ -39,3 +39,16 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+!.env.example
+
+# agent run workspaces (per-case sandboxes, regenerated on every run)
+.workspaces/
+# local scratch for eval runs
+evals/.cache/
+# private notes are never pushed
+*.private.md
+data/aao/pdf/
+.budget/
+
+# local batch scripts with machine-specific run ids
+scripts/dev/run-all*.sh

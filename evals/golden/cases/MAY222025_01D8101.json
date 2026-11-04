@@ -1,0 +1,36 @@
+{
+  "id": "MAY222025_01D8101",
+  "date": "2025-05-22",
+  "sourceUrl": "https://www.uscis.gov/sites/default/files/err/D8-Aliens-of-Extraordinary-Ability-or-Achievement_O-1_O-2_and_O-3/Decisions_Issued_in_2025/MAY222025_01D8101.pdf",
+  "split": "dev_2023_2025",
+  "field": "Mixology",
+  "facts": "The Petitioner, a restaurant and bar, sought to classify the Beneficiary as a mixologist under the O-1 nonimmigrant classification. The Petitioner claimed the Beneficiary possessed extraordinary ability in the field of business, specifically as a business owner. The petition submitted evidence related to the Beneficiary's profession as a business owner. The Petitioner asserted that the Beneficiary met three of the eight categories of evidence required for O-1A. The Petitioner also attempted to argue O-1B (Arts) classification, asserting that the profession of mixology qualified under the broad definition of \"arts,\" as mixology is defined as \"the art or skill of preparing mixed drinks.\" The Administrative Appeals Office reviewed the petition and determined that the Beneficiary's field of endeavor is mixology. The AAO noted that the Petitioner filed Form I-140 seeking to classify the Beneficiary as an O-1A Beneficiary, and therefore, the AAO adjudicated the petition based on the O-1A claim. The AAO concluded that the Petitioner did not demonstrate the Beneficiary's eligibility for O-1A classification.",
+  "factsLeakage": [
+    "aao",
+    "aao",
+    "aao",
+    "did not demonstrate"
+  ],
+  "grounds": [
+    {
+      "prong": "requirement",
+      "criterion": null,
+      "reasonCode": "PROCEDURAL",
+      "summary": "The AAO limited its review to the classification requested on the initial filing, disregarding the subsequent attempt to change the classification to O-1B.",
+      "quote": "USCIS will only consider the visa classification that the petitioner annotates on the petition at initial filing.",
+      "dispositive": true,
+      "quoteVerified": true
+    },
+    {
+      "prong": "criteria",
+      "criterion": null,
+      "reasonCode": "CRITERION_NOT_MET",
+      "summary": "The AAO determined that the field of arts (mixology) does not fall within the scope of O-1A, which is limited to sciences, education, business, or athletics.",
+      "quote": "Because the field of arts does not fall within the fields under O-lA but rather O-lB, the Petitioner did not demonstrate the Beneficiary's eligibility for O-lA classification.",
+      "dispositive": true,
+      "quoteVerified": true
+    }
+  ],
+  "reviewed": false,
+  "reviewNotes": ""
+}
