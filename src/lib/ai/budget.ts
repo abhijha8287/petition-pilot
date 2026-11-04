@@ -6,10 +6,10 @@ import path from 'node:path';
  *
  * Each model call appends its cost to an append-only JSONL ledger. Before a
  * call we check the running total plus a conservative estimate against
- * EXHIBIT_BUDGET_USD minus a 10% safety margin, and refuse if it would cross.
+ * PILOT_BUDGET_USD minus a 10% safety margin, and refuse if it would cross.
  */
-const LEDGER = path.resolve(/*turbopackIgnore: true*/ process.env.EXHIBIT_BUDGET_LEDGER ?? '.budget/ledger.jsonl');
-export const BUDGET_USD = Number(process.env.EXHIBIT_BUDGET_USD ?? 2);
+const LEDGER = path.resolve(/*turbopackIgnore: true*/ process.env.PILOT_BUDGET_LEDGER ?? '.budget/ledger.jsonl');
+export const BUDGET_USD = Number(process.env.PILOT_BUDGET_USD ?? 2);
 export const HARD_STOP_USD = BUDGET_USD * 0.9;
 
 export class BudgetExceededError extends Error {

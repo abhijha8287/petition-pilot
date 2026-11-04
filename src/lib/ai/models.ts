@@ -3,7 +3,7 @@ import { Agent as HttpAgent, fetch as undiciFetch } from 'undici';
 import { defaultSettingsMiddleware, wrapLanguageModel } from 'ai';
 
 /**
- * Model routing. One switch, EXHIBIT_PROVIDER, picks where every model call goes:
+ * Model routing. One switch, PILOT_PROVIDER, picks where every model call goes:
  *
  *   ollama      (default) local models through Ollama's OpenAI-compatible API.
  *               $0, no API key, and client documents never leave the machine.
@@ -15,8 +15,8 @@ import { defaultSettingsMiddleware, wrapLanguageModel } from 'ai';
  */
 export type Provider = 'ollama' | 'openrouter' | 'openai';
 export const PROVIDER: Provider =
-  (process.env.EXHIBIT_PROVIDER as Provider | undefined) ??
-  (process.env.OPENROUTER_API_KEY ? 'openrouter' : process.env.OPENAI_API_KEY && process.env.EXHIBIT_USE_OPENAI ? 'openai' : 'ollama');
+  (process.env.PILOT_PROVIDER as Provider | undefined) ??
+  (process.env.OPENROUTER_API_KEY ? 'openrouter' : process.env.OPENAI_API_KEY && process.env.PILOT_USE_OPENAI ? 'openai' : 'ollama');
 
 export const OLLAMA_URL = process.env.OLLAMA_BASE_URL ?? 'http://127.0.0.1:11434/v1';
 
@@ -45,11 +45,11 @@ const DEFAULTS: Record<Provider, { worker: string; drafter: string; officer: str
 };
 
 export const MODELS = {
-  worker: process.env.EXHIBIT_WORKER_MODEL ?? DEFAULTS[PROVIDER].worker,
-  drafter: process.env.EXHIBIT_DRAFTER_MODEL ?? DEFAULTS[PROVIDER].drafter,
-  officer: process.env.EXHIBIT_OFFICER_MODEL ?? DEFAULTS[PROVIDER].officer,
-  judge: process.env.EXHIBIT_JUDGE_MODEL ?? DEFAULTS[PROVIDER].judge,
-  embedding: process.env.EXHIBIT_EMBEDDING_MODEL ?? DEFAULTS[PROVIDER].embedding,
+  worker: process.env.PILOT_WORKER_MODEL ?? DEFAULTS[PROVIDER].worker,
+  drafter: process.env.PILOT_DRAFTER_MODEL ?? DEFAULTS[PROVIDER].drafter,
+  officer: process.env.PILOT_OFFICER_MODEL ?? DEFAULTS[PROVIDER].officer,
+  judge: process.env.PILOT_JUDGE_MODEL ?? DEFAULTS[PROVIDER].judge,
+  embedding: process.env.PILOT_EMBEDDING_MODEL ?? DEFAULTS[PROVIDER].embedding,
   provider: PROVIDER,
 } as const;
 
@@ -91,7 +91,7 @@ export function agentModel(id: string, settings?: { temperature?: number; seed?:
  * into the prompt instead; the answer is still validated against the schema.
  */
 export function nativeStructuredOutput(model: string) {
-  const list = process.env.EXHIBIT_PROMPT_JSON_MODELS ?? 'ollama/gemma';
+  const list = process.env.PILOT_PROMPT_JSON_MODELS ?? 'ollama/gemma';
   return !list.split(',').some((prefix) => prefix && model.startsWith(prefix.trim()));
 }
 
@@ -105,7 +105,7 @@ export const JUDGE_SETTINGS = { temperature: 0, seed: 7 } as const;
  * Qwen's documented /no_think soft switch.
  */
 export function promptSuffix(model: string) {
-  return /^ollama\/qwen3/.test(model) && !process.env.EXHIBIT_QWEN_THINK ? '/no_think\n' : '';
+  return /^ollama\/qwen3/.test(model) && !process.env.PILOT_QWEN_THINK ? '/no_think\n' : '';
 }
 
 export function embeddingModelInstance() {

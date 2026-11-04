@@ -1,8 +1,8 @@
-# Exhibit A
+# PetitionPilot
 
 **O-1A evidence mapping with source-cited drafting and attorney review.**
 
-Exhibit A takes an applicant's documents (CV, press, papers, award letters), maps every piece of evidence to the eight O-1A criteria of 8 CFR 214.2(o)(3)(iii), finds the gaps, drafts the petition with a citation on every sentence, has an adversarial "USCIS officer" agent attack the draft using real Administrative Appeals Office decisions, and stops for an attorney to review and sign off.
+PetitionPilot takes an applicant's documents (CV, press, papers, award letters), maps every piece of evidence to the eight O-1A criteria of 8 CFR 214.2(o)(3)(iii), finds the gaps, drafts the petition with a citation on every sentence, has an adversarial "USCIS officer" agent attack the draft using real Administrative Appeals Office decisions, and stops for an attorney to review and sign off.
 
 > **Not legal advice.** This is a demonstration project. All applicant data is fictional. Every draft must be reviewed and signed by a licensed attorney.
 
@@ -61,7 +61,7 @@ flowchart LR
 ### Design choices
 
 - **Workflow first, agent where it earns its place.** The known sequence is a Mastra workflow (predictable, testable, cheap). Only the officer, whose path isn't known in advance, is a tool-using agent.
-- **Recovery from failure.** Mastra persists workflow snapshots in Postgres, so the attorney-review suspension survives restarts. On top of that, each step commits a checkpoint row last and clears its own partial writes first: a retried or restarted run reuses finished work instead of calling the models again. `EXHIBIT_CHAOS=<step>` injects failures; `npm run pipeline -- crash-demo alvarez` kills the worker with SIGKILL and resumes it in a new process.
+- **Recovery from failure.** Mastra persists workflow snapshots in Postgres, so the attorney-review suspension survives restarts. On top of that, each step commits a checkpoint row last and clears its own partial writes first: a retried or restarted run reuses finished work instead of calling the models again. `PILOT_CHAOS=<step>` injects failures; `npm run pipeline -- crash-demo alvarez` kills the worker with SIGKILL and resumes it in a new process.
 - **Sandboxed agent.** The officer's file tools resolve per request to `.workspaces/<case>/<run>/` with path containment and read-only mode; write/edit/delete tools are disabled.
 - **"No source, no sentence," three times over.** Closed set of citable claim IDs, deterministic quote verification (exact, normalized, bounded fuzzy match), and a Postgres CHECK constraint.
 - **Permissions live in the database.** Row-level security on every table; the client role sees only their own case, status and questions. Version history is written by triggers into an append-only table. Sign-off is an RLS policy plus a trigger that hashes and locks the draft.
@@ -79,7 +79,7 @@ Full method, numbers and limitations: **[EVALS.md](EVALS.md)**. All numbers belo
 | **Citation integrity** | **100%** of cited quotes found verbatim on the cited page; **0** uncited sentences | Deterministic: code verification plus a database CHECK constraint. |
 | **Citation faithfulness** (68 drafted sentences) | **53%** fully supported (95% CI 41–64%), 12% partial | Mastra scorer with an LLM judge at temperature 0. Most failures are evaluative words the 8B drafter adds ("indicating high selectivity"). Human calibration sample is in `evals/human/`. |
 | **Reliability** (3 runs per case) | "≥ 3 criteria" verdict identical in **100%** of cases; 97.9% met/not-met agreement; Fleiss' κ 0.69 | Re-running evidence mapping from scratch; claim-set overlap (Jaccard 0.46) shows the model picks different quotes but reaches the same conclusions. |
-| **Durability** | 2 injected failures → reached the attorney checkpoint, every step committed exactly once; `kill -9` mid-run → a fresh process resumes from checkpoints | `EXHIBIT_CHAOS` fault injection and `npm run pipeline -- crash-demo`. |
+| **Durability** | 2 injected failures → reached the attorney checkpoint, every step committed exactly once; `kill -9` mid-run → a fresh process resumes from checkpoints | `PILOT_CHAOS` fault injection and `npm run pipeline -- crash-demo`. |
 | **Cost / speed** | $0 per case; evidence mapping 8–20 min per case on the M5 | Event log (`agent_events`). |
 
 Both LLM judges were revised once after inspecting their output (EVALS.md, "Judge revisions"); the earlier, harsher and laxer results are kept alongside.
@@ -104,13 +104,13 @@ npm run pipeline -- run alvarez      # or click "Run agents" in the app
 npm run dev                          # http://localhost:3000
 ```
 
-Demo logins (password `exhibit-a-demo`):
+Demo logins (password `petition-pilot-demo`):
 
 | Role | Email | Can do |
 |---|---|---|
-| Attorney | `attorney@exhibit-a.test` | Everything, including the only sign-off |
-| Paralegal | `paralegal@exhibit-a.test` | Run agents, edit drafts; cannot sign off |
-| Client | `priya.raman@client.exhibit-a.test` (also `mateo.alvarez@…`, `lena.okafor@…`) | Own case status and questions only |
+| Attorney | `attorney@petition-pilot.test` | Everything, including the only sign-off |
+| Paralegal | `paralegal@petition-pilot.test` | Run agents, edit drafts; cannot sign off |
+| Client | `priya.raman@client.petition-pilot.test` (also `mateo.alvarez@…`, `lena.okafor@…`) | Own case status and questions only |
 
 Pipeline CLI: `npm run pipeline -- run|resume|redo-from|crash-demo <persona|runId>` (personas: `raman` strong, `alvarez` borderline, `okafor` weak).
 
@@ -128,7 +128,7 @@ Tests: `npm test` (citation verifier, budget guard, statistics, and RLS/permissi
 
 ### Choosing models
 
-`EXHIBIT_PROVIDER=ollama` (default), `openrouter` or `openai`. Per-role overrides: `EXHIBIT_WORKER_MODEL`, `EXHIBIT_DRAFTER_MODEL`, `EXHIBIT_OFFICER_MODEL`, `EXHIBIT_JUDGE_MODEL`. With hosted models a hard spend cap applies (`EXHIBIT_BUDGET_USD`, stops at 90%).
+`PILOT_PROVIDER=ollama` (default), `openrouter` or `openai`. Per-role overrides: `PILOT_WORKER_MODEL`, `PILOT_DRAFTER_MODEL`, `PILOT_OFFICER_MODEL`, `PILOT_JUDGE_MODEL`. With hosted models a hard spend cap applies (`PILOT_BUDGET_USD`, stops at 90%).
 
 ## Project layout
 

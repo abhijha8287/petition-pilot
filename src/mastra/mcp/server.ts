@@ -7,7 +7,7 @@ import { CRITERIA, countLikelyMet, type Strength } from '@/lib/o1a/criteria';
 import { adminClient } from '@/lib/supabase/admin';
 
 /**
- * MCP server exposing Exhibit A case tools to external agents (Claude Code,
+ * MCP server exposing PetitionPilot case tools to external agents (Claude Code,
  * Claude Desktop, IDE agents) over stdio, MCP revision 2026-07-28.
  *
  * Tools are read-only by design: an external agent can inspect evidence,
@@ -108,9 +108,9 @@ const searchDecisions = createTool({
 });
 
 export const exhibitMcpServer = new MCPServer({
-  id: 'exhibit-a',
-  name: 'Exhibit A',
-  title: 'Exhibit A: O-1A evidence tools',
+  id: 'petition-pilot',
+  name: 'PetitionPilot',
+  title: 'PetitionPilot: O-1A evidence tools',
   version: '1.0.0',
   description: 'Read-only access to O-1A evidence maps, exhibit pages, citation verification and AAO precedent search.',
   instructions: 'Use list_cases to find a case, get_evidence_map for the criteria analysis, read_exhibit_page to inspect sources, and verify_citation before relying on any quote. Nothing here is legal advice.',

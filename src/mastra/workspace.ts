@@ -13,7 +13,7 @@ import { LocalFilesystem, Workspace, WORKSPACE_TOOLS } from '@mastra/core/worksp
  * writes, and destructive tools are switched off. One case can never see
  * another case's files.
  */
-export const WORKSPACES_ROOT = path.resolve(/*turbopackIgnore: true*/ process.env.EXHIBIT_WORKSPACES_DIR ?? '.workspaces');
+export const WORKSPACES_ROOT = path.resolve(/*turbopackIgnore: true*/ process.env.PILOT_WORKSPACES_DIR ?? '.workspaces');
 
 export function runDir(caseId: string, runId: string) {
   if (!/^[0-9a-f-]{36}$/i.test(caseId) || !/^[\w-]{1,64}$/.test(runId)) throw new Error('invalid workspace id');

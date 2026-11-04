@@ -8,7 +8,7 @@ const geistMono = Geist_Mono({ variable: '--font-geist-mono', subsets: ['latin']
 const sourceSerif = Source_Serif_4({ variable: '--font-source-serif', subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Exhibit A · O-1A evidence mapping',
+  title: 'PetitionPilot · O-1A evidence mapping',
   description: 'Source-cited O-1A evidence mapping, drafting and attorney review. Demo project; not legal advice.',
 };
 

@@ -13,11 +13,11 @@ function createMastra() {
     agents,
     workflows: { casePipeline },
     storage: new PostgresStore({
-      id: 'exhibit-a-store',
+      id: 'petition-pilot-store',
       connectionString: process.env.DATABASE_URL!,
       schemaName: 'mastra',
     }),
-    logger: new PinoLogger({ name: 'exhibit-a', level: process.env.NODE_ENV === 'production' ? 'info' : 'warn' }),
+    logger: new PinoLogger({ name: 'petition-pilot', level: process.env.NODE_ENV === 'production' ? 'info' : 'warn' }),
   });
 }
 

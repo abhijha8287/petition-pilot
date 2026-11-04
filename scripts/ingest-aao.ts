@@ -23,7 +23,7 @@ async function loadPdf(e: Entry): Promise<Uint8Array> {
   try {
     return new Uint8Array(await fs.readFile(file));
   } catch {
-    const res = await fetch(e.url, { headers: { 'User-Agent': 'exhibit-a-research/1.0' } });
+    const res = await fetch(e.url, { headers: { 'User-Agent': 'petition-pilot-research/1.0' } });
     if (!res.ok) throw new Error(`${e.id}: HTTP ${res.status}`);
     const buf = new Uint8Array(await res.arrayBuffer());
     await fs.mkdir(path.dirname(file), { recursive: true });

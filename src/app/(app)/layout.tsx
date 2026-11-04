@@ -16,7 +16,7 @@ export default async function AppLayout({ children }: LayoutProps<'/'>) {
         <div className="mx-auto flex h-14 max-w-[1400px] items-center justify-between px-6">
           <div className="flex items-center gap-8">
             <Link href="/cases" className="font-serif text-xl font-semibold tracking-tight">
-              Exhibit A
+              PetitionPilot
             </Link>
             <nav className="flex gap-1 text-sm">
               <Link href="/cases" className="rounded-md px-3 py-1.5 text-muted hover:bg-slate-100 hover:text-ink">

@@ -29,7 +29,7 @@ export const PERSONAS: Persona[] = [
     field: 'Distributed systems and machine learning infrastructure',
     petitioner: 'Tessellate Labs, Inc. (Delaware)',
     proposedRole: 'Chief Technology Officer',
-    clientEmail: 'priya.raman@client.exhibit-a.test',
+    clientEmail: 'priya.raman@client.petition-pilot.test',
     docs: [
       {
         label: 'A',
@@ -174,7 +174,7 @@ export const PERSONAS: Persona[] = [
     field: 'Financial technology product leadership',
     petitioner: 'Ledgerline, Inc. (Delaware)',
     proposedRole: 'Chief Executive Officer',
-    clientEmail: 'mateo.alvarez@client.exhibit-a.test',
+    clientEmail: 'mateo.alvarez@client.petition-pilot.test',
     docs: [
       {
         label: 'A',
@@ -278,7 +278,7 @@ export const PERSONAS: Persona[] = [
     field: 'Computational biology',
     petitioner: 'Corvid Therapeutics, Inc.',
     proposedRole: 'Research Scientist',
-    clientEmail: 'lena.okafor@client.exhibit-a.test',
+    clientEmail: 'lena.okafor@client.petition-pilot.test',
     docs: [
       {
         label: 'A',

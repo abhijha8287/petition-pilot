@@ -51,11 +51,11 @@ async function mappingRun(caseId: string) {
 
 async function recoveryTest(caseId: string) {
   const { data: run } = await db.from('pipeline_runs').insert({ case_id: caseId, config: { trigger: 'recovery-eval', chaos: 'extract_claims,draft' } }).select('id').single();
-  const prev = process.env.EXHIBIT_CHAOS;
-  process.env.EXHIBIT_CHAOS = 'extract_claims,draft';
+  const prev = process.env.PILOT_CHAOS;
+  process.env.PILOT_CHAOS = 'extract_claims,draft';
   const t0 = Date.now();
   const res = await executePipelineRun(caseId, run!.id);
-  process.env.EXHIBIT_CHAOS = prev ?? '';
+  process.env.PILOT_CHAOS = prev ?? '';
   const { data: ev } = await db.from('agent_events').select('step,kind,meta').eq('run_id', run!.id);
   const injected = (ev ?? []).filter((e) => e.kind === 'error' && (e.meta as { injected?: boolean })?.injected).length;
   const reached = res.status === 'suspended';

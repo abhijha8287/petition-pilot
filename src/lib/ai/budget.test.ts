@@ -6,8 +6,8 @@ import { beforeEach, describe, expect, it, vi } from 'vitest';
 describe('budget guard', () => {
   beforeEach(() => {
     vi.resetModules();
-    process.env.EXHIBIT_BUDGET_LEDGER = path.join(fs.mkdtempSync(path.join(os.tmpdir(), 'budget-')), 'ledger.jsonl');
-    process.env.EXHIBIT_BUDGET_USD = '2';
+    process.env.PILOT_BUDGET_LEDGER = path.join(fs.mkdtempSync(path.join(os.tmpdir(), 'budget-')), 'ledger.jsonl');
+    process.env.PILOT_BUDGET_USD = '2';
   });
 
   it('stops at 90% of the budget, counting spend from every recorded call', async () => {

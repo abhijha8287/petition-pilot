@@ -1,4 +1,4 @@
--- Exhibit A: core schema
+-- PetitionPilot: core schema
 -- Every table has RLS enabled in the same migration that creates it.
 -- Pipeline writes go through the service role (server-only); people read and
 -- write through their own session, so RLS is the permission boundary.

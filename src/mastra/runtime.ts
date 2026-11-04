@@ -42,13 +42,13 @@ export async function logEvent(
 
 /**
  * Fault injection for the recovery demo and tests:
- *   EXHIBIT_CHAOS="draft"           fail the first attempt of the `draft` step in every run
- *   EXHIBIT_CHAOS="draft,objections"
+ *   PILOT_CHAOS="draft"           fail the first attempt of the `draft` step in every run
+ *   PILOT_CHAOS="draft,objections"
  * A failure is injected at most once per (run, step), so a retry or a resumed
  * run gets through. The failure is recorded as an event, so the UI shows it.
  */
 async function maybeInjectFailure(ctx: RunCtx, step: string) {
-  const chaos = (process.env.EXHIBIT_CHAOS ?? '').split(',').map((s) => s.trim());
+  const chaos = (process.env.PILOT_CHAOS ?? '').split(',').map((s) => s.trim());
   if (!chaos.includes(step)) return;
   const { count } = await adminClient()
     .from('agent_events')
@@ -58,7 +58,7 @@ async function maybeInjectFailure(ctx: RunCtx, step: string) {
     .eq('kind', 'error')
     .contains('meta', { injected: true });
   if ((count ?? 0) > 0) return;
-  await logEvent(ctx, step, 'error', `Injected failure in "${step}" (EXHIBIT_CHAOS)`, { meta: { injected: true } });
+  await logEvent(ctx, step, 'error', `Injected failure in "${step}" (PILOT_CHAOS)`, { meta: { injected: true } });
   throw new Error(`Injected failure in step "${step}"`);
 }
 

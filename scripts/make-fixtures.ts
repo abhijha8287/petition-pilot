@@ -36,7 +36,7 @@ async function main() {
     for (const d of p.docs) {
       const pdf = await PDFDocument.create();
       pdf.setTitle(d.title);
-      pdf.setAuthor('Exhibit A demo fixtures (fictional)');
+      pdf.setAuthor('PetitionPilot demo fixtures (fictional)');
       const font = await pdf.embedFont(StandardFonts.Helvetica);
       const bold = await pdf.embedFont(StandardFonts.HelveticaBold);
       for (const paras of d.pages) {
@@ -51,7 +51,7 @@ async function main() {
           }
           y -= 8;
         });
-        page.drawText('FICTIONAL SAMPLE DOCUMENT - generated for the Exhibit A demo. Not a real record.', {
+        page.drawText('FICTIONAL SAMPLE DOCUMENT - generated for the PetitionPilot demo. Not a real record.', {
           x: PAGE.margin,
           y: 36,
           size: 8,

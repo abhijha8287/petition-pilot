@@ -5,9 +5,9 @@ import { Button } from '@/components/ui';
 import { signIn } from './actions';
 
 const DEMO = [
-  { email: 'attorney@exhibit-a.test', label: 'Attorney', note: 'reviews and signs off' },
-  { email: 'paralegal@exhibit-a.test', label: 'Paralegal', note: 'runs agents, cannot sign' },
-  { email: 'mateo.alvarez@client.exhibit-a.test', label: 'Client', note: 'sees own case only' },
+  { email: 'attorney@petition-pilot.test', label: 'Attorney', note: 'reviews and signs off' },
+  { email: 'paralegal@petition-pilot.test', label: 'Paralegal', note: 'runs agents, cannot sign' },
+  { email: 'mateo.alvarez@client.petition-pilot.test', label: 'Client', note: 'sees own case only' },
 ];
 
 export function LoginForm() {
@@ -37,7 +37,7 @@ export function LoginForm() {
               type="button"
               onClick={() => {
                 if (email.current) email.current.value = d.email;
-                if (password.current) password.current.value = 'exhibit-a-demo';
+                if (password.current) password.current.value = 'petition-pilot-demo';
               }}
               className="flex items-center justify-between rounded-md border border-line px-3 py-2 text-left text-sm hover:bg-slate-50"
             >

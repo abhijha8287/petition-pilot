@@ -11,10 +11,10 @@ import path from 'node:path';
 import { adminClient } from '../src/lib/supabase/admin';
 import { PERSONAS } from './fixtures/personas';
 
-export const DEMO_PASSWORD = 'exhibit-a-demo';
+export const DEMO_PASSWORD = 'petition-pilot-demo';
 const STAFF = [
-  { email: 'attorney@exhibit-a.test', name: 'Jordan Reyes, Esq.', role: 'attorney' as const },
-  { email: 'paralegal@exhibit-a.test', name: 'Sam Patel', role: 'paralegal' as const },
+  { email: 'attorney@petition-pilot.test', name: 'Jordan Reyes, Esq.', role: 'attorney' as const },
+  { email: 'paralegal@petition-pilot.test', name: 'Sam Patel', role: 'paralegal' as const },
 ];
 
 async function ensureUser(email: string, fullName: string, role: 'attorney' | 'paralegal' | 'client') {
