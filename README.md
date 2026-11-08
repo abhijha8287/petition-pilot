@@ -1,5 +1,7 @@
 # PetitionPilot
 
+[![M8ven Score](https://m8ven.ai/badge/mcp/abhijha8287-petition-pilot-14nfhe?v=cea4d498a2fd3d799fcb462cb5193eab)](https://m8ven.ai/mcp/abhijha8287-petition-pilot-14nfhe?s=readme)
+
 **O-1A evidence mapping with source-cited drafting and attorney review.**
 
 PetitionPilot takes an applicant's documents (CV, press, papers, award letters), maps every piece of evidence to the eight O-1A criteria of 8 CFR 214.2(o)(3)(iii), finds the gaps, drafts the petition with a citation on every sentence, has an adversarial "USCIS officer" agent attack the draft using real Administrative Appeals Office decisions, and stops for an attorney to review and sign off.
@@ -160,3 +162,7 @@ fixtures/                 generated fictional applicant PDFs
 - Golden labels come from published AAO dismissals, which only cover cases that were appealed; recall is measured on grounds the AAO actually wrote down.
 - The faithfulness judge is not yet calibrated against human labels; a 40-sentence labeling sample is ready in `evals/human/faithfulness-sample.csv`.
 - Full details: [EVALS.md](EVALS.md), "Known limitations".
+
+## License
+
+MIT, see [LICENSE](LICENSE).
